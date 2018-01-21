@@ -9,6 +9,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:UXDemo"
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Converters"
+        xmlns:UserControls="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
+        xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
         Title="efilnukefesin.NET UX Demo App"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -30,7 +32,7 @@
             <Setter Property="Grid.Column" Value="1" />
             <Setter Property="Grid.Row" Value="0" />
             <Style.Triggers>
-                <DataTrigger Value="true" Binding="{Binding Width, ConverterParameter=400, Converter={StaticResource IsValueLessThanParameter}, ElementName=metroWindow}">
+                <DataTrigger Value="true" Binding="{Binding ActualWidth, ConverterParameter=400, Converter={StaticResource IsValueLessThanParameter}, ElementName=mainWindow}">
                     <Setter Property="Grid.Column" Value="0" />
                     <Setter Property="Grid.Row" Value="1" />
                 </DataTrigger>
@@ -42,11 +44,16 @@
         </ResourceDictionary>
     </Window.Resources>
     <!--#endregion Window Resources-->
+    <!--#region Window DataContext-->
+    <Window.DataContext>
+        <ViewModels:MainViewModel />
+    </Window.DataContext>
+    <!--#endregion Window DataContext-->
     <!--#region Right Window Title Commands-->
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
             <Button Content="settings" />
-            <Button>
+            <Button Command="{Binding ShowUserProfileCommand, Mode=OneWay}">
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="20"
                    Height="20"
@@ -57,7 +64,7 @@
                     </Rectangle>
                     <TextBlock Margin="4 0 0 0"
                    VerticalAlignment="Center"
-                   Text="deploy cupcakes" />
+                   Text="User Info" />
                 </StackPanel>
             </Button>
         </Controls:WindowCommands>

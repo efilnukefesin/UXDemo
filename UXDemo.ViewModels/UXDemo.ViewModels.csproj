@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NET.efilnukefesin.Common.Wpf.Commands" Version="1.0.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.2.5" />
   </ItemGroup>
 
