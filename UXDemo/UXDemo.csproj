@@ -134,5 +134,11 @@
   <ItemGroup>
     <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
+      <Project>{facb7485-6029-4158-9ccf-fd52642f83a3}</Project>
+      <Name>UXDemo.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
