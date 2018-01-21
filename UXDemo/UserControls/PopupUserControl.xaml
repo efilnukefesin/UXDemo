@@ -12,7 +12,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="6*"/>
             <ColumnDefinition Width="250px"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50px"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="25px"/>
@@ -29,7 +29,7 @@
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle x:Name="rectBackground" Grid.RowSpan="3" Fill="#7F000000" Grid.ColumnSpan="3" />
-        <Polygon Points="25,0 50,25, 0,25" Fill="{DynamicResource AccentBaseColorBrush}" Grid.Row="0" Grid.Column="1" Margin="0,0,40,0" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Polygon Points="25,0 50,25, 0,25" Fill="{DynamicResource AccentBaseColorBrush}" Grid.Row="0" Grid.Column="1" Margin="0,0,50,0" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <!--<RowDefinition Height="25px"/>-->

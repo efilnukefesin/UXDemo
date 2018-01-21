@@ -28,6 +28,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
             this.MaxExperience = 100;
             this.Title = "AwesomeTitle";
             this.NextTitle = "MoreAwesomeTitle";
+            this.ImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png");
         }
     }
 }
