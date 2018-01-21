@@ -4,11 +4,18 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views"
+      xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="UserInfoPage">
-
+    <!--#region Page DataContext-->
+    <Page.DataContext>
+        <ViewModels:UserInfoViewModel />
+    </Page.DataContext>
+    <!--#endregion Page DataContext-->
     <Grid>
         <Label>USERINFO</Label>
+        <Label Content="{Binding User.Firstname}" />
+        <Label Content="{Binding User.Lastname}" />
     </Grid>
 </Page>

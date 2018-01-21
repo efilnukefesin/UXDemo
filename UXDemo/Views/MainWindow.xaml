@@ -23,7 +23,8 @@
         GlowBrush="{DynamicResource AccentColorBrush}"
         BorderThickness="1"
         Height="450" 
-        Width="800" WindowStartupLocation="CenterScreen">
+        Width="800" 
+        WindowStartupLocation="CenterScreen">
     <!--#region Window Resources-->
     <Window.Resources>
         <ResourceDictionary>
