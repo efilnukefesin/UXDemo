@@ -44,6 +44,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
         #region UpdateUI
         private void UpdateUI()
         {
+            this.fContent.Source = this.FrameSource; 
         }
         #endregion UpdateUI
 
@@ -92,6 +93,27 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
 
         public event EventHandler BlurRadiusChanged;
         #endregion BlurRadius Property
+
+        #region FrameSource Property
+        public static readonly DependencyProperty FrameSourceProperty = DependencyProperty.Register("FrameSource", typeof(Uri), typeof(PopupUserControl), new PropertyMetadata(default(Uri), FrameSource_ValueChanged));
+
+        static void FrameSource_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            PopupUserControl self = obj as PopupUserControl;
+            if (self.FrameSourceChanged != null) self.FrameSourceChanged(self, new EventArgs());
+
+            self.UpdateUI();
+        }
+
+        [Description("The Uri or Page to be shown in the Popup"), Category("Own Properties"), DisplayName("FrameSource")]
+        public Uri FrameSource
+        {
+            get { return (Uri)GetValue(FrameSourceProperty); }
+            set { SetValue(FrameSourceProperty, value); }
+        }
+
+        public event EventHandler FrameSourceChanged;
+        #endregion FrameSource Property
 
         #endregion DependencyProperties
     }

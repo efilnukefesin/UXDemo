@@ -90,6 +90,6 @@
                 <TextBox Margin="20, 0, 20, 0"></TextBox>
             </StackPanel>
         </Grid>
-        <UserControls:PopupUserControl x:Name="popupMessage" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" />
+        <UserControls:PopupUserControl x:Name="popupMessage" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" />
     </Grid>
 </Controls:MetroWindow>
