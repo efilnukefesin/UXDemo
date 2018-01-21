@@ -29,10 +29,11 @@
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle x:Name="rectBackground" Grid.RowSpan="3" Fill="#7F000000" Grid.ColumnSpan="3" />
-        <Polygon Points="25,0 50,25, 0,25" Fill="#FF26397A" Grid.Row="0" Grid.Column="1" Margin="0,0,40,0" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Polygon Points="25,0 50,25, 0,25" Fill="{DynamicResource AccentBaseColorBrush}" Grid.Row="0" Grid.Column="1" Margin="0,0,40,0" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="25px"/>
+                <!--<RowDefinition Height="25px"/>-->
+                <RowDefinition Height="0"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
             <Rectangle x:Name="rectMessage" Fill="White" Grid.Row="2" Margin="0"/>

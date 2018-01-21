@@ -8,11 +8,14 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
     {
         public string Firstname { get; set; }
         public string Lastname { get; set; }
+        public int Experience { get; set; }
+        public Uri ImageUri { get; set; }
 
         public UserModel()
         {
             this.Firstname = "Nigel";
             this.Lastname = "Lotze";
+            this.Experience = 10;
         }
     }
 }

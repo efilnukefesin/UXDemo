@@ -14,8 +14,14 @@
     </Page.DataContext>
     <!--#endregion Page DataContext-->
     <Grid>
-        <Label>USERINFO</Label>
-        <Label Content="{Binding User.Firstname}" />
-        <Label Content="{Binding User.Lastname}" />
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" />
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
