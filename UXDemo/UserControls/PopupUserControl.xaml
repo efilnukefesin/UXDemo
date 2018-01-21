@@ -5,14 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" 
+             d:DesignWidth="800">
     <Grid x:Name="grdMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Rectangle x:Name="rectBlur" Grid.RowSpan="3">
+        <Rectangle x:Name="rectBlur" Grid.RowSpan="3" Grid.ColumnSpan="3">
             <Rectangle.Effect>
                 <BlurEffect x:Name="beBackground" Radius="{Binding BlurRadius, ElementName=userControl}"/>
             </Rectangle.Effect>
@@ -20,8 +26,8 @@
                 <VisualBrush x:Name="vbBlur" ViewboxUnits="Absolute" AlignmentX="Left" AlignmentY="Top" Visual="{Binding BlurVisual, ElementName=userControl}" Stretch="None" />
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="rectBackground" Grid.RowSpan="3" Fill="#7F000000" />
-        <Grid Grid.Row="1">
+        <Rectangle x:Name="rectBackground" Grid.RowSpan="3" Fill="#7F000000" Grid.ColumnSpan="3" />
+        <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="7*"/>
@@ -31,9 +37,8 @@
             <Label x:Name="lbCaption" Content="Caption" FontSize="10"  Grid.Row="0" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0" />
             <StackPanel Orientation="Vertical" Grid.Row="1">
                 <Rectangle />
-                <Frame x:Name="fContent" Source="/BlurEffect;component/Views/MessageBoxPage.xaml" NavigationUIVisibility="Hidden" Navigated="fContent_Navigated" Margin="5,0" />
+                <Frame x:Name="fContent" Source="/UXDemo;component/Views/UserInfoPage.xaml" NavigationUIVisibility="Hidden" Navigated="fContent_Navigated" Margin="5,0" />
             </StackPanel>
-            <Button x:Name="btnOK" Content="OK" Grid.Row="1" Margin="0,0,2,2" Click="btnOK_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
         </Grid>
     </Grid>
 </UserControl>

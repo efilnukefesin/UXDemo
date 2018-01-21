@@ -30,16 +30,6 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
 
         #region Events
 
-        #region btnOK_Click: hides the popup
-        /// <summary>
-        /// hides the popup
-        /// </summary>
-        private void btnOK_Click(object sender, RoutedEventArgs e)
-        {
-            this.Visibility = System.Windows.Visibility.Collapsed;
-        }
-        #endregion btnOK_Click
-
         #region fContent_Navigated
         private void fContent_Navigated(object sender, NavigationEventArgs e)
         {

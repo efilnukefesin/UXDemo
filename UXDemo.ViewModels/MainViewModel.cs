@@ -10,6 +10,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
     {
         #region Properties
 
+        public bool IsUserInfoPopupVisible { get; set; }
+
         #region ShowUserProfileCommand
         private RelayCommand showUserProfileCommand;
         public ICommand ShowUserProfileCommand
@@ -25,6 +27,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         public MainViewModel()
             :base()
         {
+            this.IsUserInfoPopupVisible = false;
+
             this.showUserProfileCommand = new RelayCommand(this.showUserProfileCommandExecute, this.showUserProfileCommandCanExecute);
         }
 
@@ -42,7 +46,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         #region showUserProfileCommandExecute
         private void showUserProfileCommandExecute()
         {
-            throw new NotImplementedException();
+            this.IsUserInfoPopupVisible = !this.IsUserInfoPopupVisible;
         }
         #endregion showUserProfileCommandExecute
 
