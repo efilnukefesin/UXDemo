@@ -5,17 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
              mc:Ignorable="d" 
+             x:Name="userControl"
              d:DesignHeight="450" 
              d:DesignWidth="800">
     <Grid x:Name="grdMain">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="250px"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="25px"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -31,12 +32,12 @@
         <Polygon Points="25,0 50,25, 0,25" Fill="#FF26397A" Grid.Row="0" Grid.Column="1" Margin="0,0,40,0" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="25px"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
             <Rectangle x:Name="rectMessage" Fill="White" Grid.Row="2" Margin="0"/>
             <Rectangle Grid.Row="0" Fill="#FF26397A" />
-            <Label x:Name="lbCaption" Content="Caption" FontSize="10"  Grid.Row="0" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0" />
+            <Label x:Name="lbCaption" Content="Caption" FontSize="10" Grid.Row="0" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0" />
             <StackPanel Orientation="Vertical" Grid.Row="1">
                 <Rectangle />
                 <Frame x:Name="fContent" Source="/UXDemo;component/Views/UserInfoPage.xaml" NavigationUIVisibility="Hidden" Navigated="fContent_Navigated" Margin="5,0" />
