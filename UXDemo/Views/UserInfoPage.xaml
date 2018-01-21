@@ -24,37 +24,56 @@
     </Page.DataContext>
     <!--#endregion Page DataContext-->
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="100px"/>
-                    <ColumnDefinition Width="10*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="25px"/>
-                    <RowDefinition Height="50px"/>
-                    <RowDefinition Height="50px"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" Grid.ColumnSpan="3" Grid.RowSpan="2" />
-                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
-                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5" Fill="Black"/>
-                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5">
-                    <Ellipse.Fill>
-                        <!--<ImageBrush ImageSource="DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>-->
-                        <ImageBrush ImageSource="pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
-                    <materialDesign:Card>
-                        <Label>Lalala</Label>
-                    </materialDesign:Card>
-                    <materialDesign:Card>
-                        <Label>Lalala</Label>
-                    </materialDesign:Card>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px"/>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5" Fill="Black"/>
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5">
+            <Ellipse.Fill>
+                <!--<ImageBrush ImageSource="DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>-->
+                <ImageBrush ImageSource="pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" Margin="5">
+            <TextBlock Text="{Binding User.Nickname}" Style="{StaticResource MaterialDesignSubheadingTextBlock}" Foreground="{DynamicResource IdealForegroundColorBrush}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
+            <materialDesign:Card Margin="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="User.Firstname" />
+                                <Binding Path="User.Lastname" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
                 </StackPanel>
-            </Grid>
-        </ScrollViewer>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="2">
+                <StackPanel>
+                    <Label FontWeight="Bold" Content="{Binding User.Title}" />
+                    <ProgressBar Height="15px" Value="{Binding User.Experience}" Maximum="{Binding User.MaxExperience}" Margin="2" />
+                    <TextBlock TextWrapping="Wrap" Margin="2">
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="You need {0} XP to gain the level of {1}">
+                                <Binding Path="User.NeededExperience" Mode="OneWay" />
+                                <Binding Path="User.NextTitle" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </StackPanel>
+            </materialDesign:Card>
+        </StackPanel>
     </Grid>
 </Page>
