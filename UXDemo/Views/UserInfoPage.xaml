@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views"
       xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="300" 
+      d:DesignWidth="250"
       Title="UserInfoPage">
     <!--#region Page DataContext-->
     <Page.DataContext>
@@ -16,11 +17,21 @@
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100px"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50px"/>
+                    <RowDefinition Height="50px"/>
+                    <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
-                <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" />
+                <Rectangle Grid.Row="0" Fill="{DynamicResource MaterialDesignPaper}" Grid.ColumnSpan="3" Grid.RowSpan="4" />
+                <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+                <Ellipse  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
+                <Ellipse  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="Red" Margin="5"/>
             </Grid>
         </ScrollViewer>
     </Grid>
