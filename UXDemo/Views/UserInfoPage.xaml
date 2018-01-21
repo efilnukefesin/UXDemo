@@ -3,10 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views"
       xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
       mc:Ignorable="d" 
-      d:DesignHeight="300" 
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal" 
+      TextOptions.TextRenderingMode="Auto"        
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}"
+      d:DesignHeight="400" 
       d:DesignWidth="250"
       Title="UserInfoPage">
     <!--#region Page DataContext-->
@@ -23,15 +32,28 @@
                     <ColumnDefinition Width="10*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="25px"/>
+                    <RowDefinition Height="50px"/>
+                    <RowDefinition Height="50px"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="50px"/>
-                    <RowDefinition Height="50px"/>
-                    <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
-                <Rectangle Grid.Row="0" Fill="{DynamicResource MaterialDesignPaper}" Grid.ColumnSpan="3" Grid.RowSpan="4" />
                 <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" Grid.ColumnSpan="3" Grid.RowSpan="2" />
-                <Ellipse  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
-                <Ellipse  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="Red" Margin="5"/>
+                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
+                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5" Fill="Black"/>
+                <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5">
+                    <Ellipse.Fill>
+                        <!--<ImageBrush ImageSource="DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>-->
+                        <ImageBrush ImageSource="pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
+                    <materialDesign:Card>
+                        <Label>Lalala</Label>
+                    </materialDesign:Card>
+                    <materialDesign:Card>
+                        <Label>Lalala</Label>
+                    </materialDesign:Card>
+                </StackPanel>
             </Grid>
         </ScrollViewer>
     </Grid>
