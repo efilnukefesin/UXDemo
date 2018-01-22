@@ -57,16 +57,9 @@
             <Button Content="settings" Command="{Binding ShowSettingsCommand, Mode=OneWay}" />
             <Button Command="{Binding ShowUserProfileCommand, Mode=OneWay}">
                 <StackPanel Orientation="Horizontal">
-                    <Rectangle Width="20"
-                   Height="20"
-                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
-                        <Rectangle.OpacityMask>
-                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_user}" />
-                        </Rectangle.OpacityMask>
-                    </Rectangle>
-                    <Ellipse Width="20" Height="20">
+                    <Ellipse Width="30" Height="30">
                         <Ellipse.Fill>
-                            <ImageBrush ImageSource="{Binding User.ImageUri}" Stretch="UniformToFill"/>
+                            <ImageBrush ImageSource="{Binding User.SmallImageUri}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"/>
                         </Ellipse.Fill>
                     </Ellipse>
                     <TextBlock Margin="4 0 0 0"

@@ -18,6 +18,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
         public int MaxExperience { get; set; }
         public int NeededExperience { get { return this.MaxExperience - this.Experience; } }
         public Uri ImageUri { get; set; }
+        public Uri SmallImageUri { get; set; }
 
         public UserModel()
         {
@@ -29,6 +30,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
             this.Title = "AwesomeTitle";
             this.NextTitle = "MoreAwesomeTitle";
             this.ImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png");
+            this.SmallImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHeadSmall.png");
         }
     }
 }
