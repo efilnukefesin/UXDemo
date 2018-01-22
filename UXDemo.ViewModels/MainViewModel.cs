@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using NET.efilnukefesin.Common.Wpf.Commands;
+using NET.efilnukefesin.DependencyContainerManager;
 using NET.efilnukefesin.Wpf.UXDemo.Models;
+using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
 
 namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
 {
@@ -45,7 +47,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
             this.showUserProfileCommand = new RelayCommand(this.showUserProfileCommandExecute, this.showUserProfileCommandCanExecute);
             this.showSettingsCommand = new RelayCommand(this.showSettingsCommandExecute, this.showSettingsCommandCanExecute);
 
-            this.User = new UserModel();  //TODO: get from UserService
+            this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
         }
         #endregion Construction
 

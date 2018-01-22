@@ -1,4 +1,6 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+﻿using NET.efilnukefesin.DependencyContainerManager;
+using NET.efilnukefesin.Wpf.UXDemo.Models;
+using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +20,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         public UserInfoViewModel()
             : base()
         {
-            this.User = new UserModel();
+            this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
         }
 
         #endregion Construction
