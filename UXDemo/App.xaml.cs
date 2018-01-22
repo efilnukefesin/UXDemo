@@ -18,7 +18,7 @@ namespace UXDemo
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            
+
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject()))
             {
                 BootStrapper.RegisterDependenciesDesignMode();

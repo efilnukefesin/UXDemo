@@ -47,7 +47,21 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
             this.showUserProfileCommand = new RelayCommand(this.showUserProfileCommandExecute, this.showUserProfileCommandCanExecute);
             this.showSettingsCommand = new RelayCommand(this.showSettingsCommandExecute, this.showSettingsCommandCanExecute);
 
-            this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+            try
+            {
+                if (DiManager.GetInstance().Resolve<IUserService>() != null)
+                {
+                    this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            if (this.User is null)
+            {
+                this.User = new UserModel();
+            }
         }
         #endregion Construction
 

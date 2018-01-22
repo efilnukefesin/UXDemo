@@ -1,11 +1,11 @@
-﻿<Controls:MetroWindow 
-        x:Name="mainWindow" 
+﻿<mahApps:MetroWindow 
+        x:Name="uxDemoMainWindow" 
         x:Class="NET.efilnukefesin.Wpf.UXDemo.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:UXDemo"
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Converters"
@@ -34,7 +34,7 @@
             <Setter Property="Grid.Column" Value="1" />
             <Setter Property="Grid.Row" Value="0" />
             <Style.Triggers>
-                <DataTrigger Value="true" Binding="{Binding ActualWidth, ConverterParameter=400, Converter={StaticResource IsValueLessThanParameter}, ElementName=mainWindow}">
+                    <DataTrigger Value="true" Binding="{Binding ActualWidth, ConverterParameter=400, Converter={StaticResource IsValueLessThanParameter}, ElementName=uxDemoMainWindow}">
                     <Setter Property="Grid.Column" Value="0" />
                     <Setter Property="Grid.Row" Value="1" />
                 </DataTrigger>
@@ -52,8 +52,8 @@
     </Window.DataContext>
     <!--#endregion Window DataContext-->
     <!--#region Right Window Title Commands-->
-    <Controls:MetroWindow.RightWindowCommands>
-        <Controls:WindowCommands>
+    <mahApps:MetroWindow.RightWindowCommands>
+        <mahApps:WindowCommands>
             <Button Content="settings" Command="{Binding ShowSettingsCommand, Mode=OneWay}" />
             <Button Command="{Binding ShowUserProfileCommand, Mode=OneWay}">
                 <StackPanel Orientation="Horizontal">
@@ -67,8 +67,8 @@
                    Text="{Binding User.Nickname}" />
                 </StackPanel>
             </Button>
-        </Controls:WindowCommands>
-    </Controls:MetroWindow.RightWindowCommands>
+        </mahApps:WindowCommands>
+    </mahApps:MetroWindow.RightWindowCommands>
     <!--#endregion Right Window Title Commands-->
     <Grid>
         <Grid x:Name="grdMain">
@@ -88,7 +88,7 @@
                 <TextBox Margin="20, 0, 20, 0"></TextBox>
             </StackPanel>
         </Grid>
-        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="50" />
-        <UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo;component/Views/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="150" />
+        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />
+        <UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo;component/Views/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="165" />
     </Grid>
-</Controls:MetroWindow>
+</mahApps:MetroWindow>

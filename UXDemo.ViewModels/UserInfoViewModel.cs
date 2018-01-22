@@ -20,7 +20,21 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         public UserInfoViewModel()
             : base()
         {
-            this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+            try
+            {
+                if (DiManager.GetInstance().Resolve<IUserService>() != null)
+                {
+                    this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            if (this.User is null)
+            {
+                this.User = new UserModel();
+            }
         }
 
         #endregion Construction
