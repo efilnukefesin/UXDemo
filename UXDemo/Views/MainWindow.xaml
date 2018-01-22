@@ -54,7 +54,7 @@
     <!--#region Right Window Title Commands-->
     <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
-            <Button Content="settings" />
+            <Button Content="settings" Command="{Binding ShowSettingsCommand, Mode=OneWay}" />
             <Button Command="{Binding ShowUserProfileCommand, Mode=OneWay}">
                 <StackPanel Orientation="Horizontal">
                     <Rectangle Width="20"
@@ -64,9 +64,14 @@
                             <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_user}" />
                         </Rectangle.OpacityMask>
                     </Rectangle>
+                    <Ellipse Width="20" Height="20">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{Binding User.ImageUri}" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
                     <TextBlock Margin="4 0 0 0"
                    VerticalAlignment="Center"
-                   Text="User Info" />
+                   Text="{Binding User.Nickname}" />
                 </StackPanel>
             </Button>
         </Controls:WindowCommands>
@@ -90,6 +95,7 @@
                 <TextBox Margin="20, 0, 20, 0"></TextBox>
             </StackPanel>
         </Grid>
-        <UserControls:PopupUserControl x:Name="popupMessage" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" />
+        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="50" />
+        <UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo;component/Views/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="150" />
     </Grid>
 </Controls:MetroWindow>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using NET.efilnukefesin.Common.Wpf.Commands;
+using NET.efilnukefesin.Wpf.UXDemo.Models;
 
 namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
 {
@@ -11,6 +12,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         #region Properties
 
         public bool IsUserInfoPopupVisible { get; set; }
+        public bool IsSettingsPopupVisible { get; set; }
 
         #region ShowUserProfileCommand
         private RelayCommand showUserProfileCommand;
@@ -20,6 +22,16 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         }
         #endregion ShowUserProfileCommand
 
+        #region ShowSettingsCommand
+        private RelayCommand showSettingsCommand;
+        public ICommand ShowSettingsCommand
+        {
+            get { return this.showSettingsCommand; }
+        }
+        #endregion ShowSettingsCommand
+
+        public UserModel User { get; set; }
+
         #endregion Properties
 
         #region Construction
@@ -28,10 +40,13 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
             :base()
         {
             this.IsUserInfoPopupVisible = false;
+            this.IsSettingsPopupVisible = false;
 
             this.showUserProfileCommand = new RelayCommand(this.showUserProfileCommandExecute, this.showUserProfileCommandCanExecute);
-        }
+            this.showSettingsCommand = new RelayCommand(this.showSettingsCommandExecute, this.showSettingsCommandCanExecute);
 
+            this.User = new UserModel();  //TODO: get from UserService
+        }
         #endregion Construction
 
         #region Methods
@@ -47,8 +62,24 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         private void showUserProfileCommandExecute()
         {
             this.IsUserInfoPopupVisible = !this.IsUserInfoPopupVisible;
+            this.IsSettingsPopupVisible = false;
         }
         #endregion showUserProfileCommandExecute
+
+        #region showSettingsCommandCanExecute
+        private bool showSettingsCommandCanExecute()
+        {
+            return true;
+        }
+        #endregion showSettingsCommandCanExecute
+
+        #region showSettingsCommandExecute
+        private void showSettingsCommandExecute()
+        {
+            this.IsSettingsPopupVisible = !this.IsSettingsPopupVisible;
+            this.IsUserInfoPopupVisible = false;
+        }
+        #endregion showSettingsCommandExecute
 
         #endregion Methods
 

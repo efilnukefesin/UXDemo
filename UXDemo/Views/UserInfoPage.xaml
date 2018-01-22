@@ -40,7 +40,6 @@
         <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5" Fill="Black"/>
         <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5">
             <Ellipse.Fill>
-                <!--<ImageBrush ImageSource="DemoContent/SkeletonHead.png" Stretch="UniformToFill"/>-->
                 <ImageBrush ImageSource="{Binding User.ImageUri}" Stretch="UniformToFill"/>
             </Ellipse.Fill>
         </Ellipse>

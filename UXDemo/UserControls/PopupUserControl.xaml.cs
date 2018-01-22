@@ -44,7 +44,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
         #region UpdateUI
         private void UpdateUI()
         {
-            this.fContent.Source = this.FrameSource; 
+            this.fContent.Source = this.FrameSource;
+            this.polyMarker.Margin = new Thickness(0, 0, this.RightMarkerMargin, 0);
         }
         #endregion UpdateUI
 
@@ -114,6 +115,27 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
 
         public event EventHandler FrameSourceChanged;
         #endregion FrameSource Property
+
+        #region RightMarkerMargin Property
+        public static readonly DependencyProperty RightMarkerMarginProperty = DependencyProperty.Register("RightMarkerMargin", typeof(int), typeof(PopupUserControl), new PropertyMetadata(0, RightMarkerMargin_ValueChanged));
+
+        static void RightMarkerMargin_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            PopupUserControl self = obj as PopupUserControl;
+            if (self.RightMarkerMarginChanged != null) self.RightMarkerMarginChanged(self, new EventArgs());
+
+            self.UpdateUI();
+        }
+
+        [Description("The distance in pixels from the right where the marker begins"), Category("Own Properties"), DisplayName("RightMarkerMargin")]
+        public int RightMarkerMargin
+        {
+            get { return (int)GetValue(RightMarkerMarginProperty); }
+            set { SetValue(RightMarkerMarginProperty, value); }
+        }
+
+        public event EventHandler RightMarkerMarginChanged;
+        #endregion RightMarkerMargin Property
 
         #endregion DependencyProperties
     }
