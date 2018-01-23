@@ -3,7 +3,10 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views"
+      xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
       mc:Ignorable="d" 
       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
       TextElement.FontWeight="Regular"
@@ -15,7 +18,11 @@
       d:DesignHeight="400" 
       d:DesignWidth="250"
       Title="SettingsPage">
-
+    <!--#region Page DataContext-->
+    <Page.DataContext>
+        <ViewModels:SettingsViewModel />
+    </Page.DataContext>
+    <!--#endregion Page DataContext-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50px"/>
