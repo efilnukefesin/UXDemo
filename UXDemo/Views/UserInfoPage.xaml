@@ -61,13 +61,13 @@
             </materialDesign:Card>
             <materialDesign:Card Margin="2">
                 <StackPanel>
-                    <Label FontWeight="Bold" Content="{Binding User.Title}" />
-                    <ProgressBar Height="15px" Value="{Binding User.Experience}" Maximum="{Binding User.MaxExperience}" Margin="2" />
+                    <Label FontWeight="Bold" Content="{Binding User.CurrentLevel.Title}" />
+                    <ProgressBar Height="15px" Value="{Binding User.Experience}" Maximum="{Binding User.CurrentLevel.MaxExperience}" Margin="2" />
                     <TextBlock TextWrapping="Wrap" Margin="2">
                         <TextBlock.Text>
                             <MultiBinding StringFormat="You need {0} XP to gain the level of {1}">
                                 <Binding Path="User.NeededExperience" Mode="OneWay" />
-                                <Binding Path="User.NextTitle" />
+                                <Binding Path="User.CurrentLevel.NextLevel.Title" />
                             </MultiBinding>
                         </TextBlock.Text>
                     </TextBlock>

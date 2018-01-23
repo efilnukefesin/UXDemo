@@ -13,12 +13,10 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
         //TODO: put into Level Model
 
         public int Experience { get; set; }
-        public string NextTitle { get; set; }
-        public string Title { get; set; }
-        public int MaxExperience { get; set; }
-        public int NeededExperience { get { return this.MaxExperience - this.Experience; } }
+        public int NeededExperience { get { return this.CurrentLevel.MaxExperience - this.Experience; } }
         public Uri ImageUri { get; set; }
         public Uri SmallImageUri { get; set; }
+        public LevelModel CurrentLevel { get; set; }
 
         public UserModel()
         {
@@ -26,11 +24,9 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
             this.Firstname = "Nigel";
             this.Lastname = "Lotze";
             this.Experience = 10;
-            this.MaxExperience = 100;
-            this.Title = "AwesomeTitle";
-            this.NextTitle = "MoreAwesomeTitle";
             this.ImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png");
             this.SmallImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHeadSmall.png");
+            this.CurrentLevel = new LevelModel() { MinExperience = 0, MaxExperience = 100, Title = "AwesomeTitle", NextLevel = new LevelModel() { MinExperience = 101, MaxExperience = 200, Title = "MoreAwesomeTitle" } };
         }
     }
 }
