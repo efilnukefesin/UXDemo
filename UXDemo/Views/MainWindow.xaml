@@ -12,7 +12,7 @@
         xmlns:UserControls="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
-        Title="efilnukefesin.NET UX Demo App"
+        Title="SomeGamifiedITTicketingTool"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"

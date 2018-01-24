@@ -22,7 +22,13 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Services
             if (this.user == null)
             {
                 this.user = new UserModel();
-                this.user.Firstname = "Nigel2";
+                this.user.Firstname = "Michael";
+                this.user.Lastname = "Kolb";
+                this.user.Nickname = "Michael";
+                this.user.Experience = 980;
+                this.user.ImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/MichaelKolbBg.png");
+                this.user.SmallImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/MichaelKolbSmall.png");
+                this.user.CurrentLevel = new LevelModel() { MinExperience= 0, MaxExperience = 1000, Title = "Incident Newbie", NextLevel = new LevelModel() { MinExperience = 1000, MaxExperience = 5000, Title = "Ticket Wizard" } };
             }
             return this.user;
         }
