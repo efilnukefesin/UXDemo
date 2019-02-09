@@ -69,26 +69,40 @@
         </mahApps:WindowCommands>
     </mahApps:MetroWindow.RightWindowCommands>
     <!--#endregion Right Window Title Commands-->
-    <Grid>
-        <Grid x:Name="grdMain">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-
-            <Button Height="40" Margin="20">MENU</Button>
-
-            <StackPanel Style="{StaticResource ResponsiveLayoutStyle}" Margin="0,0,0,0.5" Grid.RowSpan="2">
-                <TextBlock Margin="20,20,20, 0">Name:</TextBlock>
-                <TextBox Margin="20, 0, 20, 0"></TextBox>
-            </StackPanel>
-        </Grid>
-        <!--<UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo.Views;component/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="165" />
-        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo.Views;component/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />-->
-        
-    </Grid>
+    <materialDesign:DialogHost Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
+        <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding ElementName=MenuToggleButton, Path=IsChecked}">
+            <materialDesign:DrawerHost.LeftDrawerContent>
+                <DockPanel MinWidth="212">
+                    <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
+                                    DockPanel.Dock="Top"
+                                    HorizontalAlignment="Right" Margin="16"
+                                    IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
+                    <ListBox x:Name="DemoItemsListBox" Margin="0 16 0 16" SelectedIndex="0" ItemsSource="{Binding DemoItems}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="domain:DemoItem">
+                                <TextBlock Text="{Binding Name}" Margin="32 0 32 0" />
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </materialDesign:DrawerHost.LeftDrawerContent>
+            <DockPanel>
+                <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
+                    <DockPanel>
+                        <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton"/>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Material Design In XAML Toolkit</TextBlock>
+                    </DockPanel>
+                </materialDesign:ColorZone>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock>CONTENT TO FOLLOW - replace with Frame</TextBlock>
+                    <TextBlock Grid.Row="1" >CONTENT TO FOLLOW - replace with Frame</TextBlock>
+                    <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
+                </Grid>
+            </DockPanel>
+        </materialDesign:DrawerHost>
+    </materialDesign:DialogHost>
 </mahApps:MetroWindow>
