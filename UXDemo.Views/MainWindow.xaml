@@ -7,12 +7,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:UXDemo"
-        xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Converters"
-        xmlns:UserControls="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
+        xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views.Converters"
+        xmlns:UserControls="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls;assembly=UXDemo.UserControls"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
-        Title="SomeGamifiedITTicketingTool"
+        Title="UXDemo"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -31,17 +30,17 @@
             <Converters:IsValueLessThanParameter x:Key="IsValueLessThanParameter"/>
             <Converters:BoolToVisibleOrCollapsed x:Key="BoolToVisibleOrCollapsed"/>
             <Style x:Key="ResponsiveLayoutStyle">
-            <Setter Property="Grid.Column" Value="1" />
-            <Setter Property="Grid.Row" Value="0" />
-            <Style.Triggers>
+                <Setter Property="Grid.Column" Value="1" />
+                <Setter Property="Grid.Row" Value="0" />
+                <Style.Triggers>
                     <DataTrigger Value="true" Binding="{Binding ActualWidth, ConverterParameter=400, Converter={StaticResource IsValueLessThanParameter}, ElementName=uxDemoMainWindow}">
-                    <Setter Property="Grid.Column" Value="0" />
-                    <Setter Property="Grid.Row" Value="1" />
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
+                        <Setter Property="Grid.Column" Value="0" />
+                        <Setter Property="Grid.Row" Value="1" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Resources/Icons.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Views;component/Resources/BaseResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -88,8 +87,8 @@
                 <TextBox Margin="20, 0, 20, 0"></TextBox>
             </StackPanel>
         </Grid>
-        <UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo;component/Views/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="165" />
-        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />
+        <!--<UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo.Views;component/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="165" />
+        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo.Views;component/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />-->
         
     </Grid>
 </mahApps:MetroWindow>

@@ -18,6 +18,13 @@
       d:DesignHeight="400" 
       d:DesignWidth="250"
       Title="SettingsPage">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Views;component/Resources/BaseResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <!--#region Page DataContext-->
     <Page.DataContext>
         <ViewModels:SettingsViewModel />

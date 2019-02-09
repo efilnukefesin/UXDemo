@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Services", "UXDemo.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Services.Interfaces", "UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj", "{B636CD94-7976-4C1C-9CEA-31F25C2E3747}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Views", "UXDemo.Views\UXDemo.Views.csproj", "{323F7F8E-6662-4E22-8ECE-6CE5413674CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.UserControls", "UXDemo.UserControls\UXDemo.UserControls.csproj", "{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,22 @@ Global
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|x64.ActiveCfg = Release|Any CPU
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|x64.Build.0 = Release|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x64.Build.0 = Release|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|x64.Build.0 = Debug|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
