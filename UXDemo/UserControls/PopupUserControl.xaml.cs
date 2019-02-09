@@ -44,7 +44,10 @@ namespace NET.efilnukefesin.Wpf.UXDemo.UserControls
         #region UpdateUI
         private void UpdateUI()
         {
-            this.fContent.Source = this.FrameSource;
+            //this.fContent.Source = this.FrameSource;
+            //this.fContent.Navigate(this.FrameSource);
+            //this.fContent.NavigationService.Navigate(this.FrameSource);
+            //this.fContent.
             this.polyMarker.Margin = new Thickness(0, 0, this.RightMarkerMargin, 0);
         }
         #endregion UpdateUI

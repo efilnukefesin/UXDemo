@@ -88,7 +88,8 @@
                 <TextBox Margin="20, 0, 20, 0"></TextBox>
             </StackPanel>
         </Grid>
-        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />
         <UserControls:PopupUserControl x:Name="popupSettings" FrameSource="/UXDemo;component/Views/SettingsPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsSettingsPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="165" />
+        <UserControls:PopupUserControl x:Name="popupUserInfo" FrameSource="/UXDemo;component/Views/UserInfoPage.xaml" Panel.ZIndex="1000" Visibility="{Binding IsUserInfoPopupVisible, Converter={StaticResource BoolToVisibleOrCollapsed}}" BlurVisual="{Binding ElementName=grdMain, Mode=OneWay}" BlurRadius="4" RightMarkerMargin="75" />
+        
     </Grid>
 </mahApps:MetroWindow>
