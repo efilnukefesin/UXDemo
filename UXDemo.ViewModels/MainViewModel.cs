@@ -13,26 +13,11 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
     {
         #region Properties
 
-        public bool IsUserInfoPopupVisible { get; set; }
-        public bool IsSettingsPopupVisible { get; set; }
-
-        #region ShowUserProfileCommand
-        private RelayCommand showUserProfileCommand;
-        public ICommand ShowUserProfileCommand
-        {
-            get { return this.showUserProfileCommand; }
-        }
-        #endregion ShowUserProfileCommand
-
-        #region ShowSettingsCommand
-        private RelayCommand showSettingsCommand;
-        public ICommand ShowSettingsCommand
-        {
-            get { return this.showSettingsCommand; }
-        }
-        #endregion ShowSettingsCommand
+        public List<MenuItem> Items { get; set; }
 
         public UserModel User { get; set; }
+
+        public string SearchString { get; set; }
 
         #endregion Properties
 
@@ -41,11 +26,10 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         public MainViewModel()
             :base()
         {
-            this.IsUserInfoPopupVisible = false;
-            this.IsSettingsPopupVisible = false;
-
-            this.showUserProfileCommand = new RelayCommand(this.showUserProfileCommandExecute, this.showUserProfileCommandCanExecute);
-            this.showSettingsCommand = new RelayCommand(this.showSettingsCommandExecute, this.showSettingsCommandCanExecute);
+            this.Items = new List<MenuItem>();
+            this.Items.Add(new MenuItem() { Caption = "Item1"});
+            this.Items.Add(new MenuItem() { Caption = "Item2" });
+            this.Items.Add(new MenuItem() { Caption = "Item3" });
 
             try
             {
@@ -67,40 +51,6 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
 
         #region Methods
 
-        #region showUserProfileCommandCanExecute
-        private bool showUserProfileCommandCanExecute()
-        {
-            return true;
-        }
-        #endregion showUserProfileCommandCanExecute
-
-        #region showUserProfileCommandExecute
-        private void showUserProfileCommandExecute()
-        {
-            this.IsUserInfoPopupVisible = !this.IsUserInfoPopupVisible;
-            this.IsSettingsPopupVisible = false;
-        }
-        #endregion showUserProfileCommandExecute
-
-        #region showSettingsCommandCanExecute
-        private bool showSettingsCommandCanExecute()
-        {
-            return true;
-        }
-        #endregion showSettingsCommandCanExecute
-
-        #region showSettingsCommandExecute
-        private void showSettingsCommandExecute()
-        {
-            this.IsSettingsPopupVisible = !this.IsSettingsPopupVisible;
-            this.IsUserInfoPopupVisible = false;
-        }
-        #endregion showSettingsCommandExecute
-
         #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }

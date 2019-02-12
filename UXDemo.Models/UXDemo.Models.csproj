@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,6 +9,7 @@
     <Description>Models for the UX Demo</Description>
     <Copyright>efilnukefesin.NET</Copyright>
     <PackageReleaseNotes>Inclusing UserModel and LevelModel</PackageReleaseNotes>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
 </Project>

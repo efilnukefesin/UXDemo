@@ -8,7 +8,7 @@
         xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views.Converters"
-        xmlns:UserControls="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls;assembly=UXDemo.UserControls"
+        xmlns:UserControls="clr-namespace:NET.efilnukefesin.UXDemo.UserControls;assembly=UXDemo.UserControls"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
         Title="UXDemo"
@@ -27,6 +27,9 @@
     <!--#region Window Resources-->
     <Window.Resources>
         <ResourceDictionary>
+            <!--<ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles;component/BaseResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>-->
             <Converters:IsValueLessThanParameter x:Key="IsValueLessThanParameter"/>
             <Converters:BoolToVisibleOrCollapsed x:Key="BoolToVisibleOrCollapsed"/>
             <Style x:Key="ResponsiveLayoutStyle">
@@ -39,9 +42,6 @@
                     </DataTrigger>
                 </Style.Triggers>
             </Style>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/UXDemo.Views;component/Resources/BaseResources.xaml" />
-            </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
     <!--#endregion Window Resources-->
@@ -53,19 +53,7 @@
     <!--#region Right Window Title Commands-->
     <mahApps:MetroWindow.RightWindowCommands>
         <mahApps:WindowCommands>
-            <Button Content="settings" Command="{Binding ShowSettingsCommand, Mode=OneWay}" />
-            <Button Command="{Binding ShowUserProfileCommand, Mode=OneWay}">
-                <StackPanel Orientation="Horizontal">
-                    <Ellipse Width="30" Height="30">
-                        <Ellipse.Fill>
-                            <ImageBrush ImageSource="{Binding User.SmallImageUri}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"/>
-                        </Ellipse.Fill>
-                    </Ellipse>
-                    <TextBlock Margin="4 0 0 0"
-                   VerticalAlignment="Center"
-                   Text="{Binding User.Nickname}" />
-                </StackPanel>
-            </Button>
+            <TextBlock>VERSION NUMBER</TextBlock>
         </mahApps:WindowCommands>
     </mahApps:MetroWindow.RightWindowCommands>
     <!--#endregion Right Window Title Commands-->
@@ -77,20 +65,14 @@
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
-                    <ListBox x:Name="DemoItemsListBox" Margin="0 16 0 16" SelectedIndex="0" ItemsSource="{Binding DemoItems}">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate DataType="domain:DemoItem">
-                                <TextBlock Text="{Binding Name}" Margin="32 0 32 0" />
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                    <UserControls:MenuUserControl Items="{Binding Items}"/>
                 </DockPanel>
             </materialDesign:DrawerHost.LeftDrawerContent>
             <DockPanel>
                 <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
                     <DockPanel>
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton"/>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Material Design In XAML Toolkit</TextBlock>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">UXDemo</TextBlock>
                     </DockPanel>
                 </materialDesign:ColorZone>
                 <Grid>
@@ -99,7 +81,7 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <TextBlock>CONTENT TO FOLLOW - replace with Frame</TextBlock>
-                    <TextBlock Grid.Row="1" >CONTENT TO FOLLOW - replace with Frame</TextBlock>
+                    <Frame Grid.Row="1" />
                     <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
                 </Grid>
             </DockPanel>
