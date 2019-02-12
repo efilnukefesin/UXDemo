@@ -7,6 +7,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views.Converters"
         xmlns:UserControls="clr-namespace:NET.efilnukefesin.UXDemo.UserControls;assembly=UXDemo.UserControls"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
