@@ -8,7 +8,7 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.UXDemo.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="212">
+             d:DesignHeight="200" d:DesignWidth="212">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
