@@ -81,8 +81,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <TextBlock>CONTENT TO FOLLOW - replace with Frame</TextBlock>
-                    <Frame Grid.Row="1" />
+                    <Frame x:Name="mainFrame" Grid.Row="0" Source="/UXDemo.Views;component/DemoPage.xaml" />
                     <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
                 </Grid>
             </DockPanel>
