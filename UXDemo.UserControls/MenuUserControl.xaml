@@ -23,6 +23,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <local:UserInfoUserControl Grid.Row="2" />
+        <local:UserInfoUserControl Grid.Row="2" User="{Binding User}"/>
     </Grid>
 </UserControl>

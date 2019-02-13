@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -44,6 +45,27 @@ namespace NET.efilnukefesin.UXDemo.UserControls
 
         public event EventHandler ItemsChanged;
         #endregion Items Property
+
+        #region User Property
+        public static readonly DependencyProperty UserProperty = DependencyProperty.Register("User", typeof(UserModel), typeof(MenuUserControl), new PropertyMetadata(default(UserModel), User_ValueChanged));
+
+        static void User_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuUserControl self = obj as MenuUserControl;
+            if (self.UserChanged != null) self.UserChanged(self, new EventArgs());
+
+            self.UpdateUI();
+        }
+
+        [Description("The user info to display"), Category("Own Properties"), DisplayName("User")]
+        public UserModel User
+        {
+            get { return (UserModel)GetValue(UserProperty); }
+            set { SetValue(UserProperty, value); }
+        }
+
+        public event EventHandler UserChanged;
+        #endregion User Property
 
         #endregion Properties
 
