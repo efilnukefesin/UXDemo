@@ -8,8 +8,62 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.UXDemo.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="212">
+             d:DesignHeight="500" d:DesignWidth="212">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100px"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px"/>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="{DynamicResource AccentBaseColorBrush}" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Fill="White"/>
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5" Fill="Black"/>
+        <Ellipse Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Margin="5">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="{Binding User.ImageUri}" Stretch="UniformToFill"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" Margin="5">
+            <TextBlock Text="{Binding User.Nickname}" Style="{StaticResource MaterialDesignSubheadingTextBlock}" Foreground="{DynamicResource IdealForegroundColorBrush}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="3">
+            <materialDesign:Card Margin="2">
+                <StackPanel Orientation="Horizontal" Margin="2">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="User.Firstname" />
+                                <Binding Path="User.Lastname" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </StackPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="2">
+                <StackPanel>
+                    <Label FontWeight="Bold" Content="{Binding User.CurrentLevel.Title}" />
+                    <ProgressBar Height="15px" Value="{Binding User.Experience}" Maximum="{Binding User.CurrentLevel.MaxExperience}" Margin="2" />
+                    <TextBlock TextWrapping="Wrap" Margin="2">
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="You need {0} XP to gain the level of {1}">
+                                <Binding Path="User.NeededExperience" Mode="OneWay" />
+                                <Binding Path="User.CurrentLevel.NextLevel.Title" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </StackPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="2" Padding="2">
+                <Hyperlink>
+                    How do I gain more XP?
+                </Hyperlink>
+            </materialDesign:Card>
+        </StackPanel>
     </Grid>
 </UserControl>
