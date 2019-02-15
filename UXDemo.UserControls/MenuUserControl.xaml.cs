@@ -67,6 +67,27 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         public event EventHandler UserChanged;
         #endregion User Property
 
+        #region VersionInfo Property
+        public static readonly DependencyProperty VersionInfoProperty = DependencyProperty.Register("VersionInfo", typeof(VersionModel), typeof(MenuUserControl), new PropertyMetadata(default(VersionModel), VersionInfo_ValueChanged));
+
+        static void VersionInfo_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuUserControl self = obj as MenuUserControl;
+            if (self.VersionInfoChanged != null) self.VersionInfoChanged(self, new EventArgs());
+
+            self.UpdateUI();
+        }
+
+        [Description("The Version"), Category("Own Properties"), DisplayName("VersionInfo")]
+        public VersionModel VersionInfo
+        {
+            get { return (VersionModel)GetValue(VersionInfoProperty); }
+            set { SetValue(VersionInfoProperty, value); }
+        }
+
+        public event EventHandler VersionInfoChanged;
+        #endregion VersionInfo Property
+
         #endregion Properties
 
         #region Construction

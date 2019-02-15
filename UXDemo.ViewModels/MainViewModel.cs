@@ -17,6 +17,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
 
         public UserModel User { get; set; }
 
+        public VersionModel Version { get; set; }
+
         public string SearchString { get; set; }
 
         #endregion Properties
@@ -30,6 +32,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
             this.Items.Add(new MenuItem() { Caption = "Item1"});
             this.Items.Add(new MenuItem() { Caption = "Item2" });
             this.Items.Add(new MenuItem() { Caption = "Item3" });
+
+            this.Version = new VersionModel(new System.Version(1, 1), new DateTimeOffset(1999, 12, 21, 23, 59, 2, new TimeSpan(5, 0, 0)));
 
             try
             {
