@@ -70,6 +70,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="MenuItemsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MenuUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +96,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuItemsUserControl.xaml.cs">
+      <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MenuUserControl.xaml.cs">
       <DependentUpon>MenuUserControl.xaml</DependentUpon>
     </Compile>

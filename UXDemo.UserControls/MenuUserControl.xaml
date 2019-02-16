@@ -17,13 +17,7 @@
             <RowDefinition Height="40px"/>
         </Grid.RowDefinitions>
         <local:SearchBoxUserControl Grid.Row="0" />
-        <ListBox x:Name="ItemsListBox" Margin="0 10 0 10" SelectedIndex="0" ItemsSource="{Binding Items}" Grid.Row="1">
-            <ListBox.ItemTemplate>
-                <DataTemplate DataType="domain:MenuItem">
-                    <TextBlock Text="{Binding Caption}" Margin="32 0 32 0" />
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <local:MenuItemsUserControl Grid.Row="1" />
         <local:UserInfoUserControl Grid.Row="2" User="{Binding User}"/>
         <local:VersionInfoUserControl Grid.Row="3" VersionInfo="{Binding VersionInfo}" />
     </Grid>
