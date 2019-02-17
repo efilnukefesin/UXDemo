@@ -14,5 +14,22 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <ListView>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <!--<Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Black" />
+                        </Trigger>
+                    </Style.Triggers>-->
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="Padding" Value="0" />
+                    <Setter Property="Margin" Value="0" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <local:MenuItemUserControl />
+            <local:MenuItemUserControl />
+            <local:MenuItemUserControl />
+        </ListView>
     </Grid>
 </UserControl>
