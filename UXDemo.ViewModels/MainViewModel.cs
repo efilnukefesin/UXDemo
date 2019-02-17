@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
 using NET.efilnukefesin.Common.Wpf.Commands;
@@ -13,7 +14,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
     {
         #region Properties
 
-        public List<MenuItem> Items { get; set; }
+        public ICollection<MenuItem> Items { get; set; }
 
         public UserModel User { get; set; }
 
@@ -28,7 +29,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
         public MainViewModel()
             :base()
         {
-            this.Items = new List<MenuItem>();
+            this.Items = new ObservableCollection<MenuItem>();
             this.Items.Add(new MenuItem() { Caption = "Item1"});
             this.Items.Add(new MenuItem() { Caption = "Item2" });
             this.Items.Add(new MenuItem() { Caption = "Item3" });

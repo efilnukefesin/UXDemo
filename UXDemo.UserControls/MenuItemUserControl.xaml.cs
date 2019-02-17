@@ -44,6 +44,27 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         public event EventHandler ItemChanged;
         #endregion Item Property
 
+        #region IsChecked Property
+        public static readonly DependencyProperty IsCheckedProperty = DependencyProperty.Register("IsChecked", typeof(bool), typeof(MenuItemUserControl), new PropertyMetadata(false, IsChecked_ValueChanged));
+
+        static void IsChecked_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuItemUserControl self = obj as MenuItemUserControl;
+            if (self.IsCheckedChanged != null) self.IsCheckedChanged(self, new EventArgs());
+
+            self.updateUI();
+        }
+
+        [Description("Is this Button checked?"), Category("Own Properties"), DisplayName("IsChecked")]
+        public bool IsChecked
+        {
+            get { return (bool)GetValue(IsCheckedProperty); }
+            set { SetValue(IsCheckedProperty, value); }
+        }
+
+        public event EventHandler IsCheckedChanged;
+        #endregion IsChecked Property
+
         #endregion Properties
 
         #region Construction

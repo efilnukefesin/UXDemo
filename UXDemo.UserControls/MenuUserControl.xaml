@@ -16,9 +16,9 @@
             <RowDefinition Height="200px"/>
             <RowDefinition Height="40px"/>
         </Grid.RowDefinitions>
-        <local:SearchBoxUserControl Grid.Row="0" />
-        <local:MenuItemsUserControl Grid.Row="1" />
-        <local:UserInfoUserControl Grid.Row="2" User="{Binding User}"/>
-        <local:VersionInfoUserControl Grid.Row="3" VersionInfo="{Binding VersionInfo}" />
+        <local:SearchBoxUserControl Grid.Row="0" Text ="{Binding SearchText, Mode=TwoWay}" />
+        <local:MenuItemsUserControl Grid.Row="1" Items ="{Binding Items}" />
+        <local:UserInfoUserControl Grid.Row="2" User = "{Binding User}"/>
+        <local:VersionInfoUserControl Grid.Row="3" VersionInfo = "{Binding VersionInfo}" />
     </Grid>
 </UserControl>

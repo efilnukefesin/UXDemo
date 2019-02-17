@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -24,20 +25,20 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region Properties
 
         #region Items Property
-        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items", typeof(ICollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), typeof(MenuItemsUserControl), new PropertyMetadata(default(ICollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), Items_ValueChanged));
+        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items", typeof(ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), typeof(MenuItemsUserControl), new PropertyMetadata(default(ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), Items_ValueChanged));
 
         static void Items_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
             MenuItemsUserControl self = obj as MenuItemsUserControl;
             if (self.ItemsChanged != null) self.ItemsChanged(self, new EventArgs());
 
-            self.UpdateUI();
+            self.updateUI();
         }
 
         [Description("The items to show in the menu"), Category("Own Properties"), DisplayName("Items")]
-        public ICollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem> Items
+        public ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem> Items
         {
-            get { return (ICollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>)GetValue(ItemsProperty); }
+            get { return (ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>)GetValue(ItemsProperty); }
             set { SetValue(ItemsProperty, value); }
         }
 
@@ -57,12 +58,16 @@ namespace NET.efilnukefesin.UXDemo.UserControls
 
         #region Methods
 
-        #region UpdateUI
-        private void UpdateUI()
+        #region updateUI
+        private void updateUI()
         {
-           
+            this.lvItems.Items.Clear();
+            foreach (NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem item in this.Items)
+            {
+                this.lvItems.Items.Add(new MenuItemUserControl() { Item = item});
+            }
         }
-        #endregion UpdateUI
+        #endregion updateUI
 
         #endregion Methods
 
