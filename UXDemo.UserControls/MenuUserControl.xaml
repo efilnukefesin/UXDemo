@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ViewModels="clr-namespace:NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels"
              xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
@@ -16,7 +17,7 @@
             <RowDefinition Height="200px"/>
             <RowDefinition Height="40px"/>
         </Grid.RowDefinitions>
-        <local:SearchBoxUserControl Grid.Row="0" Text ="{Binding SearchText, Mode=TwoWay}" />
+        <local:SearchBoxUserControl Grid.Row="0" Text ="{Binding SearchText, Mode=TwoWay}" Padding="0,0,0,5" />
         <local:MenuItemsUserControl Grid.Row="1" Items ="{Binding Items}" />
         <local:UserInfoUserControl Grid.Row="2" User = "{Binding User}"/>
         <local:VersionInfoUserControl Grid.Row="3" VersionInfo = "{Binding VersionInfo}" />

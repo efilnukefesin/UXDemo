@@ -100,6 +100,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignTimeViewModels\MenuItemsUserControlViewModel.cs" />
+    <Compile Include="DesignTimeViewModels\SearchBoxUserControlViewModel.cs" />
     <Compile Include="MenuItemsUserControl.xaml.cs">
       <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
     </Compile>

@@ -74,5 +74,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region Events
 
         #endregion Events
+
+        //TODO: https://stackoverflow.com/questions/7321710/wpf-binding-collection-property-in-usercontrol enable two ways of adding Items
     }
 }
