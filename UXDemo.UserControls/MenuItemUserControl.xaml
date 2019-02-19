@@ -9,6 +9,7 @@
              x:Name="userControl" 
              x:Class="NET.efilnukefesin.UXDemo.UserControls.MenuItemUserControl"
              mc:Ignorable="d" 
+             d:DataContext ="{d:DesignInstance {x:Type ViewModels:MenuItemUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="50" d:DesignWidth="100">
     <!--<UserControl.Style>
         <Style TargetType="local:MenuItemUserControl">
@@ -20,6 +21,6 @@
         </Style>
     </UserControl.Style>-->
     <Grid>
-        <Button x:Name="btnMain" Style="{DynamicResource MaterialDesignRaisedLightButtonEdgy}" Content="{Binding Item.Caption, ElementName=userControl}"/>
+        <Button x:Name="btnMain" Style="{DynamicResource MaterialDesignRaisedLightButtonEdgy}" Content="{Binding Item.Caption}"/>
     </Grid>
 </UserControl>

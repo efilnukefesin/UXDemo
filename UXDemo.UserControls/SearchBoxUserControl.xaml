@@ -17,6 +17,6 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <iconPacks:PackIconMaterial Kind="Magnify" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" AcceptsReturn="True" materialDesign:HintAssist.Hint="Search" Grid.Column="1" Text="{Binding Text, ElementName=userControl}" />
+        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" AcceptsReturn="True" materialDesign:HintAssist.Hint="Search" Grid.Column="1" Text="{Binding Text}" />
     </Grid>
 </UserControl>

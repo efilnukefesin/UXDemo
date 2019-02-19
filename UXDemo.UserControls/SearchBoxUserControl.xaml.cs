@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NET.efilnukefesin.Implementations.DependencyInjection;
+using NET.efilnukefesin.Wpf.UXDemo.Services;
+using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -51,6 +54,11 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         public SearchBoxUserControl()
         {
             InitializeComponent();
+
+            if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
+            {
+                this.DataContext = this;
+            }
         }
 
         #endregion Construction

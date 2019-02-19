@@ -9,13 +9,14 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.UXDemo.UserControls"
              mc:Ignorable="d" 
+             d:DataContext ="{d:DesignInstance {x:Type ViewModels:MenuUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="450" d:DesignWidth="212">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40px"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="200px"/>
-            <RowDefinition Height="40px"/>
+            <RowDefinition Height="20px"/>
         </Grid.RowDefinitions>
         <local:SearchBoxUserControl Grid.Row="0" Text ="{Binding SearchText, Mode=TwoWay}" Padding="0,0,0,5" />
         <local:MenuItemsUserControl Grid.Row="1" Items ="{Binding Items}" />

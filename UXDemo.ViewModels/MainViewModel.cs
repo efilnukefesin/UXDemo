@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
 using NET.efilnukefesin.Common.Wpf.Commands;
-using NET.efilnukefesin.DependencyContainerManager;
+using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Wpf.UXDemo.Models;
 using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class SearchBoxUserControlViewModel
+    internal class UserInfoUserControlViewModel
     {
         #region Properties
 
-        public string Text { get; set; }
+        public UserModel User { get; set; }
 
         #endregion Properties
 
         #region Construction
 
-        public SearchBoxUserControlViewModel()
+        public UserInfoUserControlViewModel()
         {
-            this.Text = "Something!";
+            this.User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience=100, MaxExperience=102, Title= "Grand Geek"}, Experience=101 };
         }
 
         #endregion Construction

@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using NET.efilnukefesin.Implementations.DependencyInjection;
+using NET.efilnukefesin.Wpf.UXDemo.Services;
 
 namespace NET.efilnukefesin.UXDemo.UserControls
 {
@@ -52,6 +54,11 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         public VersionInfoUserControl()
         {
             InitializeComponent();
+
+            if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
+            {
+                this.DataContext = this;
+            }
         }
 
         #endregion Construction

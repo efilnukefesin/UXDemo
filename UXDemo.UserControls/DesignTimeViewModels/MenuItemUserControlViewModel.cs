@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class SearchBoxUserControlViewModel
+    internal class MenuItemUserControlViewModel
     {
         #region Properties
 
-        public string Text { get; set; }
+        public bool IsChecked { get; set; }
+        public NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem Item { get; set; }
 
         #endregion Properties
 
         #region Construction
 
-        public SearchBoxUserControlViewModel()
+        public MenuItemUserControlViewModel()
         {
-            this.Text = "Something!";
+            this.IsChecked = false;
+            this.Item = new Wpf.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
         }
 
         #endregion Construction

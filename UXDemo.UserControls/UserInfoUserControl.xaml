@@ -9,6 +9,7 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.UXDemo.UserControls"
              mc:Ignorable="d" 
+             d:DataContext ="{d:DesignInstance {x:Type ViewModels:UserInfoUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="200" d:DesignWidth="212">
     <Grid>
         <Grid.ColumnDefinitions>

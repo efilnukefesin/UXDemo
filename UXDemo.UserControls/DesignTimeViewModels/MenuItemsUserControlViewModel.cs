@@ -20,7 +20,9 @@ namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
         public MenuItemsUserControlViewModel()
         {
             this.Items = new ObservableCollection<Wpf.UXDemo.Models.MenuItem>();
-            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo"});
+            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo1"});
+            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo2" });
+            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo3" });
         }
 
         #endregion Construction

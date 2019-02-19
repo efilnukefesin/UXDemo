@@ -101,7 +101,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesignTimeViewModels\MenuItemsUserControlViewModel.cs" />
+    <Compile Include="DesignTimeViewModels\MenuItemUserControlViewModel.cs" />
+    <Compile Include="DesignTimeViewModels\MenuUserControlViewModel.cs" />
     <Compile Include="DesignTimeViewModels\SearchBoxUserControlViewModel.cs" />
+    <Compile Include="DesignTimeViewModels\UserInfoUserControlViewModel.cs" />
+    <Compile Include="DesignTimeViewModels\VersionInfoUserControlViewModel.cs" />
     <Compile Include="MenuItemsUserControl.xaml.cs">
       <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
     </Compile>
@@ -164,11 +168,22 @@
     <PackageReference Include="MaterialDesignThemes.MahApps">
       <Version>0.0.12</Version>
     </PackageReference>
+    <PackageReference Include="NET.efilnukefesin.Implementations.DependencyInjection">
+      <Version>1.0.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj">
       <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
       <Name>UXDemo.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj">
+      <Project>{B636CD94-7976-4C1C-9CEA-31F25C2E3747}</Project>
+      <Name>UXDemo.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Services\UXDemo.Services.csproj">
+      <Project>{D960E943-A921-47E5-830C-5887F920525E}</Project>
+      <Name>UXDemo.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\UXDemo.Styles\UXDemo.Styles.csproj">
       <Project>{8c87d648-8e4b-4dfe-aa91-f3cd3f10623a}</Project>

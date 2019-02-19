@@ -77,14 +77,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.9.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.9.0\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=4.9.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.9.1\lib\net45\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
-    </Reference>
-    <Reference Include="DependencyContainerManager, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DependencyContainerManager.2.3.0\lib\netstandard1.1\DependencyContainerManager.dll</HintPath>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
@@ -109,6 +106,15 @@
     </Reference>
     <Reference Include="NET.efilnukefesin.Common.Wpf.Commands, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Common.Wpf.Commands.1.0.1\lib\netstandard1.3\NET.efilnukefesin.Common.Wpf.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Contracts.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Contracts.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Contracts.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Contracts.Xml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Contracts.Xml.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Implementations.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Implementations.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Implementations.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
