@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class SearchBoxUserControlViewModel
+    internal class SearchBoxUserControlViewModel : BaseViewModel
     {
         #region Properties
 

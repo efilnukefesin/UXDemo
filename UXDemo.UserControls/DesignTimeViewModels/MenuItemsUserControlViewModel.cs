@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class MenuItemsUserControlViewModel
+    internal class MenuItemsUserControlViewModel : BaseViewModel
     {
         #region Properties
 

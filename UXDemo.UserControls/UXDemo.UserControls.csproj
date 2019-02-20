@@ -189,6 +189,10 @@
       <Project>{8c87d648-8e4b-4dfe-aa91-f3cd3f10623a}</Project>
       <Name>UXDemo.Styles</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
+      <Project>{FACB7485-6029-4158-9CCF-FD52642F83A3}</Project>
+      <Name>UXDemo.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

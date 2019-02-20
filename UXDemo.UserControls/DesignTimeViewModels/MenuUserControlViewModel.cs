@@ -1,4 +1,5 @@
 ﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class MenuUserControlViewModel
+    internal class MenuUserControlViewModel : BaseViewModel
     {
         #region Properties
 
@@ -29,6 +30,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
             this.Items = new ObservableCollection<Wpf.UXDemo.Models.MenuItem>();
             this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo1" });
             this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo2" });
+            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo3" });
         }
 
         #endregion Construction

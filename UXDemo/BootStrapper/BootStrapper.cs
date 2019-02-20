@@ -24,6 +24,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.BootStrapper
         {
             DiManager.GetInstance().RegisterType<IUserService, DemoUserService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IDesignModeService, WpfDesignModeService>(Lifetime.Singleton);
+            DiManager.GetInstance().RegisterType<IVersionService, VersionService>(Lifetime.Singleton);
         }
         #endregion RegisterDependencies
     }

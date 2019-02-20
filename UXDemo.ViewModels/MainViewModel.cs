@@ -34,13 +34,16 @@ namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
             this.Items.Add(new MenuItem() { Caption = "Item2" });
             this.Items.Add(new MenuItem() { Caption = "Item3" });
 
-            this.Version = new VersionModel(new System.Version(1, 1), new DateTimeOffset(1999, 12, 21, 23, 59, 2, new TimeSpan(5, 0, 0)));
-
             try
             {
                 if (DiManager.GetInstance().Resolve<IUserService>() != null)
                 {
                     this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+                }
+
+                if (DiManager.GetInstance().Resolve<IVersionService>() != null)
+                {
+                    this.Version = DiManager.GetInstance().Resolve<IVersionService>().GetVersion();
                 }
             }
             catch (Exception ex)

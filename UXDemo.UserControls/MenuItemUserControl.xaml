@@ -22,5 +22,6 @@
     </UserControl.Style>-->
     <Grid>
         <Button x:Name="btnMain" Style="{DynamicResource MaterialDesignRaisedLightButtonEdgy}" Content="{Binding Item.Caption}"/>
+        <Label Content="{Binding Item.Caption}" />
     </Grid>
 </UserControl>

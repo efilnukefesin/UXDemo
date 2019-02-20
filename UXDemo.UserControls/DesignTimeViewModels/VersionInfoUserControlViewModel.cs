@@ -1,4 +1,5 @@
 ﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 {
-    internal class VersionInfoUserControlViewModel
+    internal class VersionInfoUserControlViewModel : BaseViewModel
     {
         #region Properties
 
