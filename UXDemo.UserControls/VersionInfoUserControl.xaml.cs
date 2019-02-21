@@ -27,7 +27,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region Properties
 
         #region VersionInfo Property
-        public static readonly DependencyProperty VersionInfoProperty = DependencyProperty.Register("VersionInfo", typeof(VersionModel), typeof(VersionInfoUserControl), new PropertyMetadata(default(VersionModel), VersionInfo_ValueChanged));
+        public static readonly DependencyProperty VersionInfoProperty = DependencyProperty.Register("VersionInfo", typeof(VersionModel), typeof(VersionInfoUserControl), new PropertyMetadata(new VersionModel(new System.Version(1, 2), new DateTimeOffset(1999, 12, 30, 23, 32, 1, new TimeSpan(-1, 0, 0))), VersionInfo_ValueChanged));
 
         static void VersionInfo_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
@@ -55,9 +55,9 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         {
             InitializeComponent();
 
-            if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
+            if (DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
             {
-                //this.DataContext = this;
+                this.VersionInfo = new VersionModel(new System.Version(1, 2), new DateTimeOffset(1999, 12, 30, 23, 32, 1, new TimeSpan(-1, 0, 0)));
             }
         }
 
