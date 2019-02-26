@@ -6,6 +6,8 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Models
 {
     public class MenuItem
     {
+        #region Properties
         public string Caption { get; set; }
+        #endregion Properties
     }
 }

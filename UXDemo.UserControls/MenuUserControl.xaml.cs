@@ -132,7 +132,8 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region updateUI
         private void updateUI()
         {
-            //throw new NotImplementedException();
+            this.miucMain.Items = this.Items;  //TODO: remove, as binding workaround
+            this.uiucMain.User = this.User;  //TODO: remove, as binding workaround
         }
         #endregion updateUI
 

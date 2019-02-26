@@ -38,9 +38,9 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         }
 
         [Description("the user info to display"), Category("Own Properties"), DisplayName("User")]
-        public Type User
+        public UserModel User
         {
-            get { return (Type)GetValue(UserProperty); }
+            get { return (UserModel)GetValue(UserProperty); }
             set { SetValue(UserProperty, value); }
         }
 

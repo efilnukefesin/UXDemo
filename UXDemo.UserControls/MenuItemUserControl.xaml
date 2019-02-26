@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:ViewModels="clr-namespace:NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels"
              xmlns:local="clr-namespace:NET.efilnukefesin.UXDemo.UserControls"
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
              x:Name="userControl" 
              x:Class="NET.efilnukefesin.UXDemo.UserControls.MenuItemUserControl"
              mc:Ignorable="d" 
-             d:DataContext ="{d:DesignInstance {x:Type ViewModels:MenuItemUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="50" d:DesignWidth="100">
     <!--<UserControl.Style>
         <Style TargetType="local:MenuItemUserControl">
@@ -21,7 +19,8 @@
         </Style>
     </UserControl.Style>-->
     <Grid>
-        <Button x:Name="btnMain" Style="{DynamicResource MaterialDesignRaisedLightButtonEdgy}" Content="{Binding Item.Caption}"/>
-        <Label Content="{Binding Item.Caption}" />
+        <Button x:Name="btnMain" Style="{DynamicResource MaterialDesignRaisedLightButtonEdgy}">
+            <Label Content="{Binding Item.Caption, ElementName=userControl}" />
+        </Button>
     </Grid>
 </UserControl>
