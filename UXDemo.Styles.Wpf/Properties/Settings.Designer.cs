@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NET.efilnukefesin.Apps.UXDemo.Styles.W.Properties {
+namespace NET.efilnukefesin.Apps.UXDemo.Styles.Wpf.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
