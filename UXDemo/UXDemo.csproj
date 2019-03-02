@@ -255,6 +255,10 @@
       <Project>{53732fe1-88ef-4d6a-8d44-efe9bea72cd5}</Project>
       <Name>UXDemo.UserControls.ViewModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.Wpf\UXDemo.UserControls.Wpf.csproj">
+      <Project>{16038684-846a-4525-90bc-95a33f2da865}</Project>
+      <Name>UXDemo.UserControls.Wpf</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UXDemo.UserControls\UXDemo.UserControls.csproj">
       <Project>{ca8a13e0-e35c-4d71-8776-4f4a02fcb4f5}</Project>
       <Name>UXDemo.UserControls</Name>
@@ -262,6 +266,10 @@
     <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
       <Project>{facb7485-6029-4158-9ccf-fd52642f83a3}</Project>
       <Name>UXDemo.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Views.Wpf\UXDemo.Views.Wpf.csproj">
+      <Project>{b2c0dfc6-7fa9-4e77-9c42-fed71910cda6}</Project>
+      <Name>UXDemo.Views.Wpf</Name>
     </ProjectReference>
     <ProjectReference Include="..\UXDemo.Views\UXDemo.Views.csproj">
       <Project>{323f7f8e-6662-4e22-8ece-6ce5413674ca}</Project>
