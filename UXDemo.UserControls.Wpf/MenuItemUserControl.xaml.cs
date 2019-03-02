@@ -95,11 +95,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public MenuItemUserControl()
         {
             InitializeComponent();
-
-            if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
-            {
-                this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Item" };
-            }
         }
 
         #endregion Construction
@@ -120,6 +115,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public event PropertyChangedEventHandler PropertyChanged;
 
         #endregion Events
-
     }
 }

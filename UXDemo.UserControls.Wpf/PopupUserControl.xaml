@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;assembly=UXDemo.UserControls.ViewModels"
              xmlns:DesignTimeViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;assembly=UXDemo.UserControls.ViewModels.Design"
-             xmlns:local="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.UserControls"
+             xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
              mc:Ignorable="d" 
              x:Name="userControl"
              d:DesignHeight="450" 

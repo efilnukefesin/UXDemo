@@ -54,11 +54,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public SearchBoxUserControl()
         {
             InitializeComponent();
-
-            if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
-            {
-                this.DataContext = this;
-            }
         }
 
         #endregion Construction
@@ -77,6 +72,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         #region Events
 
         #endregion Events
-
     }
 }
