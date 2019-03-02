@@ -247,6 +247,14 @@
       <Project>{8c87d648-8e4b-4dfe-aa91-f3cd3f10623a}</Project>
       <Name>UXDemo.Styles</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.ViewModels.Design\UXDemo.UserControls.ViewModels.Design.csproj">
+      <Project>{5643762b-29ad-4446-99fc-1e7c3230e5b8}</Project>
+      <Name>UXDemo.UserControls.ViewModels.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj">
+      <Project>{53732fe1-88ef-4d6a-8d44-efe9bea72cd5}</Project>
+      <Name>UXDemo.UserControls.ViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UXDemo.UserControls\UXDemo.UserControls.csproj">
       <Project>{ca8a13e0-e35c-4d71-8776-4f4a02fcb4f5}</Project>
       <Name>UXDemo.UserControls</Name>

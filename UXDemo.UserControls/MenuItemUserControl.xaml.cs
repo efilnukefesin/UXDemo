@@ -21,7 +21,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
     /// <summary>
     /// Interaktionslogik für MenuItemUserControl.xaml
     /// </summary>
-    public partial class MenuItemUserControl : UserControl
+    public partial class MenuItemUserControl : UserControl, INotifyPropertyChanged
     {
         #region Properties
 
@@ -116,6 +116,8 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #endregion Methods
 
         #region Events
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         #endregion Events
 

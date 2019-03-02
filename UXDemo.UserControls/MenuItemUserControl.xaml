@@ -12,7 +12,6 @@
              d:DesignHeight="50" d:DesignWidth="100">
     <UserControl.Style>
         <Style TargetType="{x:Type local:MenuItemUserControl}">
-            <Setter Property="ButtonStyleName" Value="MaterialDesignRaisedLightButtonEdgy"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="ButtonStyleName" Value="MaterialDesignRaisedDarkButtonEdgy"/>
