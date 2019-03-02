@@ -67,6 +67,27 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         public event EventHandler IsCheckedChanged;
         #endregion IsChecked Property
 
+        #region ButtonStyleName Property
+        public static readonly DependencyProperty ButtonStyleNameProperty = DependencyProperty.Register("ButtonStyleName", typeof(string), typeof(MenuItemUserControl), new PropertyMetadata(string.Empty, ButtonStyleName_ValueChanged));
+
+        static void ButtonStyleName_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuItemUserControl self = obj as MenuItemUserControl;
+            if (self.ButtonStyleNameChanged != null) self.ButtonStyleNameChanged(self, new EventArgs());
+
+            self.updateUI();
+        }
+
+        [Description("The name of the Button Style"), Category("Own Properties"), DisplayName("ButtonStyleName")]
+        public string ButtonStyleName
+        {
+            get { return (string)GetValue(ButtonStyleNameProperty); }
+            set { SetValue(ButtonStyleNameProperty, value); }
+        }
+
+        public event EventHandler ButtonStyleNameChanged;
+        #endregion ButtonStyleName Property
+
         #endregion Properties
 
         #region Construction

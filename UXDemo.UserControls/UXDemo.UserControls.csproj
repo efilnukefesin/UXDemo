@@ -173,6 +173,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UXDemo.Converters\UXDemo.Converters.csproj">
+      <Project>{a7078161-3ac0-4a1c-a1ed-6669b59107c1}</Project>
+      <Name>UXDemo.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj">
       <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
       <Name>UXDemo.Models</Name>
