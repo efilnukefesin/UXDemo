@@ -29,13 +29,13 @@
         <ViewModels:MenuItemUserControlViewModel />
     </UserControl.DataContext>
     <Grid>
-        <Button x:Name="btnMain" Style="{Binding ., ElementName=userControl, Mode=OneWay, Converter={Converters:StyleConverter}, ConverterParameter=ButtonStyleName}">
+        <Button x:Name="btnMain" Style="{Binding ., Mode=OneWay, Converter={Converters:StyleConverter}, ConverterParameter=ButtonStyleName}">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="10px" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <!--<Label Content="{Binding Item.Caption, ElementName=userControl}" />-->
+                <!--<Label Content="{Binding Item.Caption}" />-->
                 <Rectangle Grid.Column="0" Fill="Red" />
                 <Label Grid.Column="1" Content="5678" />
             </Grid>

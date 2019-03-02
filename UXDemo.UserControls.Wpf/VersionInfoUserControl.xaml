@@ -20,9 +20,9 @@
 
         <TextBlock Grid.Row="0">
             <Run Text="Version "/>
-            <Run Text="{Binding VersionInfo.Version, ElementName=userControl, Mode=OneWay}" FontWeight="Bold" />
+            <Run Text="{Binding Version.Version, Mode=OneWay}" FontWeight="Bold" />
             <Run Text=" // " />
-            <Run Text="{Binding VersionInfo.PublishDate, ElementName=userControl, StringFormat=\{0:dd.MM.yyyy hh:mm\}}" />
+            <Run Text="{Binding Version.PublishDate, StringFormat=\{0:dd.MM.yyyy hh:mm\}}" />
         </TextBlock>
     </Grid>
 </UserControl>

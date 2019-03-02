@@ -21,9 +21,6 @@
                     <Setter Property="Margin" Value="0" />
                 </Style>
             </ListView.ItemContainerStyle>
-            <!--<local:MenuItemUserControl />
-            <local:MenuItemUserControl />
-            <local:MenuItemUserControl />-->
         </ListView>
     </Grid>
 </UserControl>
