@@ -192,9 +192,9 @@
       <Project>{D960E943-A921-47E5-830C-5887F920525E}</Project>
       <Name>UXDemo.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UXDemo.Styles\UXDemo.Styles.csproj">
-      <Project>{8c87d648-8e4b-4dfe-aa91-f3cd3f10623a}</Project>
-      <Name>UXDemo.Styles</Name>
+    <ProjectReference Include="..\UXDemo.Styles.Wpf\UXDemo.Styles.Wpf.csproj">
+      <Project>{f6cad3ef-31cd-4599-adc2-a4c5095df428}</Project>
+      <Name>UXDemo.Styles.Wpf</Name>
     </ProjectReference>
     <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
       <Project>{FACB7485-6029-4158-9CCF-FD52642F83A3}</Project>

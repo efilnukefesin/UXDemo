@@ -1,13 +1,11 @@
 ﻿<Application x:Class="NET.efilnukefesin.Apps.UXDemo.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:UXDemo"
+             xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo"
              StartupUri="pack://application:,,,/UXDemo.Views;component/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-
             <ResourceDictionary.MergedDictionaries>
-
                 <!-- MahApps -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
@@ -27,7 +25,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.MahApps;component/Themes/MaterialDesignTheme.MahApps.Flyout.xaml" />
 
                 <!-- own style overrides-->
-                <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles;component/MaterialDesignXamlOverrides.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/MaterialDesignXamlOverrides.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <!-- MahApps Brushes -->
