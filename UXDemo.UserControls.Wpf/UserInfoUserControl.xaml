@@ -12,6 +12,9 @@
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:UserInfoUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="200" d:DesignWidth="212">
+    <UserControl.DataContext>
+        <ViewModels:UserInfoUserControlViewModel />
+    </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

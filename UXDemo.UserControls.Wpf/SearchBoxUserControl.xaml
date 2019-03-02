@@ -13,6 +13,9 @@
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:SearchBoxUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="40" d:DesignWidth="212">
+    <UserControl.DataContext>
+        <ViewModels:SearchBoxUserControlViewModel />
+    </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40px"/>

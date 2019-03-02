@@ -9,6 +9,9 @@
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:MenuItemsUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="300" d:DesignWidth="212">
+    <UserControl.DataContext>
+        <ViewModels:MenuItemsUserControlViewModel />
+    </UserControl.DataContext>
     <Grid>
         <ListView x:Name="lvItems">
             <ListView.ItemContainerStyle>

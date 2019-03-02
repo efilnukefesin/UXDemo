@@ -13,6 +13,9 @@
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:MenuUserControlViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="450" d:DesignWidth="212">
+    <UserControl.DataContext>
+        <ViewModels:MenuUserControlViewModel />
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40px"/>
