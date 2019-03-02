@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 {
-    internal class MenuItemUserControlViewModel : BaseViewModel
+    public class MenuItemUserControlViewModel : BaseViewModel
     {
         #region Properties
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 {
-    internal class SearchBoxUserControlViewModel : BaseViewModel
+    public class SearchBoxUserControlViewModel : BaseViewModel
     {
         #region Properties
 

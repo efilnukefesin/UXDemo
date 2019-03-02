@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 {
-    internal class VersionInfoUserControlViewModel : BaseViewModel
+    public class VersionInfoUserControlViewModel : BaseViewModel
     {
         #region Properties
 
