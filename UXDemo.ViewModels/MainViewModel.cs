@@ -5,10 +5,10 @@ using System.Text;
 using System.Windows.Input;
 using NET.efilnukefesin.Common.Wpf.Commands;
 using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Models;
-using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
+using NET.efilnukefesin.Apps.UXDemo.Models;
+using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
+namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {

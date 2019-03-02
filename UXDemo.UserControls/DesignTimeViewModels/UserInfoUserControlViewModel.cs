@@ -1,5 +1,5 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
-using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
+﻿using NET.efilnukefesin.Apps.UXDemo.Models;
+using NET.efilnukefesin.Apps.UXDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

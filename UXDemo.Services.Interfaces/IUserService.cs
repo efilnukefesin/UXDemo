@@ -1,9 +1,9 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+﻿using NET.efilnukefesin.Apps.UXDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces
+namespace NET.efilnukefesin.Apps.UXDemo.Services.Interfaces
 {
     public interface IUserService
     {

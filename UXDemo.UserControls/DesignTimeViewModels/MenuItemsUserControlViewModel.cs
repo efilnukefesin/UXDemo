@@ -1,4 +1,4 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
+﻿using NET.efilnukefesin.Apps.UXDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
+namespace NET.efilnukefesin.Apps.UXDemo.UserControls.DesignTimeViewModels
 {
     internal class MenuItemsUserControlViewModel : BaseViewModel
     {
         #region Properties
 
-        public ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem> Items { get; set; }
+        public ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem> Items { get; set; }
 
         #endregion Properties
 
@@ -20,10 +20,10 @@ namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
 
         public MenuItemsUserControlViewModel()
         {
-            this.Items = new ObservableCollection<Wpf.UXDemo.Models.MenuItem>();
-            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo1"});
-            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo2" });
-            this.Items.Add(new Wpf.UXDemo.Models.MenuItem() { Caption = "Demo3" });
+            this.Items = new ObservableCollection<Apps.UXDemo.Models.MenuItem>();
+            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1"});
+            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" });
+            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" });
         }
 
         #endregion Construction

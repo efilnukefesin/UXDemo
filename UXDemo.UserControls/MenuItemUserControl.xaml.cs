@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.Services;
 
 namespace NET.efilnukefesin.UXDemo.UserControls
 {
@@ -26,7 +26,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region Properties
 
         #region Item Property
-        public static readonly DependencyProperty ItemProperty = DependencyProperty.Register("Item", typeof(NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem), typeof(MenuItemUserControl), new PropertyMetadata(default(NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem), Item_ValueChanged));
+        public static readonly DependencyProperty ItemProperty = DependencyProperty.Register("Item", typeof(NET.efilnukefesin.Apps.UXDemo.Models.MenuItem), typeof(MenuItemUserControl), new PropertyMetadata(default(NET.efilnukefesin.Apps.UXDemo.Models.MenuItem), Item_ValueChanged));
 
         static void Item_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
@@ -37,9 +37,9 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         }
 
         [Description("The Content"), Category("Own Properties"), DisplayName("Item")]
-        public NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem Item
+        public NET.efilnukefesin.Apps.UXDemo.Models.MenuItem Item
         {
-            get { return (NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem)GetValue(ItemProperty); }
+            get { return (NET.efilnukefesin.Apps.UXDemo.Models.MenuItem)GetValue(ItemProperty); }
             set { SetValue(ItemProperty, value); }
         }
 
@@ -98,7 +98,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
 
             if (!DiManager.GetInstance().Resolve<WpfDesignModeService>().IsInDesignMode(this))  //have to resolve directly as this view is always wpf and the boottrapper has not been called in designmode
             {
-                this.Item = new Wpf.UXDemo.Models.MenuItem() { Caption = "Test Item" };
+                this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Item" };
             }
         }
 

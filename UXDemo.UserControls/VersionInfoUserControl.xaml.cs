@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using NET.efilnukefesin.Wpf.UXDemo.Models;
+using NET.efilnukefesin.Apps.UXDemo.Models;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.Services;
 
 namespace NET.efilnukefesin.UXDemo.UserControls
 {

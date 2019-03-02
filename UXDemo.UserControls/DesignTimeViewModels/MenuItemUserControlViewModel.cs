@@ -1,4 +1,4 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.ViewModels;
+﻿using NET.efilnukefesin.Apps.UXDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
         #region Properties
 
         public bool IsChecked { get; set; }
-        public NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem Item { get; set; }
+        public Apps.UXDemo.Models.MenuItem Item { get; set; }
 
         #endregion Properties
 
@@ -21,7 +21,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls.DesignTimeViewModels
         public MenuItemUserControlViewModel()
         {
             this.IsChecked = false;
-            this.Item = new Wpf.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
         }
 
         #endregion Construction

@@ -1,6 +1,6 @@
 ﻿using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Services;
-using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
+using NET.efilnukefesin.Apps.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.Services;
 
 namespace NET.efilnukefesin.UXDemo.UserControls
 {
@@ -27,7 +27,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         #region Properties
 
         #region Items Property
-        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items", typeof(ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), typeof(MenuItemsUserControl), new PropertyMetadata(default(ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>), Items_ValueChanged));
+        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items", typeof(ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>), typeof(MenuItemsUserControl), new PropertyMetadata(default(ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>), Items_ValueChanged));
 
         static void Items_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
@@ -38,9 +38,9 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         }
 
         [Description("The items to show in the menu"), Category("Own Properties"), DisplayName("Items")]
-        public ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem> Items
+        public ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem> Items
         {
-            get { return (ObservableCollection<NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem>)GetValue(ItemsProperty); }
+            get { return (ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>)GetValue(ItemsProperty); }
             set { SetValue(ItemsProperty, value); }
         }
 
@@ -69,7 +69,7 @@ namespace NET.efilnukefesin.UXDemo.UserControls
         private void updateUI()
         {
             this.lvItems.Items.Clear();
-            foreach (NET.efilnukefesin.Wpf.UXDemo.Models.MenuItem item in this.Items)
+            foreach (NET.efilnukefesin.Apps.UXDemo.Models.MenuItem item in this.Items)
             {
                 this.lvItems.Items.Add(new MenuItemUserControl() { Item = item});
             }

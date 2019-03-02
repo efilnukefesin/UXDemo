@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Models
+namespace NET.efilnukefesin.Apps.UXDemo.Models
 {
     public class MenuItem
     {

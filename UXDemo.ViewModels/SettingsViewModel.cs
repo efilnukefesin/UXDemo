@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.ViewModels
+namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
     public class SettingsViewModel : BaseViewModel
     {

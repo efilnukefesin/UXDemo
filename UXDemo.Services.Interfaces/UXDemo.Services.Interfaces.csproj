@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces</RootNamespace>
+    <RootNamespace>NET.efilnukefesin.Apps.UXDemo.Services.Interfaces</RootNamespace>
     <Version>0.5.0</Version>
     <Authors>efilnukefesin</Authors>
     <Company>efilnukefesin.NET</Company>

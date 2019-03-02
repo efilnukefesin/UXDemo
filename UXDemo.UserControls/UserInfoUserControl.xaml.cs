@@ -1,4 +1,4 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.Models;
+﻿using NET.efilnukefesin.Apps.UXDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
-using NET.efilnukefesin.Wpf.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.Services;
 
 namespace NET.efilnukefesin.UXDemo.UserControls
 {

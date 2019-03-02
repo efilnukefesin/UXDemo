@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>NET.efilnukefesin.Wpf.UXDemo.ViewModels</RootNamespace>
+    <RootNamespace>NET.efilnukefesin.Apps.UXDemo.ViewModels</RootNamespace>
     <Version>0.6.0</Version>
     <Authors>efilnukefesin</Authors>
     <Company>efilnukefesin.NET</Company>

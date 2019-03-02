@@ -1,11 +1,11 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.Services.Interfaces;
+﻿using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using System.Windows;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Services
+namespace NET.efilnukefesin.Apps.UXDemo.Services
 {
     public class WpfDesignModeService : IDesignModeService
     {
