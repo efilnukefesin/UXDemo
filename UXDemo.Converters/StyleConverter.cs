@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace NET.efilnukefesin.UXDemo.Converters
+namespace NET.efilnukefesin.Apps.UXDemo.Converters
 {
     public class StyleConverter : MarkupExtension, IValueConverter
     {
