@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.BootStrapper
+namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
 {
     internal static class BootStrapper
     {

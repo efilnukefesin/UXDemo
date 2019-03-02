@@ -1,5 +1,4 @@
-﻿using NET.efilnukefesin.Wpf.UXDemo.BootStrapper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -7,8 +6,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using NET.efilnukefesin.Apps.UXDemo.BootStrapper;
 
-namespace UXDemo
+namespace NET.efilnukefesin.Apps.UXDemo
 {
     /// <summary>
     /// Interaktionslogik für "App.xaml"
@@ -21,11 +21,11 @@ namespace UXDemo
 
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject()))
             {
-                BootStrapper.RegisterDependenciesDesignMode();
+                BootStrapper.BootStrapper.RegisterDependenciesDesignMode();
             }
             else
             {
-                BootStrapper.RegisterDependencies();
+                BootStrapper.BootStrapper.RegisterDependencies();
             }
         }
     }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Properties {
+namespace NET.efilnukefesin.Apps.UXDemo.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace NET.efilnukefesin.Wpf.UXDemo.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NET.efilnukefesin.Wpf.UXDemo.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NET.efilnukefesin.Apps.UXDemo.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
