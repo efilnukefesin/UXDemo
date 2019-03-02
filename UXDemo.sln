@@ -13,15 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Services", "UXDemo.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Services.Interfaces", "UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj", "{B636CD94-7976-4C1C-9CEA-31F25C2E3747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Views", "UXDemo.Views\UXDemo.Views.csproj", "{323F7F8E-6662-4E22-8ECE-6CE5413674CA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.UserControls", "UXDemo.UserControls\UXDemo.UserControls.csproj", "{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Converters", "UXDemo.Converters\UXDemo.Converters.csproj", "{A7078161-3AC0-4A1C-A1ED-6669B59107C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.UserControls.ViewModels", "UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj", "{53732FE1-88EF-4D6A-8D44-EFE9BEA72CD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.UserControls.ViewModels", "UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj", "{53732FE1-88EF-4D6A-8D44-EFE9BEA72CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.UserControls.ViewModels.Design", "UXDemo.UserControls.ViewModels.Design\UXDemo.UserControls.ViewModels.Design.csproj", "{5643762B-29AD-4446-99FC-1E7C3230E5B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.UserControls.ViewModels.Design", "UXDemo.UserControls.ViewModels.Design\UXDemo.UserControls.ViewModels.Design.csproj", "{5643762B-29AD-4446-99FC-1E7C3230E5B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Views.Wpf", "UXDemo.Views.Wpf\UXDemo.Views.Wpf.csproj", "{B2C0DFC6-7FA9-4E77-9C42-FED71910CDA6}"
 EndProject
@@ -99,18 +97,6 @@ Global
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|x64.Build.0 = Release|Any CPU
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|x86.ActiveCfg = Release|x86
 		{B636CD94-7976-4C1C-9CEA-31F25C2E3747}.Release|x86.Build.0 = Release|x86
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x64.Build.0 = Debug|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x86.ActiveCfg = Debug|x86
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Debug|x86.Build.0 = Debug|x86
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x64.ActiveCfg = Release|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x64.Build.0 = Release|Any CPU
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x86.ActiveCfg = Release|x86
-		{323F7F8E-6662-4E22-8ECE-6CE5413674CA}.Release|x86.Build.0 = Release|x86
 		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8A13E0-E35C-4D71-8776-4F4A02FCB4F5}.Debug|x64.ActiveCfg = Debug|Any CPU

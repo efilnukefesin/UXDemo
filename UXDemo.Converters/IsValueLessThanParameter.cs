@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Views.Converters
+namespace NET.efilnukefesin.Apps.UXDemo.Converters
 {
     public class IsValueLessThanParameter : IValueConverter
     {

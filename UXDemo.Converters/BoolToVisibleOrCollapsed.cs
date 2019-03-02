@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Views.Converters
+namespace NET.efilnukefesin.Apps.UXDemo.Converters
 {
     public class BoolToVisibleOrCollapsed : IValueConverter
     {

@@ -271,10 +271,6 @@
       <Project>{b2c0dfc6-7fa9-4e77-9c42-fed71910cda6}</Project>
       <Name>UXDemo.Views.Wpf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UXDemo.Views\UXDemo.Views.csproj">
-      <Project>{323f7f8e-6662-4e22-8ece-6ce5413674ca}</Project>
-      <Name>UXDemo.Views</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="DemoContent\MichaelKolb.png">

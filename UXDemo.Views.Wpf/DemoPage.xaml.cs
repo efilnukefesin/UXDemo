@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NET.efilnukefesin.Wpf.UXDemo.Views
+namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
 {
     /// <summary>
     /// Interaktionslogik für DemoPage.xaml

@@ -1,6 +1,6 @@
 ﻿<mahApps:MetroWindow 
         x:Name="uxDemoMainWindow" 
-        x:Class="NET.efilnukefesin.Wpf.UXDemo.Views.MainWindow"
+        x:Class="NET.efilnukefesin.Apps.UXDemo.Views.Wpf.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,7 +8,7 @@
         xmlns:mahApps="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-        xmlns:Converters="clr-namespace:NET.efilnukefesin.Wpf.UXDemo.Views.Converters"
+        xmlns:Converters="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Converters;assembly=UXDemo.Converters"
         xmlns:UserControls="clr-namespace:NET.efilnukefesin.UXDemo.UserControls;assembly=UXDemo.UserControls"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
@@ -78,7 +78,7 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Frame x:Name="mainFrame" Grid.Row="0" Source="/UXDemo.Views;component/DemoPage.xaml" />
+                    <Frame x:Name="mainFrame" Grid.Row="0" Source="/UXDemo.Views.Wpf;component/DemoPage.xaml" />
                     <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
                 </Grid>
             </DockPanel>
