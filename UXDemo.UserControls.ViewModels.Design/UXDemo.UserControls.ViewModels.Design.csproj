@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>NET.efilnukefesin.UXDemo.UserControls.ViewModels.Design</RootNamespace>
+    <RootNamespace>NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

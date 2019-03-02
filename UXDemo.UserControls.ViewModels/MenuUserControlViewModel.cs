@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NET.efilnukefesin.UXDemo.UserControls.ViewModels
+namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 {
     internal class MenuUserControlViewModel : BaseViewModel
     {

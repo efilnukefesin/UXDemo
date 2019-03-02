@@ -48,6 +48,18 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuItemsUserControl.xaml.cs">
+      <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItemUserControl.xaml.cs">
+      <DependentUpon>MenuItemUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUserControl.xaml.cs">
+      <DependentUpon>MenuUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopupUserControl.xaml.cs">
+      <DependentUpon>PopupUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -60,6 +72,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchBoxUserControl.xaml.cs">
+      <DependentUpon>SearchBoxUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoUserControl.xaml.cs">
+      <DependentUpon>UserInfoUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VersionInfoUserControl.xaml.cs">
+      <DependentUpon>VersionInfoUserControl.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,6 +110,65 @@
     <PackageReference Include="MaterialDesignThemes.MahApps">
       <Version>0.0.12</Version>
     </PackageReference>
+    <PackageReference Include="NET.efilnukefesin.Implementations.DependencyInjection">
+      <Version>1.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MenuItemsUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuItemUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PopupUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchBoxUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInfoUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VersionInfoUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UXDemo.Converters\UXDemo.Converters.csproj">
+      <Project>{a7078161-3ac0-4a1c-a1ed-6669b59107c1}</Project>
+      <Name>UXDemo.Converters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj">
+      <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
+      <Name>UXDemo.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj">
+      <Project>{b636cd94-7976-4c1c-9cea-31f25c2e3747}</Project>
+      <Name>UXDemo.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Services\UXDemo.Services.csproj">
+      <Project>{d960e943-a921-47e5-830c-5887f920525e}</Project>
+      <Name>UXDemo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.ViewModels.Design\UXDemo.UserControls.ViewModels.Design.csproj">
+      <Project>{5643762b-29ad-4446-99fc-1e7c3230e5b8}</Project>
+      <Name>UXDemo.UserControls.ViewModels.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj">
+      <Project>{53732fe1-88ef-4d6a-8d44-efe9bea72cd5}</Project>
+      <Name>UXDemo.UserControls.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
