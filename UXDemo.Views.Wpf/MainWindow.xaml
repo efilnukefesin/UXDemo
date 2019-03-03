@@ -9,7 +9,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Converters;assembly=UXDemo.Converters"
-        xmlns:UserControls="clr-namespace:NET.efilnukefesin.UXDemo.UserControls;assembly=UXDemo.UserControls"
+        xmlns:UserControls="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf;assembly=UXDemo.UserControls.Wpf"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
         mc:Ignorable="d"
         Title="UXDemo"

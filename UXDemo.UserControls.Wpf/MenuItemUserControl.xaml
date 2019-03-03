@@ -35,9 +35,8 @@
                     <ColumnDefinition Width="10px" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <!--<Label Content="{Binding Item.Caption}" />-->
                 <Rectangle Grid.Column="0" Fill="Red" />
-                <Label Grid.Column="1" Content="5678" />
+                <Label Content="{Binding Item.Caption}" Grid.Column="1" />
             </Grid>
         </Button>
     </Grid>

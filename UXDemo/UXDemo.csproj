@@ -259,10 +259,6 @@
       <Project>{16038684-846a-4525-90bc-95a33f2da865}</Project>
       <Name>UXDemo.UserControls.Wpf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UXDemo.UserControls\UXDemo.UserControls.csproj">
-      <Project>{ca8a13e0-e35c-4d71-8776-4f4a02fcb4f5}</Project>
-      <Name>UXDemo.UserControls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
       <Project>{facb7485-6029-4158-9ccf-fd52642f83a3}</Project>
       <Name>UXDemo.ViewModels</Name>

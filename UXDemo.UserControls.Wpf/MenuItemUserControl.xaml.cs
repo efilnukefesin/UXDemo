@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
@@ -104,7 +105,14 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         #region updateUI
         private void updateUI()
         {
-            
+            if (this.DataContext is MenuItemUserControlViewModel)
+            {
+                (this.DataContext as MenuItemUserControlViewModel).ButtonStyleName = this.ButtonStyleName;
+            }
+            else if (this.DataContext is NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design.MenuItemUserControlViewModel)
+            {
+                (this.DataContext as NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design.MenuItemUserControlViewModel).ButtonStyleName = this.ButtonStyleName;
+            }
         }
         #endregion updateUI
 

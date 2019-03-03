@@ -13,6 +13,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public bool IsChecked { get; set; }
         public Apps.UXDemo.Models.MenuItem Item { get; set; }
+        public string ButtonStyleName { get; set; }
 
         #endregion Properties
 

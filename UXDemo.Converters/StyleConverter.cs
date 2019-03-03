@@ -27,7 +27,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Converters
 
             string styleValue = value.GetType()
                 .GetProperty(styleProperty)
-                .GetValue(value, null)
+                .GetValue(value, null)?
                 .ToString();
             if (styleValue == null)
             {
