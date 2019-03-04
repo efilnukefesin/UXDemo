@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj" />
+    <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj" />
+    <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj" />
   </ItemGroup>
 
 </Project>

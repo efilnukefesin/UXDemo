@@ -145,6 +145,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj">
+      <Project>{33861155-48ca-4f78-b16b-bf47ed0ba515}</Project>
+      <Name>UXDemo.Basics</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UXDemo.Converters\UXDemo.Converters.csproj">
       <Project>{a7078161-3ac0-4a1c-a1ed-6669b59107c1}</Project>
       <Name>UXDemo.Converters</Name>

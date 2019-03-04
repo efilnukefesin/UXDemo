@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj" />
     <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj" />
     <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj" />
   </ItemGroup>

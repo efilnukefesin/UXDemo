@@ -7,6 +7,7 @@ using NET.efilnukefesin.Common.Wpf.Commands;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Models;
 using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
+using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {

@@ -1,4 +1,5 @@
-﻿using NET.efilnukefesin.Apps.UXDemo.ViewModels;
+﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+using NET.efilnukefesin.Apps.UXDemo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         #region Properties
 
         public bool IsChecked { get; set; }
-        public Apps.UXDemo.Models.MenuItem Item { get; set; }
+        public MenuItem Item { get; set; }
         public string ButtonStyleName { get; set; }
 
         #endregion Properties

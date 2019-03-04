@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Text;
 using PropertyChanged;
 
-namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
+namespace NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {

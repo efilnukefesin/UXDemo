@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.UserControls.Wpf", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Styles.Wpf", "UXDemo.Styles.Wpf\UXDemo.Styles.Wpf.csproj", "{F6CAD3EF-31CD-4599-ADC2-A4C5095DF428}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Basics", "UXDemo.Basics\UXDemo.Basics.csproj", "{33861155-48CA-4F78-B16B-BF47ED0BA515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +169,18 @@ Global
 		{F6CAD3EF-31CD-4599-ADC2-A4C5095DF428}.Release|x64.Build.0 = Release|Any CPU
 		{F6CAD3EF-31CD-4599-ADC2-A4C5095DF428}.Release|x86.ActiveCfg = Release|Any CPU
 		{F6CAD3EF-31CD-4599-ADC2-A4C5095DF428}.Release|x86.Build.0 = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|x64.Build.0 = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Debug|x86.Build.0 = Debug|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|x64.ActiveCfg = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|x64.Build.0 = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|x86.ActiveCfg = Release|Any CPU
+		{33861155-48CA-4F78-B16B-BF47ED0BA515}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
