@@ -24,31 +24,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     /// </summary>
     public partial class UserInfoUserControl : UserControl
     {
-        #region Properties
-
-        #region User Property
-        public static readonly DependencyProperty UserProperty = DependencyProperty.Register("User", typeof(UserModel), typeof(UserInfoUserControl), new PropertyMetadata(default(UserModel), User_ValueChanged));
-
-        static void User_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
-        {
-            UserInfoUserControl self = obj as UserInfoUserControl;
-            if (self.UserChanged != null) self.UserChanged(self, new EventArgs());
-
-            self.UpdateUI();
-        }
-
-        [Description("the user info to display"), Category("Own Properties"), DisplayName("User")]
-        public UserModel User
-        {
-            get { return (UserModel)GetValue(UserProperty); }
-            set { SetValue(UserProperty, value); }
-        }
-
-        public event EventHandler UserChanged;
-        #endregion User Property
-
-        #endregion Properties
-
         #region Construction
 
         public UserInfoUserControl()
@@ -57,18 +32,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         }
 
         #endregion Construction
-
-        #region Methods
-
-        private void UpdateUI()
-        {
-            
-        }
-
-        #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }

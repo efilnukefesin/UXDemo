@@ -40,6 +40,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
         #region Methods
 
+        #region OnInitialized
         protected override void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
@@ -48,11 +49,23 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
             viewModel.PropertyChanged += this.menuItemsUserControlViewModelPropertyChangedEventHandler;
             viewModel.NotifyPropertyChanged();
         }
+        #endregion OnInitialized
 
+        #region menuItemsUserControlViewModelPropertyChangedEventHandler
         private void menuItemsUserControlViewModelPropertyChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            List<MenuItemUserControl> items = new List<MenuItemUserControl>();
+
+            MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
+
+            foreach (MenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
+            {
+                items.Add(new MenuItemUserControl() { DataContext = menuItemUserControlViewModel });
+            }
+
+            this.lvItems.ItemsSource = items;
         }
+        #endregion menuItemsUserControlViewModelPropertyChangedEventHandler
 
         #endregion Methods
 
