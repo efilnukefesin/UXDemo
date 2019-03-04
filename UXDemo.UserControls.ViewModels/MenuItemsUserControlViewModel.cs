@@ -12,7 +12,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
     {
         #region Properties
 
-        public ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem> Items { get; set; }
+        public ObservableCollection<MenuItemUserControlViewModel> Items { get; set; }
 
         #endregion Properties
 
@@ -20,10 +20,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public MenuItemsUserControlViewModel()
         {
-            this.Items = new ObservableCollection<Apps.UXDemo.Models.MenuItem>();
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1"});
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" });
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" });
+            this.Items = new ObservableCollection<MenuItemUserControlViewModel>();
         }
 
         #endregion Construction
