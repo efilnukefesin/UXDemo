@@ -8,6 +8,7 @@ using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Models;
 using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
@@ -15,13 +16,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
     {
         #region Properties
 
-        public ICollection<MenuItem> Items { get; set; }
-
-        public UserModel User { get; set; }
-
-        public VersionModel Version { get; set; }
-
-        public string SearchString { get; set; }
+        public MenuUserControlViewModel Menu { get; set; }
 
         #endregion Properties
 
@@ -30,31 +25,32 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
         public MainViewModel()
             :base()
         {
-            this.Items = new ObservableCollection<MenuItem>();
-            this.Items.Add(new MenuItem() { Caption = "Item1"});
-            this.Items.Add(new MenuItem() { Caption = "Item2" });
-            this.Items.Add(new MenuItem() { Caption = "Item3" });
+            this.Menu = new MenuUserControlViewModel();
+            //this.Items = new ObservableCollection<MenuItem>();
+            //this.Items.Add(new MenuItem() { Caption = "Item1"});
+            //this.Items.Add(new MenuItem() { Caption = "Item2" });
+            //this.Items.Add(new MenuItem() { Caption = "Item3" });
 
-            try
-            {
-                if (DiManager.GetInstance().Resolve<IUserService>() != null)
-                {
-                    this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
-                }
+            //try
+            //{
+            //    if (DiManager.GetInstance().Resolve<IUserService>() != null)
+            //    {
+            //        this.User = DiManager.GetInstance().Resolve<IUserService>().GetUser();
+            //    }
 
-                if (DiManager.GetInstance().Resolve<IVersionService>() != null)
-                {
-                    this.Version = DiManager.GetInstance().Resolve<IVersionService>().GetVersion();
-                }
-            }
-            catch (Exception ex)
-            {
+            //    if (DiManager.GetInstance().Resolve<IVersionService>() != null)
+            //    {
+            //        this.Version = DiManager.GetInstance().Resolve<IVersionService>().GetVersion();
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
 
-            }
-            if (this.User is null)
-            {
-                this.User = new UserModel();
-            }
+            //}
+            //if (this.User is null)
+            //{
+            //    this.User = new UserModel();
+            //}
         }
         #endregion Construction
 
