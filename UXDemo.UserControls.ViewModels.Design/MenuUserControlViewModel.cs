@@ -13,10 +13,10 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
     {
         #region Properties
 
-        public VersionModel Version { get; set; }
-        public UserModel User { get; set; }
-        public string SearchText { get; set; }
-        public ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem> Items { get; set; }
+        public MenuItemsUserControlViewModel MenuItems { get; set; }
+        public UserInfoUserControlViewModel UserInfo { get; set; }
+        public VersionInfoUserControlViewModel VersionInfo { get; set; }
+        public SearchBoxUserControlViewModel SearchInfo { get; set; }
 
         #endregion Properties
 
@@ -24,13 +24,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         public MenuUserControlViewModel()
         {
-            this.Version = new VersionModel(new System.Version(1, 2), new DateTimeOffset(1999, 12, 30, 23, 32, 1, new TimeSpan(-1, 0, 0)));
-            this.User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience = 100, MaxExperience = 102, Title = "Grand Geek" }, Experience = 101 };
-            this.SearchText = "Something!";
-            this.Items = new ObservableCollection<Apps.UXDemo.Models.MenuItem>();
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" });
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" });
-            this.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" });
+            this.SearchInfo = new SearchBoxUserControlViewModel() { Text = "Something2!" };
+            this.VersionInfo = new VersionInfoUserControlViewModel() { Version = new VersionModel(new Version(1, 1), new DateTimeOffset(2019, 03, 04, 23, 59, 59, new TimeSpan(-1, 0, 0))) };
+            this.UserInfo = new UserInfoUserControlViewModel() { User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience = 100, MaxExperience = 102, Title = "Grand Geek" }, Experience = 101 } };
+            this.MenuItems = new MenuItemsUserControlViewModel() { Items = new ObservableCollection<MenuItem>() { } };
+            this.MenuItems.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" });
+            this.MenuItems.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" });
+            this.MenuItems.Items.Add(new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" });
         }
 
         #endregion Construction
