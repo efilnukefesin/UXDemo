@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
+using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
@@ -25,27 +26,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     public partial class MenuItemsUserControl : UserControl
     {
         #region Properties
-
-        #region Items Property
-        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items", typeof(ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>), typeof(MenuItemsUserControl), new PropertyMetadata(default(ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>), Items_ValueChanged));
-
-        static void Items_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
-        {
-            MenuItemsUserControl self = obj as MenuItemsUserControl;
-            if (self.ItemsChanged != null) self.ItemsChanged(self, new EventArgs());
-
-            self.updateUI();
-        }
-
-        [Description("The items to show in the menu"), Category("Own Properties"), DisplayName("Items")]
-        public ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem> Items
-        {
-            get { return (ObservableCollection<NET.efilnukefesin.Apps.UXDemo.Models.MenuItem>)GetValue(ItemsProperty); }
-            set { SetValue(ItemsProperty, value); }
-        }
-
-        public event EventHandler ItemsChanged;
-        #endregion Items Property
 
         #endregion Properties
 
@@ -60,16 +40,19 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
         #region Methods
 
-        #region updateUI
-        private void updateUI()
+        protected override void OnInitialized(EventArgs e)
         {
-            this.lvItems.Items.Clear();
-            foreach (NET.efilnukefesin.Apps.UXDemo.Models.MenuItem item in this.Items)
-            {
-                this.lvItems.Items.Add(new MenuItemUserControl() { Item = item});
-            }
+            base.OnInitialized(e);
+
+            MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
+            viewModel.PropertyChanged += this.menuItemsUserControlViewModelPropertyChangedEventHandler;
+            viewModel.NotifyPropertyChanged();
         }
-        #endregion updateUI
+
+        private void menuItemsUserControlViewModelPropertyChangedEventHandler(object sender, PropertyChangedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion Methods
 

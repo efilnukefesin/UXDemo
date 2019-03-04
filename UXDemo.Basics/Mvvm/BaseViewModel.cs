@@ -18,6 +18,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm
 
         #region Methods
 
+        #region NotifyPropertyChanged
+        public void NotifyPropertyChanged()
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(String.Empty));
+        }
+        #endregion NotifyPropertyChanged
+
         #endregion Methods
 
         #region Events
