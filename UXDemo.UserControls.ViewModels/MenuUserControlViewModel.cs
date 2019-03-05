@@ -34,13 +34,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         }
 
         #endregion Construction
-
-        #region Methods
-
-        #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }

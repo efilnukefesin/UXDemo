@@ -10,7 +10,7 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
              mc:Ignorable="d" 
-             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:UserInfoUserControlViewModel}, IsDesignTimeCreatable=True}"
+             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:UserInfoUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="200" d:DesignWidth="212">
     <UserControl.DataContext>
         <ViewModels:UserInfoUserControlViewModel />

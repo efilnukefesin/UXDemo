@@ -7,22 +7,17 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 {
-    public class MenuItemUserControlViewModel : BaseViewModel
+    public class SearchBoxUserControlDesignViewModel : SearchBoxUserControlViewModel
     {
         #region Properties
-
-        public bool IsChecked { get; set; }
-        public Apps.UXDemo.Models.MenuItem Item { get; set; }
-        public string ButtonStyleName { get; set; }
 
         #endregion Properties
 
         #region Construction
 
-        public MenuItemUserControlViewModel()
+        public SearchBoxUserControlDesignViewModel()
         {
-            this.IsChecked = false;
-            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Text = "Something!";
         }
 
         #endregion Construction

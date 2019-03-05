@@ -11,7 +11,7 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
              mc:Ignorable="d" 
-             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:SearchBoxUserControlViewModel}, IsDesignTimeCreatable=True}"
+             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:SearchBoxUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="40" d:DesignWidth="212">
     <UserControl.DataContext>
         <ViewModels:SearchBoxUserControlViewModel />

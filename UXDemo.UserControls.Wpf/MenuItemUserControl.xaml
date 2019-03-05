@@ -11,7 +11,7 @@
              x:Name="userControl" 
              x:Class="NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf.MenuItemUserControl"
              mc:Ignorable="d" 
-             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:MenuItemUserControlViewModel}, IsDesignTimeCreatable=True}"
+             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:MenuItemUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="50" d:DesignWidth="100">
     <UserControl.Style>
         <Style TargetType="{x:Type local:MenuItemUserControl}">

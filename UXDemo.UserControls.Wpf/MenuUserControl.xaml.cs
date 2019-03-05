@@ -25,10 +25,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     /// </summary>
     public partial class MenuUserControl : UserControl
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Construction
 
         public MenuUserControl()
@@ -37,13 +33,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         }
 
         #endregion Construction
-
-        #region Methods
-
-        #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }
