@@ -46,8 +46,11 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
             base.EndInit();
 
             MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
-            viewModel.PropertyChanged += this.menuItemsUserControlViewModelPropertyChangedEventHandler;
-            viewModel.NotifyPropertyChanged();
+            if (viewModel != null)
+            {
+                viewModel.PropertyChanged += this.menuItemsUserControlViewModelPropertyChangedEventHandler;
+                viewModel.NotifyPropertyChanged();
+            }
         }
         #endregion EndInit
 
