@@ -40,16 +40,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
         #region Methods
 
-        #region OnInitialized
-        protected override void OnInitialized(EventArgs e)
+        #region EndInit
+        public override void EndInit()
         {
-            base.OnInitialized(e);
+            base.EndInit();
 
             MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
             viewModel.PropertyChanged += this.menuItemsUserControlViewModelPropertyChangedEventHandler;
             viewModel.NotifyPropertyChanged();
         }
-        #endregion OnInitialized
+        #endregion EndInit
 
         #region menuItemsUserControlViewModelPropertyChangedEventHandler
         private void menuItemsUserControlViewModelPropertyChangedEventHandler(object sender, PropertyChangedEventArgs e)
