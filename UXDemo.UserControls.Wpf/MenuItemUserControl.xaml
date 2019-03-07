@@ -24,20 +24,26 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <Converters:StyleMultiConverter x:Key="styleConverter"/>
     </UserControl.Resources>
     <UserControl.DataContext>
         <ViewModels:MenuItemUserControlViewModel />
     </UserControl.DataContext>
-    <Grid>
-        <Button x:Name="btnMain" Style="{Binding ., Mode=OneWay, Converter={Converters:StyleConverter}, ConverterParameter=ButtonStyleName}">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10px" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Rectangle Grid.Column="0" Fill="Red" />
-                <Label Content="{Binding Item.Caption}" Grid.Column="1" />
-            </Grid>
-        </Button>
-    </Grid>
+    <Button x:Name="btnMain">
+        <Button.Style>
+            <MultiBinding Converter="{StaticResource styleConverter}">
+                <Binding Path="ButtonStyleName"/>
+                <Binding Source="{StaticResource MaterialDesignRaisedLightButtonEdgy}" />
+                <Binding Source="{StaticResource MaterialDesignRaisedDarkButtonEdgy}" />
+            </MultiBinding>
+        </Button.Style>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10px" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.Column="0" Fill="Red" />
+            <Label Content="{Binding Item.Caption}" Grid.Column="1" />
+        </Grid>
+    </Button>
 </UserControl>

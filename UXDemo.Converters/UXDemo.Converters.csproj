@@ -48,7 +48,7 @@
     <Compile Include="BoolToVisibleOrCollapsed.cs" />
     <Compile Include="IsValueLessThanParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StyleConverter.cs" />
+    <Compile Include="StyleMultiConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
