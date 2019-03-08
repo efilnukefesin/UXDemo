@@ -26,6 +26,7 @@
 
                 <!-- own style overrides-->
                 <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/MaterialDesignXamlOverrides.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/ButtonResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <!-- MahApps Brushes -->

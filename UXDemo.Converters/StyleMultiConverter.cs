@@ -16,8 +16,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Converters
             Style firstStyle = values[1] as Style;
             Style secondStyle = values[2] as Style;
 
-            //return dataValue.Equals("cust2") ? firstStyle : secondStyle;
-            if (dataValue.Equals("MaterialDesignRaisedLightButtonEdgy"))
+            if (dataValue.Equals("MenuButtonNotHovered"))
             {
                 return firstStyle;
             }

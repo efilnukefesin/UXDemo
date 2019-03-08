@@ -75,6 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ButtonResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MaterialDesignXamlOverrides.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

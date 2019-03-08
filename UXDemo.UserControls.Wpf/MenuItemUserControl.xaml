@@ -17,10 +17,10 @@
         <Style TargetType="{x:Type local:MenuItemUserControl}">
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="ButtonStyleName" Value="MaterialDesignRaisedDarkButtonEdgy"/>
+                    <Setter Property="ButtonStyleName" Value="MenuButtonHovered"/>
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="False">
-                    <Setter Property="ButtonStyleName" Value="MaterialDesignRaisedLightButtonEdgy"/>
+                    <Setter Property="ButtonStyleName" Value="MenuButtonNotHovered"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -33,8 +33,8 @@
         <Button.Style>
             <MultiBinding Converter="{StaticResource styleConverter}">
                 <Binding Path="ButtonStyleName"/>
-                <Binding Source="{StaticResource MaterialDesignRaisedLightButtonEdgy}" />
-                <Binding Source="{StaticResource MaterialDesignRaisedDarkButtonEdgy}" />
+                <Binding Source="{StaticResource MenuButtonNotHovered}" />
+                <Binding Source="{StaticResource MenuButtonHovered}" />
             </MultiBinding>
         </Button.Style>
         <Grid>
