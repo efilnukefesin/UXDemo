@@ -29,7 +29,7 @@
     <UserControl.DataContext>
         <ViewModels:MenuItemUserControlViewModel />
     </UserControl.DataContext>
-    <Button x:Name="btnMain">
+    <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}">
         <Button.Style>
             <MultiBinding Converter="{StaticResource styleConverter}">
                 <Binding Path="ButtonStyleName"/>

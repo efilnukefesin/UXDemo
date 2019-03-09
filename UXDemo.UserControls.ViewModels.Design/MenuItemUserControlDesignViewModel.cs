@@ -11,6 +11,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
     {
         #region Properties
 
+        
+
         #endregion Properties
 
         #region Construction

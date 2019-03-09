@@ -17,6 +17,7 @@ using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;
+using NET.efilnukefesin.Extensions.Wpf.Commands;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
@@ -90,6 +91,29 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public event EventHandler ButtonStyleNameChanged;
         #endregion ButtonStyleName Property
 
+        #region Commands
+
+        #region ClickCommand Property
+        public static readonly DependencyProperty ClickCommandProperty = DependencyProperty.Register("ClickCommand", typeof(RelayCommand), typeof(MenuItemUserControl), new PropertyMetadata(default(RelayCommand), ClickCommand_ValueChanged));
+
+        static void ClickCommand_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuItemUserControl self = obj as MenuItemUserControl;
+            if (self.ClickCommandChanged != null) self.ClickCommandChanged(self, new EventArgs());
+        }
+
+        [Description("The Click Command"), Category("Own Properties"), DisplayName("ClickCommand")]
+        public RelayCommand ClickCommand
+        {
+            get { return (RelayCommand)GetValue(ClickCommandProperty); }
+            set { SetValue(ClickCommandProperty, value); }
+        }
+
+        public event EventHandler ClickCommandChanged;
+        #endregion ClickCommand Property
+
+        #endregion Commands
+
         #endregion Properties
 
         #region Construction
@@ -98,6 +122,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         {
             InitializeComponent();
         }
+
+        #region EndInit
+        public override void EndInit()
+        {
+            base.EndInit();
+
+            MenuItemUserControlViewModel viewModel = (MenuItemUserControlViewModel)this.DataContext;
+            this.ClickCommand = new RelayCommand(viewModel.ClickCommandExecute, viewModel.ClickCommandCanExecute);
+        }
+        #endregion EndInit
 
         #endregion Construction
 

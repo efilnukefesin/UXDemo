@@ -38,6 +38,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         #region Methods
 
+        public void ClickCommandExecute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ClickCommandCanExecute()
+        {
+            return true;
+        }
+
         #endregion Methods
 
         #region Events
