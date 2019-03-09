@@ -36,6 +36,7 @@
                 <Binding Path="State"/>
                 <Binding Source="{StaticResource MenuButtonNotHovered}" />
                 <Binding Source="{StaticResource MenuButtonHovered}" />
+                <Binding Source="{StaticResource MenuButtonSelected}" />
             </MultiBinding>
         </Button.Style>
         <Grid>
