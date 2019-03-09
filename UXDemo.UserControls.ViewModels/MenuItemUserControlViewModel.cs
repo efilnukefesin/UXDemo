@@ -15,7 +15,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public bool IsChecked { get; set; }
         public MenuItem Item { get; set; }
-        public string ButtonStyleName { get; set; } = "MenuButtonNotHovered";
         public ButtonState State { get; set; } = ButtonState.Normal;
 
         #endregion Properties

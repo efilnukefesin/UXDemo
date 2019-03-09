@@ -71,27 +71,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public event EventHandler IsCheckedChanged;
         #endregion IsChecked Property
 
-        #region ButtonStyleName Property
-        public static readonly DependencyProperty ButtonStyleNameProperty = DependencyProperty.Register("ButtonStyleName", typeof(string), typeof(MenuItemUserControl), new PropertyMetadata(string.Empty, ButtonStyleName_ValueChanged));
-
-        static void ButtonStyleName_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
-        {
-            MenuItemUserControl self = obj as MenuItemUserControl;
-            if (self.ButtonStyleNameChanged != null) self.ButtonStyleNameChanged(self, new EventArgs());
-
-            self.updateUI();
-        }
-
-        [Description("The name of the Button Style"), Category("Own Properties"), DisplayName("ButtonStyleName")]
-        public string ButtonStyleName
-        {
-            get { return (string)GetValue(ButtonStyleNameProperty); }
-            set { SetValue(ButtonStyleNameProperty, value); }
-        }
-
-        public event EventHandler ButtonStyleNameChanged;
-        #endregion ButtonStyleName Property
-
         #region State Property
         public static readonly DependencyProperty StateProperty = DependencyProperty.Register("State", typeof(ButtonState), typeof(MenuItemUserControl), new PropertyMetadata(ButtonState.Normal, State_ValueChanged));
 
@@ -164,12 +143,10 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         {
             if (this.DataContext is MenuItemUserControlViewModel)
             {
-                (this.DataContext as MenuItemUserControlViewModel).ButtonStyleName = this.ButtonStyleName;
                 (this.DataContext as MenuItemUserControlViewModel).State = this.State;
             }
             else if (this.DataContext is MenuItemUserControlDesignViewModel)
             {
-                (this.DataContext as MenuItemUserControlDesignViewModel).ButtonStyleName = this.ButtonStyleName;
                 (this.DataContext as MenuItemUserControlDesignViewModel).State = this.State;
             }
         }

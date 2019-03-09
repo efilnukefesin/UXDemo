@@ -18,11 +18,9 @@
         <Style TargetType="{x:Type local:MenuItemUserControl}">
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="ButtonStyleName" Value="MenuButtonHovered"/>
                     <Setter Property="State" Value="Hovered"/>
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="False">
-                    <Setter Property="ButtonStyleName" Value="MenuButtonNotHovered"/>
                     <Setter Property="State" Value="Normal"/>
                 </Trigger>
             </Style.Triggers>
