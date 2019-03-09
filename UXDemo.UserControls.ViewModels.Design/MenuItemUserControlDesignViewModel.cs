@@ -15,7 +15,15 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         #region Construction
 
+        public MenuItemUserControlDesignViewModel(BaseViewModel Parent = null)
+            : base(Parent)
+        {
+            this.IsChecked = false;
+            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+        }
+
         public MenuItemUserControlDesignViewModel()
+            : base(null)
         {
             this.IsChecked = false;
             this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };

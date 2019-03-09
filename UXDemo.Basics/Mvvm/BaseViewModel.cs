@@ -10,9 +10,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm
     {
         #region Properties
 
+        protected BaseViewModel Parent { get; set; }
+
         #endregion Properties
 
         #region Construction
+
+        public BaseViewModel(BaseViewModel Parent = null)
+        {
+            this.Parent = Parent;
+        }
 
         #endregion Construction
 
