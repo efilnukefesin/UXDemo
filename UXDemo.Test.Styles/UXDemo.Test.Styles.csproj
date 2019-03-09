@@ -51,6 +51,9 @@
     <Compile Include="MenuButtonStylesTestPage.xaml.cs">
       <DependentUpon>MenuButtonStylesTestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuButtonTestPage.xaml.cs">
+      <DependentUpon>MenuButtonTestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -78,11 +81,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MenuButtonTestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Styles.Wpf\UXDemo.Styles.Wpf.csproj">
       <Project>{f6cad3ef-31cd-4599-adc2-a4c5095df428}</Project>
       <Name>UXDemo.Styles.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.UserControls.Wpf\UXDemo.UserControls.Wpf.csproj">
+      <Project>{16038684-846a-4525-90bc-95a33f2da865}</Project>
+      <Name>UXDemo.UserControls.Wpf</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

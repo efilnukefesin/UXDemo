@@ -7,6 +7,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
+             xmlns:Enums="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Basics.Enums;assembly=UXDemo.Basics"
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
              x:Name="userControl" 
              x:Class="NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf.MenuItemUserControl"
@@ -18,13 +19,15 @@
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="ButtonStyleName" Value="MenuButtonHovered"/>
+                    <Setter Property="State" Value="Hovered"/>
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="False">
                     <Setter Property="ButtonStyleName" Value="MenuButtonNotHovered"/>
+                    <Setter Property="State" Value="Normal"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
-        <Converters:StyleMultiConverter x:Key="styleConverter"/>
+        <Converters:StyleFromStateMultiConverter x:Key="styleConverter"/>
     </UserControl.Resources>
     <UserControl.DataContext>
         <ViewModels:MenuItemUserControlViewModel />
@@ -32,7 +35,7 @@
     <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}">
         <Button.Style>
             <MultiBinding Converter="{StaticResource styleConverter}">
-                <Binding Path="ButtonStyleName"/>
+                <Binding Path="State"/>
                 <Binding Source="{StaticResource MenuButtonNotHovered}" />
                 <Binding Source="{StaticResource MenuButtonHovered}" />
             </MultiBinding>

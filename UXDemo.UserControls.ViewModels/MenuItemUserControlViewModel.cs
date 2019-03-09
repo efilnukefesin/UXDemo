@@ -1,4 +1,5 @@
-﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Enums;
+using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.Models;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public bool IsChecked { get; set; }
         public MenuItem Item { get; set; }
         public string ButtonStyleName { get; set; } = "MenuButtonNotHovered";
+        public ButtonState State { get; set; } = ButtonState.Normal;
 
         #endregion Properties
 
@@ -40,7 +42,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public void ClickCommandExecute()
         {
-            throw new NotImplementedException();
+            this.State = ButtonState.Selected;
+            (this.Parent as MenuItemsUserControlViewModel).DeselectAllOthers(this);
         }
 
         public bool ClickCommandCanExecute()

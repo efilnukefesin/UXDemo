@@ -18,6 +18,7 @@ using NET.efilnukefesin.Apps.UXDemo.Services;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;
 using NET.efilnukefesin.Extensions.Wpf.Commands;
+using NET.efilnukefesin.Apps.UXDemo.Basics.Enums;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
@@ -91,6 +92,27 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public event EventHandler ButtonStyleNameChanged;
         #endregion ButtonStyleName Property
 
+        #region State Property
+        public static readonly DependencyProperty StateProperty = DependencyProperty.Register("State", typeof(ButtonState), typeof(MenuItemUserControl), new PropertyMetadata(ButtonState.Normal, State_ValueChanged));
+
+        static void State_ValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
+        {
+            MenuItemUserControl self = obj as MenuItemUserControl;
+            if (self.StateChanged != null) self.StateChanged(self, new EventArgs());
+
+            self.updateUI();
+        }
+
+        [Description("The Button State"), Category("Own Properties"), DisplayName("State")]
+        public ButtonState State
+        {
+            get { return (ButtonState)GetValue(StateProperty); }
+            set { SetValue(StateProperty, value); }
+        }
+
+        public event EventHandler StateChanged;
+        #endregion State Property
+
         #region Commands
 
         #region ClickCommand Property
@@ -143,10 +165,12 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
             if (this.DataContext is MenuItemUserControlViewModel)
             {
                 (this.DataContext as MenuItemUserControlViewModel).ButtonStyleName = this.ButtonStyleName;
+                (this.DataContext as MenuItemUserControlViewModel).State = this.State;
             }
             else if (this.DataContext is MenuItemUserControlDesignViewModel)
             {
                 (this.DataContext as MenuItemUserControlDesignViewModel).ButtonStyleName = this.ButtonStyleName;
+                (this.DataContext as MenuItemUserControlDesignViewModel).State = this.State;
             }
         }
         #endregion updateUI

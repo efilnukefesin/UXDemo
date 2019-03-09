@@ -22,10 +22,17 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.Items = new ObservableCollection<MenuItemUserControlViewModel>();
         }
-
         #endregion Construction
 
         #region Methods
+
+        #region DeselectAllOthers
+        internal void DeselectAllOthers(MenuItemUserControlViewModel menuItemUserControlViewModel)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion DeselectAllOthers
+
 
         #endregion Methods
 
