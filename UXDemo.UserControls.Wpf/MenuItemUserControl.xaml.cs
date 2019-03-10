@@ -86,11 +86,23 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public ButtonState State
         {
             get { return (ButtonState)GetValue(StateProperty); }
-            set { SetValue(StateProperty, value); }
+            set
+            {
+                if (this.State != ButtonState.Selected)
+                {
+                    SetValue(StateProperty, value);
+                }
+            }
         }
 
         public event EventHandler StateChanged;
         #endregion State Property
+
+        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register(
+    "BoundDataContext",
+    typeof(object),
+    typeof(MenuItemUserControl),
+    new PropertyMetadata(null, OnBoundDataContextChanged));
 
         #region Commands
 
@@ -122,17 +134,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public MenuItemUserControl()
         {
             InitializeComponent();
+            this.SetBinding(BoundDataContextProperty, new Binding());
         }
-
-        #region EndInit
-        public override void EndInit()
-        {
-            base.EndInit();
-
-            MenuItemUserControlViewModel viewModel = (MenuItemUserControlViewModel)this.DataContext;
-            this.ClickCommand = new RelayCommand(viewModel.ClickCommandExecute, viewModel.ClickCommandCanExecute);
-        }
-        #endregion EndInit
 
         #endregion Construction
 
@@ -151,6 +154,18 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
             }
         }
         #endregion updateUI
+
+        private static void OnBoundDataContextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            // e.NewValue is your new DataContext
+            // d is your UserControl
+            MenuItemUserControlViewModel viewModel = (MenuItemUserControlViewModel)e.NewValue;
+            MenuItemUserControl userControl = (MenuItemUserControl)d;
+            if (viewModel != null)
+            {
+                userControl.ClickCommand = new RelayCommand(viewModel.ClickCommandExecute, viewModel.ClickCommandCanExecute);
+            }
+        }
 
         #endregion Methods
 

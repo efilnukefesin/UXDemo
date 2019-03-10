@@ -63,7 +63,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
             foreach (MenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
             {
-                items.Add(new MenuItemUserControl() { DataContext = menuItemUserControlViewModel });
+                MenuItemUserControl item = new MenuItemUserControl();
+                item.Loaded += (s, e2) =>
+                {
+                    item.DataContext = menuItemUserControlViewModel;
+                };
+                items.Add(item);
+                
             }
 
             this.lvItems.ItemsSource = items;

@@ -39,11 +39,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         #region Methods
 
+        #region ClickCommandExecute
         public void ClickCommandExecute()
         {
             this.State = ButtonState.Selected;
             (this.Parent as MenuItemsUserControlViewModel).DeselectAllOthers(this);
         }
+        #endregion ClickCommandExecute
 
         public bool ClickCommandCanExecute()
         {
