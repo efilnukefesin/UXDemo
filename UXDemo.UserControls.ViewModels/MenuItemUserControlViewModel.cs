@@ -47,10 +47,19 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         }
         #endregion ClickCommandExecute
 
+        #region ClickCommandCanExecute
         public bool ClickCommandCanExecute()
         {
             return true;
         }
+        #endregion ClickCommandCanExecute
+
+        #region dispose
+        protected override void dispose()
+        {
+            this.Item = null;
+        }
+        #endregion dispose
 
         #endregion Methods
 

@@ -7,5 +7,11 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
     public class SettingsViewModel : BaseViewModel
     {
+        #region dispose
+        protected override void dispose()
+        {
+
+        }
+        #endregion dispose
     }
 }

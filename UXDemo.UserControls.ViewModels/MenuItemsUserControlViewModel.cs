@@ -29,10 +29,23 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         #region DeselectAllOthers
         internal void DeselectAllOthers(MenuItemUserControlViewModel menuItemUserControlViewModel)
         {
-            throw new NotImplementedException();
+            foreach (MenuItemUserControlViewModel existingMenuItemUserControlViewModel in this.Items)
+            {
+                if (!existingMenuItemUserControlViewModel.Id.Equals(menuItemUserControlViewModel.Id))
+                {
+                    existingMenuItemUserControlViewModel.State = Basics.Enums.ButtonState.Normal;
+                }
+            }
         }
         #endregion DeselectAllOthers
 
+        #region dispose
+        protected override void dispose()
+        {
+            this.Items.Clear();
+            this.Items = null;
+        }
+        #endregion dispose
 
         #endregion Methods
 

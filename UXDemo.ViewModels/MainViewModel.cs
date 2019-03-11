@@ -31,6 +31,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 
         #region Methods
 
+        #region dispose
+        protected override void dispose()
+        {
+            this.Menu = null;
+        }
+        #endregion dispose
+
         #endregion Methods
     }
 }

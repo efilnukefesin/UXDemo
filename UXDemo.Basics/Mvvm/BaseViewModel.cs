@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using PropertyChanged;
+using NET.efilnukefesin.Implementations.Base;
 
 namespace NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : BaseObject, INotifyPropertyChanged
     {
         #region Properties
 

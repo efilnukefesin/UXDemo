@@ -107,11 +107,17 @@
     <Reference Include="NET.efilnukefesin.Common.Wpf.Commands, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Common.Wpf.Commands.1.0.1\lib\netstandard1.3\NET.efilnukefesin.Common.Wpf.Commands.dll</HintPath>
     </Reference>
+    <Reference Include="NET.efilnukefesin.Contracts.Base, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Contracts.Base.1.5.1\lib\netstandard2.0\NET.efilnukefesin.Contracts.Base.dll</HintPath>
+    </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Contracts.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.Xml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.Xml.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Implementations.Base, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Implementations.Base.1.5.1\lib\netstandard2.0\NET.efilnukefesin.Implementations.Base.dll</HintPath>
     </Reference>
     <Reference Include="NET.efilnukefesin.Implementations.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Implementations.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Implementations.DependencyInjection.dll</HintPath>

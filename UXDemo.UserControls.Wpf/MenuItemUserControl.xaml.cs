@@ -86,23 +86,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public ButtonState State
         {
             get { return (ButtonState)GetValue(StateProperty); }
-            set
-            {
-                if (this.State != ButtonState.Selected)
-                {
-                    SetValue(StateProperty, value);
-                }
-            }
+            set { SetValue(StateProperty, value); }
         }
 
         public event EventHandler StateChanged;
         #endregion State Property
 
-        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register(
-    "BoundDataContext",
-    typeof(object),
-    typeof(MenuItemUserControl),
-    new PropertyMetadata(null, OnBoundDataContextChanged));
+        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register("BoundDataContext", typeof(object), typeof(MenuItemUserControl), new PropertyMetadata(null, OnBoundDataContextChanged));
 
         #region Commands
 
@@ -146,11 +136,17 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         {
             if (this.DataContext is MenuItemUserControlViewModel)
             {
-                (this.DataContext as MenuItemUserControlViewModel).State = this.State;
+                if ((this.DataContext as MenuItemUserControlViewModel).State != ButtonState.Selected)
+                {
+                    (this.DataContext as MenuItemUserControlViewModel).State = this.State;
+                }
             }
             else if (this.DataContext is MenuItemUserControlDesignViewModel)
             {
-                (this.DataContext as MenuItemUserControlDesignViewModel).State = this.State;
+                if ((this.DataContext as MenuItemUserControlViewModel).State != ButtonState.Selected)
+                {
+                    (this.DataContext as MenuItemUserControlDesignViewModel).State = this.State;
+                }
             }
         }
         #endregion updateUI

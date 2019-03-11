@@ -26,6 +26,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         #region Methods
 
+        #region dispose
+        protected override void dispose()
+        {
+
+        }
+        #endregion dispose
+
         #endregion Methods
 
         #region Events
