@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Apps.UXDemo.Models.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +10,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Models
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Nickname { get; set; }
+        public UserStatus Status { get; set; }
 
         //TODO: put into Level Model
 
