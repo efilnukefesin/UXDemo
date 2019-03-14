@@ -54,6 +54,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         }
         #endregion ClickCommandCanExecute
 
+        #region Select
+        public void Select()
+        {
+            if (this.ClickCommandCanExecute())
+            {
+                this.ClickCommandExecute();
+            }
+        }
+        #endregion Select
+
         #region dispose
         protected override void dispose()
         {

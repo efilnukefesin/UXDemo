@@ -20,7 +20,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="40px"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="200px"/>
+            <RowDefinition Height="105px"/>
             <RowDefinition Height="20px"/>
         </Grid.RowDefinitions>
         <local:SearchBoxUserControl x:Name="sbucMain" Grid.Row="0" DataContext="{Binding SearchInfo}" Padding="0,0,0,5" />
