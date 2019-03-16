@@ -19,13 +19,14 @@ using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;
 using NET.efilnukefesin.Extensions.Wpf.Commands;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Enums;
+using NET.efilnukefesin.Extensions.Wpf.UserControls;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
     /// <summary>
     /// Interaktionslogik für MenuItemUserControl.xaml
     /// </summary>
-    public partial class MenuItemUserControl : UserControl, INotifyPropertyChanged
+    public partial class MenuItemUserControl : BaseUserControl, INotifyPropertyChanged
     {
         #region Properties
 
@@ -92,7 +93,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         public event EventHandler StateChanged;
         #endregion State Property
 
-        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register("BoundDataContext", typeof(object), typeof(MenuItemUserControl), new PropertyMetadata(null, OnBoundDataContextChanged));
+        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register("BoundDataContext", typeof(object), typeof(MenuItemUserControl), new PropertyMetadata(null, onBoundDataContextChanged));
 
         #region Commands
 
@@ -151,7 +152,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         }
         #endregion updateUI
 
-        private static void OnBoundDataContextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        #region onBoundDataContextChanged
+        private static void onBoundDataContextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             // e.NewValue is your new DataContext
             // d is your UserControl
@@ -162,6 +164,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
                 userControl.ClickCommand = new RelayCommand(viewModel.ClickCommandExecute, viewModel.ClickCommandCanExecute);
             }
         }
+        #endregion onBoundDataContextChanged
 
         #endregion Methods
 
