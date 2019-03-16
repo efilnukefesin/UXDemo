@@ -13,6 +13,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         #region Properties
 
         public UserModel User { get; set; }
+        public UserStatusUserControlViewModel Status { get; set; }
 
         #endregion Properties
 
@@ -21,6 +22,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public UserInfoUserControlViewModel()
         {
             this.User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience=100, MaxExperience=102, Title= "Grand Geek"}, Experience=101 };
+            this.Status = new UserStatusUserControlViewModel() { Status = this.User.Status };
         }
 
         #endregion Construction

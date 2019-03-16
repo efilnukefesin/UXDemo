@@ -49,11 +49,16 @@
     <Compile Include="IsValueLessThanParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StyleFromStateMultiConverter.cs" />
+    <Compile Include="UserStatusToVisibilityConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj">
       <Project>{33861155-48CA-4F78-B16B-BF47ED0BA515}</Project>
       <Name>UXDemo.Basics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj">
+      <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
+      <Name>UXDemo.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

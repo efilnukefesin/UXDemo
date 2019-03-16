@@ -79,6 +79,9 @@
     <Compile Include="UserInfoUserControl.xaml.cs">
       <DependentUpon>UserInfoUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserStatusUserControl.xaml.cs">
+      <DependentUpon>UserStatusUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VersionInfoUserControl.xaml.cs">
       <DependentUpon>VersionInfoUserControl.xaml</DependentUpon>
     </Compile>
@@ -144,6 +147,10 @@
     <Page Include="UserInfoUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserStatusUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VersionInfoUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>

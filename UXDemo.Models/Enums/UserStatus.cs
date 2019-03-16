@@ -8,6 +8,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Models.Enums
     {
         Away,
         Online,
-
+        None,
+        Busy
     }
 }

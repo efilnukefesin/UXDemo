@@ -10,10 +10,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 {
     public class VersionInfoUserControlDesignViewModel : VersionInfoUserControlViewModel
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Construction
 
         public VersionInfoUserControlDesignViewModel()
@@ -22,13 +18,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
         }
 
         #endregion Construction
-
-        #region Methods
-
-        #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }
