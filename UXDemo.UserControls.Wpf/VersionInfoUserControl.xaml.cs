@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 using System.ComponentModel;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
+using NET.efilnukefesin.Extensions.Wpf.UserControls;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
     /// <summary>
     /// Interaktionslogik für VersionInfoUserControl.xaml
     /// </summary>
-    public partial class VersionInfoUserControl : UserControl
+    public partial class VersionInfoUserControl : BaseUserControl
     {
 
         #region Construction

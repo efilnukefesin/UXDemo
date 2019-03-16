@@ -17,13 +17,14 @@ using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
+using NET.efilnukefesin.Extensions.Wpf.UserControls;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
     /// <summary>
     /// Interaktionslogik für MenuItemsUserControl.xaml
     /// </summary>
-    public partial class MenuItemsUserControl : UserControl
+    public partial class MenuItemsUserControl : BaseUserControl
     {
         #region Properties
 

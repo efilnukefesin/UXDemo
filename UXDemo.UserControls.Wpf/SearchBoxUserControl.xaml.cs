@@ -22,7 +22,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     /// <summary>
     /// Interaktionslogik für SearchBoxUserControl.xaml
     /// </summary>
-    public partial class SearchBoxUserControl : UserControl
+    public partial class SearchBoxUserControl : Extensions.Wpf.UserControls.BaseUserControl
     {
         #region Construction
 

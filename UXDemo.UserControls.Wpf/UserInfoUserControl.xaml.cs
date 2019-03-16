@@ -16,13 +16,14 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Apps.UXDemo.Services;
+using NET.efilnukefesin.Extensions.Wpf.UserControls;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 {
     /// <summary>
     /// Interaktionslogik für UserInfoUserControl.xaml
     /// </summary>
-    public partial class UserInfoUserControl : UserControl
+    public partial class UserInfoUserControl : BaseUserControl
     {
         #region Construction
 

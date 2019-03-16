@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NET.efilnukefesin.Extensions.Wpf.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     /// <summary>
     /// Interaktionslogik für PopupUserControl.xaml
     /// </summary>
-    public partial class PopupUserControl : UserControl
+    public partial class PopupUserControl : BaseUserControl
     {
         #region Construction
         public PopupUserControl()
