@@ -9,7 +9,7 @@
         <Setter Property="Fill" Value="Red"/>
     </Style>
     <Style x:Key="YellowEllipse" TargetType="{x:Type Ellipse}">
-        <Setter Property="Fill" Value="Yellow"/>
+        <Setter Property="Fill" Value="Orange"/>
     </Style>
     <Style x:Key="GreenEllipse" TargetType="{x:Type Ellipse}">
         <Setter Property="Fill" Value="Green"/>
