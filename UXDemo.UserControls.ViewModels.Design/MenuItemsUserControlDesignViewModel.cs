@@ -10,10 +10,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 {
     public class MenuItemsUserControlDesignViewModel : MenuItemsUserControlViewModel
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Construction
 
         public MenuItemsUserControlDesignViewModel()
@@ -27,13 +23,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
         }
 
         #endregion Construction
-
-        #region Methods
-
-        #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }

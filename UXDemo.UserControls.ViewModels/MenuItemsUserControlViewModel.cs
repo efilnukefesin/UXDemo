@@ -48,9 +48,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         #endregion dispose
 
         #endregion Methods
-
-        #region Events
-
-        #endregion Events
     }
 }

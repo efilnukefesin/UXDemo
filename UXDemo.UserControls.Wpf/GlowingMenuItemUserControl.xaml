@@ -1,0 +1,55 @@
+﻿<local:BaseMenuItemUserControl x:Class="NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf.GlowingMenuItemUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Base="clr-namespace:NET.efilnukefesin.Extensions.Wpf.UserControls;assembly=NET.efilnukefesin.Extensions.Wpf.UserControls"
+             xmlns:Converters="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Converters;assembly=UXDemo.Converters"
+             xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;assembly=UXDemo.UserControls.ViewModels"
+             xmlns:DesignTimeViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;assembly=UXDemo.UserControls.ViewModels.Design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
+             xmlns:Enums="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Basics.Enums;assembly=UXDemo.Basics"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+             x:Name="userControl" 
+             mc:Ignorable="d" 
+             d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:GlowingMenuItemUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
+             d:DesignHeight="50" d:DesignWidth="100">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type local:GlowingMenuItemUserControl}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="State" Value="Hovered"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="State" Value="Normal"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Converters:StyleFromStateMultiConverter x:Key="styleConverter"/>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <ViewModels:GlowingMenuItemUserControlViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5px"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5px"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="Red" />
+        <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="1" Grid.Row="1" Content="{Binding Item.Caption}">
+            <Button.Style>
+                <MultiBinding Converter="{StaticResource styleConverter}">
+                    <Binding Path="State"/>
+                    <Binding Source="{StaticResource MenuButtonNotHovered}" />
+                    <Binding Source="{StaticResource MenuButtonHovered}" />
+                    <Binding Source="{StaticResource MenuButtonSelected}" />
+                </MultiBinding>
+            </Button.Style>
+        </Button>
+    </Grid>
+</local:BaseMenuItemUserControl>

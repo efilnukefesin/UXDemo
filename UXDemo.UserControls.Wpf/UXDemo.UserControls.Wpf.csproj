@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseMenuItemUserControl.cs" />
+    <Compile Include="GlowingMenuItemUserControl.xaml.cs">
+      <DependentUpon>GlowingMenuItemUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MenuItemsUserControl.xaml.cs">
       <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
     </Compile>
@@ -125,6 +128,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="GlowingMenuItemUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MenuItemsUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
