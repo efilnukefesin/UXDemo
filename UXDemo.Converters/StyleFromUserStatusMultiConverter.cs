@@ -1,4 +1,4 @@
-﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Enums;
+﻿using NET.efilnukefesin.Apps.UXDemo.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,34 +9,33 @@ using System.Windows.Data;
 
 namespace NET.efilnukefesin.Apps.UXDemo.Converters
 {
-    public class StyleFromStateMultiConverter : IMultiValueConverter
+    public class StyleFromUserStatusMultiConverter : IMultiValueConverter
     {
         #region Convert
         public object Convert(object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             Style result = null;
 
-            ButtonState? dataValue = values[0] as ButtonState?;
-            Style firstStyle = values[1] as Style;
-            Style secondStyle = values[2] as Style;
-            Style selectedStyle = values[3] as Style;
+            UserStatus? dataValue = values[0] as UserStatus?;
 
-            if (dataValue.Equals(ButtonState.Normal))
+            if (dataValue != null)
             {
-                result = firstStyle;
+                switch (dataValue)
+                {
+                    case UserStatus.Online:
+                        result = values[1] as Style;
+                        break;
+                    case UserStatus.Away:
+                        result = values[2] as Style;
+                        break;
+                    case UserStatus.Busy:
+                        result = values[3] as Style;
+                        break;
+                    default:
+                        break;
+                }
             }
-            else if (dataValue.Equals(ButtonState.Hovered))
-            {
-                result = secondStyle;
-            }
-            else if (dataValue.Equals(ButtonState.Selected))
-            {
-                result = selectedStyle;
-            }
-            else
-            {
-                result = null;
-            }
+            
             return result;
         }
         #endregion Convert

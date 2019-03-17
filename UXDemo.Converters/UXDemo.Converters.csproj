@@ -49,6 +49,7 @@
     <Compile Include="IsValueLessThanParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StyleFromStateMultiConverter.cs" />
+    <Compile Include="StyleFromUserStatusMultiConverter.cs" />
     <Compile Include="UserStatusToVisibilityConverter.cs" />
   </ItemGroup>
   <ItemGroup>

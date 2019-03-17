@@ -20,6 +20,7 @@
     </UserControl.DataContext>
     <UserControl.Resources>
         <Converters:UserStatusToVisibilityConverter x:Key="visibilityConverter"/>
+        <Converters:StyleFromUserStatusMultiConverter x:Key="userStatusConverter"/>
     </UserControl.Resources>
     <Base:BaseUserControl.Visibility>
         <Binding Converter="{StaticResource visibilityConverter}" Path="Status"/>
@@ -36,6 +37,15 @@
             <ColumnDefinition Width="2px"/>
         </Grid.ColumnDefinitions>
         <Ellipse Fill="White" Grid.RowSpan="3" Grid.ColumnSpan="3" />
-        <Ellipse Fill="Red" Grid.Row="1" Grid.Column="1" />
+        <Ellipse Grid.Row="1" Grid.Column="1">
+            <Ellipse.Style>
+                <MultiBinding Converter="{StaticResource userStatusConverter}">
+                    <Binding Path="Status"/>
+                    <Binding Source="{StaticResource GreenEllipse}" />
+                    <Binding Source="{StaticResource YellowEllipse}" />
+                    <Binding Source="{StaticResource RedEllipse}" />
+                </MultiBinding>
+            </Ellipse.Style>
+        </Ellipse>
     </Grid>
 </Base:BaseUserControl>
