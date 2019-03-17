@@ -26,6 +26,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Models
             this.Firstname = "Nigel";
             this.Lastname = "Lotze";
             this.Experience = 10;
+            this.Status = UserStatus.None;
             this.ImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHead.png");
             this.SmallImageUri = new Uri("pack://application:,,,/UXDemo;component/DemoContent/SkeletonHeadSmall.png");
             this.CurrentLevel = new LevelModel() { MinExperience = 0, MaxExperience = 100, Title = "AwesomeTitle", NextLevel = new LevelModel() { MinExperience = 101, MaxExperience = 200, Title = "MoreAwesomeTitle" } };
