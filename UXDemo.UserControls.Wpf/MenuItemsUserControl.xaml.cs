@@ -62,9 +62,29 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
             MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
 
+#if DEBUG
+            int counter = 0;
+#endif
+
             foreach (BaseMenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
             {
-                GlowingMenuItemUserControl item = new GlowingMenuItemUserControl();
+                BaseMenuItemUserControl item;
+
+#if DEBUG
+                if (counter % 2 == 0)
+                {
+                    item = new GlowingMenuItemUserControl();
+                }
+                else
+                {
+                    item = new SimpleMenuItemUserControl();
+                }
+                counter++;
+#endif
+
+#if RELEASE
+                item = new GlowingMenuItemUserControl();
+#endif
                 item.Loaded += (s, e2) =>
                 {
                     item.DataContext = menuItemUserControlViewModel;
@@ -75,13 +95,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
             this.lvItems.ItemsSource = items;
         }
-        #endregion menuItemsUserControlViewModelPropertyChangedEventHandler
+#endregion menuItemsUserControlViewModelPropertyChangedEventHandler
 
-        #endregion Methods
+#endregion Methods
 
-        #region Events
+#region Events
 
-        #endregion Events
+#endregion Events
 
         //TODO: https://stackoverflow.com/questions/7321710/wpf-binding-collection-property-in-usercontrol enable two ways of adding Items
     }
