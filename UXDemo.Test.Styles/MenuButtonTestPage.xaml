@@ -14,8 +14,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <UserControls:MenuItemUserControl Grid.Row="0" />
-        <UserControls:MenuItemUserControl Grid.Row="1" />
-        <UserControls:MenuItemUserControl Grid.Row="2" />
+        <UserControls:SimpleMenuItemUserControl Grid.Row="0" />
+        <UserControls:SimpleMenuItemUserControl Grid.Row="1" />
+        <UserControls:SimpleMenuItemUserControl Grid.Row="2" />
     </Grid>
 </Page>

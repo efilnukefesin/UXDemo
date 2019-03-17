@@ -48,11 +48,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseMenuItemUserControl.cs" />
     <Compile Include="MenuItemsUserControl.xaml.cs">
       <DependentUpon>MenuItemsUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MenuItemUserControl.xaml.cs">
-      <DependentUpon>MenuItemUserControl.xaml</DependentUpon>
+    <Compile Include="SimpleMenuItemUserControl.xaml.cs">
+      <DependentUpon>SimpleMenuItemUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MenuUserControl.xaml.cs">
       <DependentUpon>MenuUserControl.xaml</DependentUpon>
@@ -128,7 +129,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MenuItemUserControl.xaml">
+    <Page Include="SimpleMenuItemUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

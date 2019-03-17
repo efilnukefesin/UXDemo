@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 {
-    public class MenuItemUserControlDesignViewModel : MenuItemUserControlViewModel
+    public class SimpleMenuItemUserControlDesignViewModel : BaseMenuItemUserControlViewModel
     {
         #region Properties
 
@@ -17,14 +17,14 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         #region Construction
 
-        public MenuItemUserControlDesignViewModel(BaseViewModel Parent = null)
+        public SimpleMenuItemUserControlDesignViewModel(BaseViewModel Parent = null)
             : base(Parent)
         {
             this.IsChecked = false;
             this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
         }
 
-        public MenuItemUserControlDesignViewModel()
+        public SimpleMenuItemUserControlDesignViewModel()
             : base(null)
         {
             this.IsChecked = false;

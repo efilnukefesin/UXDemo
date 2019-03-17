@@ -12,7 +12,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
     {
         #region Properties
 
-        public ObservableCollection<MenuItemUserControlViewModel> Items { get; set; }
+        public ObservableCollection<BaseMenuItemUserControlViewModel> Items { get; set; }
 
         #endregion Properties
 
@@ -20,16 +20,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public MenuItemsUserControlViewModel()
         {
-            this.Items = new ObservableCollection<MenuItemUserControlViewModel>();
+            this.Items = new ObservableCollection<BaseMenuItemUserControlViewModel>();
         }
         #endregion Construction
 
         #region Methods
 
         #region DeselectAllOthers
-        internal void DeselectAllOthers(MenuItemUserControlViewModel menuItemUserControlViewModel)
+        internal void DeselectAllOthers(BaseMenuItemUserControlViewModel menuItemUserControlViewModel)
         {
-            foreach (MenuItemUserControlViewModel existingMenuItemUserControlViewModel in this.Items)
+            foreach (BaseMenuItemUserControlViewModel existingMenuItemUserControlViewModel in this.Items)
             {
                 if (!existingMenuItemUserControlViewModel.Id.Equals(menuItemUserControlViewModel.Id))
                 {

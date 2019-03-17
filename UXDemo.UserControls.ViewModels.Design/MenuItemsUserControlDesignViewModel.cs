@@ -18,11 +18,11 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         public MenuItemsUserControlDesignViewModel()
         {
-            this.Items = new ObservableCollection<MenuItemUserControlViewModel>
+            this.Items = new ObservableCollection<BaseMenuItemUserControlViewModel>
             {
-                new MenuItemUserControlDesignViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" } },
-                new MenuItemUserControlDesignViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" } },
-                new MenuItemUserControlDesignViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" } }
+                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" } },
+                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" } },
+                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" } }
             };
         }
 

@@ -58,13 +58,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         #region menuItemsUserControlViewModelPropertyChangedEventHandler
         private void menuItemsUserControlViewModelPropertyChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
-            List<MenuItemUserControl> items = new List<MenuItemUserControl>();
+            List<BaseMenuItemUserControl> items = new List<BaseMenuItemUserControl>();
 
             MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
 
-            foreach (MenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
+            foreach (BaseMenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
             {
-                MenuItemUserControl item = new MenuItemUserControl();
+                SimpleMenuItemUserControl item = new SimpleMenuItemUserControl();
                 item.Loaded += (s, e2) =>
                 {
                     item.DataContext = menuItemUserControlViewModel;
