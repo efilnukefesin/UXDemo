@@ -13,7 +13,9 @@
              x:Name="userControl" 
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:GlowingMenuItemUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
-             d:DesignHeight="50" d:DesignWidth="100">
+             d:DesignHeight="50" 
+             d:DesignWidth="100"
+             Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView}},Path=ActualWidth}">
     <UserControl.Resources>
         <Style TargetType="{x:Type local:GlowingMenuItemUserControl}">
             <Style.Triggers>
@@ -31,17 +33,16 @@
         <ViewModels:GlowingMenuItemUserControlViewModel />
     </UserControl.DataContext>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="5px"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="5px"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20px"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.Row="1" Grid.Column="0" Fill="Red" />
-        <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="1" Grid.Row="1" Content="{Binding Item.Caption}">
+        <Border x:Name="border" Grid.Column="0" Margin="5px" Background="Red" BorderBrush="White" BorderThickness="1" >
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="{Binding Background.Color, ElementName=border}"/>
+            </Border.Effect>
+        </Border>
+        <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="1" Content="{Binding Item.Caption}">
             <Button.Style>
                 <MultiBinding Converter="{StaticResource styleConverter}">
                     <Binding Path="State"/>

@@ -9,19 +9,13 @@
              xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf"
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:MenuItemsUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
-             d:DesignHeight="300" d:DesignWidth="212">
+             d:DesignHeight="300" 
+             d:DesignWidth="212"
+             MinWidth="212"
+             Width="212">
     <UserControl.DataContext>
         <ViewModels:MenuItemsUserControlViewModel />
     </UserControl.DataContext>
-    <Grid>
-        <ListView x:Name="lvItems">
-            <ListView.ItemContainerStyle>
-                <Style TargetType="{x:Type ListViewItem}">
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                    <Setter Property="Padding" Value="0" />
-                    <Setter Property="Margin" Value="0" />
-                </Style>
-            </ListView.ItemContainerStyle>
-        </ListView>
-    </Grid>
+
+    <ListView x:Name="lvItems" Style="{StaticResource MenuItemsListView}" ItemContainerStyle="{StaticResource MenuItemsListViewItem}" />
 </Base:BaseUserControl>

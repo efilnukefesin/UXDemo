@@ -15,7 +15,8 @@
              mc:Ignorable="d" 
              d:DataContext ="{d:DesignInstance {x:Type DesignTimeViewModels:SimpleMenuItemUserControlDesignViewModel}, IsDesignTimeCreatable=True}"
              d:DesignHeight="50" 
-             d:DesignWidth="100">
+             d:DesignWidth="100"
+             Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView}},Path=ActualWidth}">
     <UserControl.Resources>
         <Style TargetType="{x:Type local:SimpleMenuItemUserControl}">
             <Style.Triggers>
