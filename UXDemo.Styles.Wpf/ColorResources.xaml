@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Styles.Wpf">
+    <Color x:Key="GlowingLedColor" R="255" G="0" B="0" A="255"/>
+    <SolidColorBrush x:Key="GlowingLedBrush" Color="{StaticResource GlowingLedColor}" />
+</ResourceDictionary>
