@@ -89,9 +89,7 @@
         <Setter Property="Background" Value="{DynamicResource PrimaryHueMidBrush}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueMidBrush}"/>
         <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidForegroundBrush}"/>
-        <Setter Property="wpf:RippleAssist.Feedback" Value="White" />
         <!--<Setter Property="Cursor" Value="Hand"/>-->
-        <!--<Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth1" />-->
         <Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth0" />
         <Setter Property="TextBlock.FontWeight" Value="Medium"/>
         <Setter Property="TextBlock.FontSize" Value="14"/>
@@ -147,19 +145,19 @@
 
     <Style x:Key="GlowingMenuButtonNotHovered" TargetType="{x:Type ButtonBase}" BasedOn="{StaticResource GlowingMenuButtonBase}">
         <Setter Property="Background" Value="{DynamicResource PrimaryHueLightBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueLightBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GlowingLedButtonFrameNormalBrush}"/>
         <Setter Property="Foreground" Value="{DynamicResource PrimaryHueLightForegroundBrush}"/>
     </Style>
 
     <Style x:Key="GlowingMenuButtonHovered" TargetType="{x:Type ButtonBase}" BasedOn="{StaticResource GlowingMenuButtonBase}">
         <Setter Property="Background" Value="{DynamicResource PrimaryHueDarkBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource PrimaryHueDarkBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GlowingLedButtonFrameHoveredBrush}"/> 
         <Setter Property="Foreground" Value="{DynamicResource PrimaryHueDarkForegroundBrush}"/>
     </Style>
 
     <Style x:Key="GlowingMenuButtonSelected" TargetType="{x:Type ButtonBase}" BasedOn="{StaticResource GlowingMenuButtonBase}">
         <Setter Property="Background" Value="{DynamicResource SecondaryAccentBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource SecondaryAccentBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GlowingLedButtonFrameSelectedBrush}"/>
         <Setter Property="Foreground" Value="{DynamicResource SecondaryAccentForegroundBrush}"/>
     </Style>
 

@@ -3,4 +3,7 @@
                     xmlns:local="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Styles.Wpf">
     <Color x:Key="GlowingLedColor" R="255" G="0" B="0" A="255"/>
     <SolidColorBrush x:Key="GlowingLedBrush" Color="{StaticResource GlowingLedColor}" />
+    <SolidColorBrush x:Key="GlowingLedButtonFrameNormalBrush" Color="Black" />
+    <SolidColorBrush x:Key="GlowingLedButtonFrameHoveredBrush" Color="Gray" />
+    <SolidColorBrush x:Key="GlowingLedButtonFrameSelectedBrush" Color="White" />
 </ResourceDictionary>
