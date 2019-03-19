@@ -29,6 +29,7 @@
                 <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/ButtonResources.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/EllipseResources.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/ListViewResources.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles.Wpf;component/BorderResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <!-- MahApps Brushes -->

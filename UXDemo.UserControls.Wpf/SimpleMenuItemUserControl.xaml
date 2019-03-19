@@ -37,9 +37,9 @@
         <Button.Style>
             <MultiBinding Converter="{StaticResource styleConverter}">
                 <Binding Path="State"/>
-                <Binding Source="{StaticResource MenuButtonNotHovered}" />
-                <Binding Source="{StaticResource MenuButtonHovered}" />
-                <Binding Source="{StaticResource MenuButtonSelected}" />
+                <Binding Source="{StaticResource SimpleMenuButtonNotHovered}" />
+                <Binding Source="{StaticResource SimpleMenuButtonHovered}" />
+                <Binding Source="{StaticResource SimpleMenuButtonSelected}" />
             </MultiBinding>
         </Button.Style>
         <Grid>

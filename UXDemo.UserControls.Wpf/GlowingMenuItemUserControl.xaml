@@ -38,19 +38,15 @@
             <ColumnDefinition Width="20px"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border x:Name="backgroundBorder" Grid.Column="0" Margin="5px" Background="Gray" BorderBrush="LightGray" BorderThickness="1" />
-        <Border x:Name="glowBorder" Grid.Column="0" Margin="5px" Background="Red" BorderBrush="White" BorderThickness="1" Visibility="{Binding State, Converter={StaticResource ButtonStatusToVisibilityConverter}}" >
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="{Binding Background.Color, ElementName=border}"/>
-            </Border.Effect>
-        </Border>
+        <Border x:Name="backgroundBorder" Grid.Column="0" Margin="5px" Style="{StaticResource BackgroundLed}" />
+        <Border x:Name="glowBorder" Grid.Column="0" Margin="5px" Style="{StaticResource GlowingLed}" Visibility="{Binding State, Converter={StaticResource ButtonStatusToVisibilityConverter}}" />
         <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="1" Content="{Binding Item.Caption}">
             <Button.Style>
                 <MultiBinding Converter="{StaticResource styleConverter}">
                     <Binding Path="State"/>
-                    <Binding Source="{StaticResource MenuButtonNotHovered}" />
-                    <Binding Source="{StaticResource MenuButtonHovered}" />
-                    <Binding Source="{StaticResource MenuButtonSelected}" />
+                    <Binding Source="{StaticResource GlowingMenuButtonNotHovered}" />
+                    <Binding Source="{StaticResource GlowingMenuButtonHovered}" />
+                    <Binding Source="{StaticResource GlowingMenuButtonSelected}" />
                 </MultiBinding>
             </Button.Style>
         </Button>
