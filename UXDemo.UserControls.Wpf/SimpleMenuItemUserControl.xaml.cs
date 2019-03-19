@@ -26,12 +26,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
     /// <summary>
     /// Interaktionslogik für MenuItemUserControl.xaml
     /// </summary>
-    public partial class SimpleMenuItemUserControl : BaseMenuItemUserControl, INotifyPropertyChanged
+    public partial class SimpleMenuItemUserControl : BaseMenuItemUserControl
     {
-        #region Properties
-
-        #endregion Properties
-
         #region Construction
 
         public SimpleMenuItemUserControl()
@@ -41,15 +37,5 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
         }
 
         #endregion Construction
-
-        #region Methods
-
-        #endregion Methods
-
-        #region Events
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        #endregion Events
     }
 }

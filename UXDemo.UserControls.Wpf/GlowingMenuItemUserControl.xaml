@@ -16,7 +16,8 @@
              d:DesignHeight="50" 
              d:DesignWidth="100"
              Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type ListView}},Path=ActualWidth}">
-    <UserControl.Resources>
+    <local:BaseMenuItemUserControl.Resources>
+        <Converters:ButtonStatusToVisibilityConverter x:Key="ButtonStatusToVisibilityConverter"/>
         <Style TargetType="{x:Type local:GlowingMenuItemUserControl}">
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
@@ -28,7 +29,7 @@
             </Style.Triggers>
         </Style>
         <Converters:StyleFromStateMultiConverter x:Key="styleConverter"/>
-    </UserControl.Resources>
+    </local:BaseMenuItemUserControl.Resources>
     <UserControl.DataContext>
         <ViewModels:GlowingMenuItemUserControlViewModel />
     </UserControl.DataContext>
@@ -37,7 +38,8 @@
             <ColumnDefinition Width="20px"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border x:Name="border" Grid.Column="0" Margin="5px" Background="Red" BorderBrush="White" BorderThickness="1" >
+        <Border x:Name="backgroundBorder" Grid.Column="0" Margin="5px" Background="Gray" BorderBrush="LightGray" BorderThickness="1" />
+        <Border x:Name="glowBorder" Grid.Column="0" Margin="5px" Background="Red" BorderBrush="White" BorderThickness="1" Visibility="{Binding State, Converter={StaticResource ButtonStatusToVisibilityConverter}}" >
             <Border.Effect>
                 <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="{Binding Background.Color, ElementName=border}"/>
             </Border.Effect>

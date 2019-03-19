@@ -20,6 +20,6 @@
         </Setter>
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="Margin" Value="0" />
+        <Setter Property="Margin" Value="2" />
     </Style>
 </ResourceDictionary>

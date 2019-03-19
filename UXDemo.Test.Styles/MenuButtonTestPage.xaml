@@ -14,8 +14,16 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <UserControls:SimpleMenuItemUserControl Grid.Row="0" />
-        <UserControls:SimpleMenuItemUserControl Grid.Row="1" />
-        <UserControls:SimpleMenuItemUserControl Grid.Row="2" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <UserControls:SimpleMenuItemUserControl Grid.Row="0" Grid.Column="0" />
+        <UserControls:SimpleMenuItemUserControl Grid.Row="1" Grid.Column="0" />
+        <UserControls:SimpleMenuItemUserControl Grid.Row="2" Grid.Column="0" />
+
+        <UserControls:GlowingMenuItemUserControl Grid.Row="0" Grid.Column="1" />
+        <UserControls:GlowingMenuItemUserControl Grid.Row="1" Grid.Column="1" />
+        <UserControls:GlowingMenuItemUserControl Grid.Row="2" Grid.Column="1" />
     </Grid>
 </Page>

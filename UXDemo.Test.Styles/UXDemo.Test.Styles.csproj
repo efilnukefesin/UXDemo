@@ -48,9 +48,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuButtonStylesTestPage.xaml.cs">
-      <DependentUpon>MenuButtonStylesTestPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MenuButtonTestPage.xaml.cs">
       <DependentUpon>MenuButtonTestPage.xaml</DependentUpon>
     </Compile>
@@ -77,10 +74,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MenuButtonStylesTestPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MenuButtonTestPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
