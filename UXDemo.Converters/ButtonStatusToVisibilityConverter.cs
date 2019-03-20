@@ -25,10 +25,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.Converters
                         result = Visibility.Collapsed;
                         break;
                     case ButtonState.Disabled:
+                        result = Visibility.Collapsed;
                         break;
                     case ButtonState.Hovered:
+                        result = Visibility.Collapsed;
                         break;
                     case ButtonState.Selected:
+                        result = Visibility.Visible;
                         break;
                     default:
                         break;
