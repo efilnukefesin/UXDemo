@@ -20,7 +20,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator
 
         public VMLocator()
         {
-            this.FindViewModels();
+            this.findViewModels();
         }
 
         #endregion Construction
@@ -65,8 +65,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator
             }
         }
 
-        #region FindViewModels
-        private void FindViewModels()
+        #region findViewModels
+        private void findViewModels()
         {
             Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
             foreach (Assembly currentAssembly in assemblies)
@@ -80,7 +80,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator
                         {
                             if (!registeredInstances.ContainsKey(locAttribute.Name))
                             {
-                                //object instance = Activator.CreateInstance(currentType);
                                 object instance = DiManager.GetInstance().Resolve(currentType);
                                 registeredInstances.Add(locAttribute.Name, instance);
                             }
@@ -89,7 +88,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator
                 }
             }
         }
-        #endregion FindViewModels
+        #endregion findViewModels
 
         #endregion Methods
     }
