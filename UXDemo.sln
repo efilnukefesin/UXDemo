@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Basics", "UXDemo.Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Test.Styles", "UXDemo.Test.Styles\UXDemo.Test.Styles.csproj", "{2B1FAF64-1552-4BD4-BA11-D97FA2891710}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.ViewModelLocator", "UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj", "{66150AD3-FE3D-4288-8587-9EF45A4717C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,18 @@ Global
 		{2B1FAF64-1552-4BD4-BA11-D97FA2891710}.Release|x64.Build.0 = Release|Any CPU
 		{2B1FAF64-1552-4BD4-BA11-D97FA2891710}.Release|x86.ActiveCfg = Release|Any CPU
 		{2B1FAF64-1552-4BD4-BA11-D97FA2891710}.Release|x86.Build.0 = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|x64.Build.0 = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Debug|x86.Build.0 = Debug|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|x64.ActiveCfg = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|x64.Build.0 = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|x86.ActiveCfg = Release|Any CPU
+		{66150AD3-FE3D-4288-8587-9EF45A4717C7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

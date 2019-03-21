@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using NET.efilnukefesin.Apps.UXDemo.BootStrapper;
+using NET.efilnukefesin.Apps.UXDemo.ViewModels;
 
 namespace NET.efilnukefesin.Apps.UXDemo
 {
@@ -26,6 +27,8 @@ namespace NET.efilnukefesin.Apps.UXDemo
             else
             {
                 BootStrapper.BootStrapper.RegisterDependencies();
+                MainViewModel test = new MainViewModel();
+                test = null;
             }
         }
     }

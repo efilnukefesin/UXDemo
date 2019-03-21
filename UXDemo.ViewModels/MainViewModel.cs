@@ -9,9 +9,11 @@ using NET.efilnukefesin.Apps.UXDemo.Models;
 using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
+using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Attributes;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
+    [Locator("MainViewModel")]
     public class MainViewModel : BaseViewModel
     {
         #region Properties
