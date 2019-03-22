@@ -75,13 +75,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator
                 {
                     foreach (object customAttribute in currentType.GetCustomAttributes(true))
                     {
-                        LocatorAttribute locAttribute = customAttribute as LocatorAttribute;
-                        if (locAttribute != null)
+                        LocatorAttribute locatorAttribute = customAttribute as LocatorAttribute;
+                        if (locatorAttribute != null)
                         {
-                            if (!registeredInstances.ContainsKey(locAttribute.Name))
+                            if (!this.registeredInstances.ContainsKey(locatorAttribute.Name))
                             {
                                 object instance = DiManager.GetInstance().Resolve(currentType);
-                                registeredInstances.Add(locAttribute.Name, instance);
+                                this.registeredInstances.Add(locatorAttribute.Name, instance);
                             }
                         }
                     }

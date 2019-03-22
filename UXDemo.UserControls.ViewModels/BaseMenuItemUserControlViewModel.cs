@@ -1,6 +1,7 @@
 ﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Enums;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.Models;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,13 +18,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public MenuItem Item { get; set; }
         public ButtonState State { get; set; } = ButtonState.Normal;
 
+        private INavigationService navigationService;
+
         #endregion Properties
 
         #region Construction
 
-        public BaseMenuItemUserControlViewModel(BaseViewModel Parent = null)
+        public BaseMenuItemUserControlViewModel(INavigationService NavigationService, BaseViewModel Parent = null)
             : base(Parent)
         {
+            this.navigationService = NavigationService;
             this.IsChecked = false;
             this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
         }
@@ -31,6 +35,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public BaseMenuItemUserControlViewModel()
             : base(null)
         {
+            this.navigationService = null;
             this.IsChecked = false;
             this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
         }

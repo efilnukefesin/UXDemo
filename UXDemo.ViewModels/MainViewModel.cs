@@ -10,6 +10,7 @@ using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Attributes;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
@@ -20,14 +21,17 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 
         public MenuUserControlViewModel Menu { get; set; }
 
+        private INavigationService navigationService;
+
         #endregion Properties
 
         #region Construction
 
-        public MainViewModel()
+        public MainViewModel(INavigationService NavigationService)
             :base()
         {
-            this.Menu = new MenuUserControlViewModel();
+            this.navigationService = NavigationService;
+            this.Menu = new MenuUserControlViewModel(this.navigationService);
         }
         #endregion Construction
 

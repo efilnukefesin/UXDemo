@@ -1,4 +1,5 @@
 ﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,12 +15,21 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public ObservableCollection<BaseMenuItemUserControlViewModel> Items { get; set; }
 
+        private INavigationService navigationService;
+
         #endregion Properties
 
         #region Construction
 
+        public MenuItemsUserControlViewModel(INavigationService NavigationService)
+        {
+            this.navigationService = NavigationService;
+            this.Items = new ObservableCollection<BaseMenuItemUserControlViewModel>();
+        }
+
         public MenuItemsUserControlViewModel()
         {
+            this.navigationService = null;
             this.Items = new ObservableCollection<BaseMenuItemUserControlViewModel>();
         }
         #endregion Construction

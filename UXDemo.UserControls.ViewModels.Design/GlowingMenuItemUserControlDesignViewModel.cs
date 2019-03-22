@@ -1,4 +1,5 @@
 ﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,8 +14,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         #region Construction
 
-        public GlowingMenuItemUserControlDesignViewModel(BaseViewModel Parent = null)
-            : base(Parent)
+        public GlowingMenuItemUserControlDesignViewModel(INavigationService NavigationService, BaseViewModel Parent = null)
+            : base(NavigationService, Parent)
         {
             this.IsChecked = false;
             this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };

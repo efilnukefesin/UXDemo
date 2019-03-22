@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NET.efilnukefesin.Apps.UXDemo.Services.Interfaces
+namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces
 {
     public interface INavigationService
     {
@@ -11,6 +11,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.Services.Interfaces
         #endregion Properties
 
         #region Methods
+
+        bool Navigate(string ViewModelName);
 
         #endregion Methods
 

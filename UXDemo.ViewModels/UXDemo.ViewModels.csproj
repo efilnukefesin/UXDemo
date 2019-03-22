@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj" />
     <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj" />
+    <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj" />
     <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj" />
     <ProjectReference Include="..\UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj" />
     <ProjectReference Include="..\UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj" />

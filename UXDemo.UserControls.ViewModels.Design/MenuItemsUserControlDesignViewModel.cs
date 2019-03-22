@@ -16,9 +16,9 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
         {
             this.Items = new ObservableCollection<BaseMenuItemUserControlViewModel>
             {
-                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" } },
-                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" } },
-                new BaseMenuItemUserControlViewModel(this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" } }
+                new BaseMenuItemUserControlViewModel(null, this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo1" } },
+                new BaseMenuItemUserControlViewModel(null, this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo2" } },
+                new BaseMenuItemUserControlViewModel(null, this) { Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Demo3" } }
             };
         }
 
