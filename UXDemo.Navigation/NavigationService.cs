@@ -4,6 +4,7 @@ using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Interfaces;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -65,6 +66,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
             throw new NotImplementedException();
         }
         #endregion Navigate
+
+        #region CanNavigate
+        public bool CanNavigate(string ViewModelName)
+        {
+            return this.viewsAndViewModels.Any(x => x.Value.Equals(ViewModelName));
+        }
+        #endregion CanNavigate
 
         #endregion Methods
 

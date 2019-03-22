@@ -29,7 +29,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.navigationService = NavigationService;
             this.IsChecked = false;
-            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Item = new Apps.UXDemo.Models.MenuItem("Test Menu Item", string.Empty);
         }
 
         public BaseMenuItemUserControlViewModel()
@@ -37,7 +37,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.navigationService = null;
             this.IsChecked = false;
-            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Item = new Apps.UXDemo.Models.MenuItem("Test Menu Item", string.Empty);
         }
 
         #endregion Construction
@@ -49,13 +49,21 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.State = ButtonState.Selected;
             (this.Parent as MenuItemsUserControlViewModel).DeselectAllOthers(this);
+            this.navigationService?.Navigate(this.Item.ViewModelName);
         }
         #endregion ClickCommandExecute
 
         #region ClickCommandCanExecute
         public bool ClickCommandCanExecute()
         {
-            return true;
+            bool result = false;
+
+            if (this.navigationService?.CanNavigate(this.Item.ViewModelName) != null)
+            {
+                result = (bool)this.navigationService.CanNavigate(this.Item.ViewModelName);
+            }
+
+            return result;
         }
         #endregion ClickCommandCanExecute
 

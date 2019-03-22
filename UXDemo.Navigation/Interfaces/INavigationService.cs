@@ -12,6 +12,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces
 
         #region Methods
 
+        bool CanNavigate(string ViewModelName);
         bool Navigate(string ViewModelName);
 
         #endregion Methods

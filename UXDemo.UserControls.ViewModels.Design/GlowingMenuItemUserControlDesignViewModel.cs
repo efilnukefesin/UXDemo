@@ -18,14 +18,14 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
             : base(NavigationService, Parent)
         {
             this.IsChecked = false;
-            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Item = new Apps.UXDemo.Models.MenuItem("Test Menu Item", string.Empty);
         }
 
         public GlowingMenuItemUserControlDesignViewModel()
             : base(null)
         {
             this.IsChecked = false;
-            this.Item = new Apps.UXDemo.Models.MenuItem() { Caption = "Test Menu Item" };
+            this.Item = new Apps.UXDemo.Models.MenuItem("Test Menu Item", string.Empty);
         }
 
         #endregion Construction
