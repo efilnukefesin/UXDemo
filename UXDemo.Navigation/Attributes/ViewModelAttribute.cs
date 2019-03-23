@@ -10,7 +10,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Attributes
 
         public ViewModelAttribute(string viewModelName)
         {
-            ViewModelName = viewModelName;
+            this.ViewModelName = viewModelName;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Attributes
 
         public LocatorAttribute(string name)
         {
-            Name = name;
+            this.Name = name;
         }
     }
 }

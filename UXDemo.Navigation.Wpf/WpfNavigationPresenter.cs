@@ -23,12 +23,22 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
         #region Methods
 
         #region Present
-        public void Present(object View)
+        public bool Present(string ViewUri)
         {
-            if (this.presentationFrame != null)
+            bool result = false;
+            try
             {
-                this.presentationFrame.Navigate(View);
+                if (this.presentationFrame != null)
+                {
+                    this.presentationFrame.Navigate(new Uri(ViewUri));
+                    result = true;
+                }
             }
+            catch (Exception ex)
+            {
+
+            }
+            return result;
         }
         #endregion Present
 

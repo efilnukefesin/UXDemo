@@ -14,7 +14,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
     {
         #region Properties
 
-        private Dictionary<object, string> viewsAndViewModels;
+        private Dictionary<string, string> viewsAndViewModels;
 
         private ILocator viewModelLocator;
         private INavigationPresenter navigationPresenter;
@@ -27,7 +27,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
         {
             this.navigationPresenter = NavigationPresenter;
             this.viewModelLocator = null;
-            this.viewsAndViewModels = new Dictionary<object, string>();
+            this.viewsAndViewModels = new Dictionary<string, string>();
             this.findViewsAndViewModels();
         }
 
@@ -43,17 +43,26 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
             {
                 foreach (Type currentType in currentAssembly.GetTypes())
                 {
+                    ViewModelAttribute viewModelAttribute = null;
+                    ViewAttribute viewAttribute = null;
                     foreach (object customAttribute in currentType.GetCustomAttributes(true))
                     {
-                        ViewModelAttribute viewModelAttribute = customAttribute as ViewModelAttribute;
-                        if (viewModelAttribute != null)
+                        if (customAttribute is ViewModelAttribute)
                         {
-                            if (!this.viewsAndViewModels.ContainsKey(viewModelAttribute.ViewModelName))
+                            viewModelAttribute = customAttribute as ViewModelAttribute;
+                        }
+                        else if (customAttribute is ViewAttribute)
+                        {
+                            viewAttribute = customAttribute as ViewAttribute;
+                        }
+                        if (viewModelAttribute != null && viewAttribute != null)
+                        {
+                            if (!this.viewsAndViewModels.ContainsValue(viewModelAttribute.ViewModelName))
                             {
                                 //object instance = DiManager.GetInstance().Resolve(currentType);
                                 //this.viewsAndViewModels.Add(viewModelAttribute.ViewModelName, instance);
                                 //this.viewsAndViewModels.Add(currentType, this.viewModelLocator.GetInstance(viewModelAttribute.ViewModelName));
-                                this.viewsAndViewModels.Add(currentType, viewModelAttribute.ViewModelName);
+                                this.viewsAndViewModels.Add(viewAttribute.ViewUri, viewModelAttribute.ViewModelName);
                             }
                         }
                     }
@@ -65,8 +74,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
         #region Navigate
         public bool Navigate(string ViewModelName)
         {
-            this.navigationPresenter.Present(this.viewsAndViewModels.Where(x => x.Value.Equals(ViewModelName)).FirstOrDefault().Key);
-            return true;  //TODO: get error
+            return this.navigationPresenter.Present(this.viewsAndViewModels.Where(x => x.Value.Equals(ViewModelName)).FirstOrDefault().Key);
         }
         #endregion Navigate
 

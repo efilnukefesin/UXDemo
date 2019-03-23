@@ -7,6 +7,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces
     public interface INavigationPresenter
     {
         void RegisterPresenter(object Presenter);
-        void Present(object View);
+        bool Present(string ViewUri);
     }
 }

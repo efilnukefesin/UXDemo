@@ -20,6 +20,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
     /// Interaktionslogik für DemoPage.xaml
     /// </summary>
     [ViewModel("DemoPageViewModel")]
+    [View("DemoPage.xaml")]
     public partial class DemoPage : Page
     {
         #region Properties
