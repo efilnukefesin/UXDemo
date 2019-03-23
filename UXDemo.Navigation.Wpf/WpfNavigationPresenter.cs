@@ -30,7 +30,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
             {
                 if (this.presentationFrame != null)
                 {
-                    this.presentationFrame.Navigate(new Uri(ViewUri));
+                    this.presentationFrame.Navigate(new Uri("pack://application:,,,/UXDemo.Views.Wpf;component/" + ViewUri));
                     result = true;
                 }
             }
