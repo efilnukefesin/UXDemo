@@ -1,4 +1,6 @@
 ﻿using MahApps.Metro.Controls;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
+using NET.efilnukefesin.Implementations.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
         public MainWindow()
         {
             InitializeComponent();
+
+            DiManager.GetInstance().Resolve<INavigationPresenter>().RegisterPresenter(this.mainFrame);
         }
     }
 }

@@ -11,6 +11,8 @@ using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.Navigation;
 using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator;
+using NET.efilnukefesin.Apps.UXDemo.Views.Wpf;
+using NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf;
 
 namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
 {
@@ -29,6 +31,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
             DiManager.GetInstance().RegisterType<IUserService, DemoUserService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IDesignModeService, WpfDesignModeService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IVersionService, VersionService>(Lifetime.Singleton);
+            DiManager.GetInstance().RegisterType<INavigationPresenter, WpfNavigationPresenter>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<ILocator, VMLocator>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<INavigationService, NavigationService>(Lifetime.Singleton);
         }

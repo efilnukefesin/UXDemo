@@ -17,13 +17,15 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
         private Dictionary<object, string> viewsAndViewModels;
 
         private ILocator viewModelLocator;
+        private INavigationPresenter navigationPresenter;
 
         #endregion Properties
 
         #region Construction
 
-        public NavigationService(/*ILocator ViewModelLocator*/)
+        public NavigationService(INavigationPresenter NavigationPresenter)
         {
+            this.navigationPresenter = NavigationPresenter;
             this.viewModelLocator = null;
             this.viewsAndViewModels = new Dictionary<object, string>();
             this.findViewsAndViewModels();
@@ -63,7 +65,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation
         #region Navigate
         public bool Navigate(string ViewModelName)
         {
-            throw new NotImplementedException();
+            this.navigationPresenter.Present(this.viewsAndViewModels.Where(x => x.Value.Equals(ViewModelName)).FirstOrDefault().Key);
+            return true;  //TODO: get error
         }
         #endregion Navigate
 

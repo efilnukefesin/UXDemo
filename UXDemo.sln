@@ -31,7 +31,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Test.Styles", "UXDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.ViewModelLocator", "UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj", "{66150AD3-FE3D-4288-8587-9EF45A4717C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Navigation", "UXDemo.Navigation\UXDemo.Navigation.csproj", "{BE1A25D3-8845-483D-92F4-AA21E2A642E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UXDemo.Navigation", "UXDemo.Navigation\UXDemo.Navigation.csproj", "{BE1A25D3-8845-483D-92F4-AA21E2A642E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXDemo.Navigation.Wpf", "UXDemo.Navigation.Wpf\UXDemo.Navigation.Wpf.csproj", "{C4F97757-62CB-4347-90D3-59E0300532A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +225,18 @@ Global
 		{BE1A25D3-8845-483D-92F4-AA21E2A642E8}.Release|x64.Build.0 = Release|Any CPU
 		{BE1A25D3-8845-483D-92F4-AA21E2A642E8}.Release|x86.ActiveCfg = Release|Any CPU
 		{BE1A25D3-8845-483D-92F4-AA21E2A642E8}.Release|x86.Build.0 = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|x64.Build.0 = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Debug|x86.Build.0 = Debug|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|x64.ActiveCfg = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|x64.Build.0 = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{C4F97757-62CB-4347-90D3-59E0300532A5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

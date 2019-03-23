@@ -241,6 +241,10 @@
       <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
       <Name>UXDemo.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UXDemo.Navigation.Wpf\UXDemo.Navigation.Wpf.csproj">
+      <Project>{c4f97757-62cb-4347-90d3-59e0300532a5}</Project>
+      <Name>UXDemo.Navigation.Wpf</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj">
       <Project>{be1a25d3-8845-483d-92f4-aa21e2a642e8}</Project>
       <Name>UXDemo.Navigation</Name>
