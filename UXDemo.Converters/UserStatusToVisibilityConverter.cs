@@ -17,9 +17,6 @@ namespace NET.efilnukefesin.Apps.UXDemo.Converters
         #region Convert
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            //get status
-            //if status is "none" then return collapsed, else visible
-            //TODO: implement
             Visibility result = Visibility.Visible;
             if (value is UserStatus)
             {
