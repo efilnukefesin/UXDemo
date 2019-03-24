@@ -33,7 +33,7 @@
     <UserControl.DataContext>
         <ViewModels:SimpleMenuItemUserControlViewModel />
     </UserControl.DataContext>
-    <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}">
+    <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Content="{Binding Item.Caption}">
         <Button.Style>
             <MultiBinding Converter="{StaticResource styleConverter}">
                 <Binding Path="State"/>
@@ -42,13 +42,5 @@
                 <Binding Source="{StaticResource SimpleMenuButtonSelected}" />
             </MultiBinding>
         </Button.Style>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10px" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Rectangle Grid.Column="0" Fill="Red" />
-            <Label Content="{Binding Item.Caption}" Grid.Column="1" />
-        </Grid>
     </Button>
 </local:BaseMenuItemUserControl>
