@@ -110,8 +110,8 @@
     <Reference Include="NET.efilnukefesin.Contracts.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Contracts.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="NET.efilnukefesin.Contracts.Mvvm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NET.efilnukefesin.Contracts.Mvvm.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Mvvm.dll</HintPath>
+    <Reference Include="NET.efilnukefesin.Contracts.Mvvm, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Contracts.Mvvm.1.0.1\lib\netstandard2.0\NET.efilnukefesin.Contracts.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.Xml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.Xml.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Xml.dll</HintPath>
@@ -125,8 +125,8 @@
     <Reference Include="NET.efilnukefesin.Implementations.DependencyInjection, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Implementations.DependencyInjection.1.0.4\lib\netstandard2.0\NET.efilnukefesin.Implementations.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="NET.efilnukefesin.Implementations.Mvvm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NET.efilnukefesin.Implementations.Mvvm.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Implementations.Mvvm.dll</HintPath>
+    <Reference Include="NET.efilnukefesin.Implementations.Mvvm, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Implementations.Mvvm.1.0.1\lib\netstandard2.0\NET.efilnukefesin.Implementations.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

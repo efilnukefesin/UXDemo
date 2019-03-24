@@ -28,6 +28,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
     {
         #region Properties
 
+        public static readonly DependencyProperty BoundDataContextProperty = DependencyProperty.Register("BoundDataContext", typeof(object), typeof(DemoPage2), new PropertyMetadata(null, onBoundDataContextChanged));
+
         #region Commands
 
         #region ToastCommand Property
@@ -60,22 +62,26 @@ namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
         public DemoPage2()
         {
             InitializeComponent();
+            this.SetBinding(BoundDataContextProperty, new Binding());
         }
 
         #endregion Construction
 
         #region Methods
 
-        public override void EndInit()
+        #region onBoundDataContextChanged
+        private static void onBoundDataContextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            base.EndInit();
-
-            DemoPage2ViewModel viewModel = (DemoPage2ViewModel)this.DataContext;
-            if (viewModel != null && this.ToastCommand == default(RelayCommand))
+            // e.NewValue is your new DataContext
+            // d is your UserControl
+            DemoPage2ViewModel viewModel = (DemoPage2ViewModel)e.NewValue;
+            DemoPage2 userControl = (DemoPage2)d;
+            if (viewModel != null)
             {
-                this.ToastCommand = new RelayCommand(viewModel.ToastCommandExecute, viewModel.ToastCommandCanExecute);
+                userControl.ToastCommand = new RelayCommand(viewModel.ToastCommandExecute, viewModel.ToastCommandCanExecute);
             }
         }
+        #endregion onBoundDataContextChanged
 
         #region updateUI
         private void updateUI()

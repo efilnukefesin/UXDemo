@@ -27,6 +27,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
         public static void RegisterDependencies()
         {
             DiManager.GetInstance().RegisterType<IUserService, DemoUserService>(Lifetime.Singleton);
+            DiManager.GetInstance().RegisterType<IToastService, ToastService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IDesignModeService, WpfDesignModeService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IVersionService, VersionService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<INavigationPresenter, WpfNavigationPresenter>(Lifetime.Singleton);

@@ -8,9 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" 
              d:DesignWidth="800">
-    <Page.DataContext>
-        <ViewModels:DemoPageViewModel />
-    </Page.DataContext>
     <Grid>
         <TextBlock>DemoPage</TextBlock> 
     </Grid>

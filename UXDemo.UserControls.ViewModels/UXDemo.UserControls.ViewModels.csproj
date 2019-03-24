@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NET.efilnukefesin.Contracts.Mvvm" Version="1.0.0" />
+    <PackageReference Include="NET.efilnukefesin.Contracts.Mvvm" Version="1.0.1" />
     <PackageReference Include="NET.efilnukefesin.Implementations.DependencyInjection" Version="1.0.4" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
   </ItemGroup>

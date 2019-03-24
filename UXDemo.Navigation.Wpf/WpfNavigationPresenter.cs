@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
@@ -13,6 +14,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
         #region Properties
 
         private Frame presentationFrame;
+        private object currentDataContext = null;
 
         #endregion Properties
 
@@ -23,14 +25,21 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
         #region Methods
 
         #region Present
-        public bool Present(string ViewUri)
+        public bool Present(string ViewUri, object DataContext)
         {
             bool result = false;
             try
             {
                 if (this.presentationFrame != null)
                 {
+                    this.currentDataContext = DataContext;
                     this.presentationFrame.Navigate(new Uri("pack://application:,,,/UXDemo.Views.Wpf;component/" + ViewUri));
+
+                    if ((Page)this.presentationFrame.Content != null)
+                    {
+                        ((Page)this.presentationFrame.Content).DataContext = null;
+                    }
+
                     result = true;
                 }
             }
@@ -48,9 +57,25 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
             if (Presenter is Frame)
             {
                 this.presentationFrame = (Frame)Presenter;
+                this.presentationFrame.Navigated += this.presentationFrame_Navigated;
             }
         }
         #endregion RegisterPresenter
+
+        #region presentationFrame_Navigated: set the datacontext after navigating as the content is now different
+        /// <summary>
+        /// set the datacontext after navigating as the content is now different
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void presentationFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+            if ((Page)e.Content != null)
+            {
+                ((Page)e.Content).DataContext = this.currentDataContext;
+            }
+        }
+        #endregion presentationFrame_Navigated
 
         #endregion Methods   
     }

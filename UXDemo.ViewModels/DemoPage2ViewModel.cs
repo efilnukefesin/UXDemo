@@ -1,4 +1,6 @@
 ﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
+using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
+using NET.efilnukefesin.Implementations.DependencyInjection;
 using NET.efilnukefesin.Implementations.Mvvm.Attributes;
 using System;
 using System.Collections.Generic;
@@ -11,9 +13,16 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
     {
         #region Properties
 
+        private IToastService toastService;
+
         #endregion Properties
 
         #region Construction
+
+        public DemoPage2ViewModel(IToastService ToastService)
+        {
+            this.toastService = ToastService;
+        }
 
         #endregion Construction
 

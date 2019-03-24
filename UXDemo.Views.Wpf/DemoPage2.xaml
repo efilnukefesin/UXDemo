@@ -9,9 +9,6 @@
       d:DesignHeight="450" 
       d:DesignWidth="800"
       Title="DemoPage2">
-    <Page.DataContext>
-        <ViewModels:DemoPage2ViewModel />
-    </Page.DataContext>
     <Grid>
         <TextBlock>DemoPage2</TextBlock>
         <Button Command="{Binding ToastCommand, ElementName=page}">Do the Toast!</Button>
