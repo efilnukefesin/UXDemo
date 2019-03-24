@@ -11,6 +11,7 @@ using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
 using NET.efilnukefesin.Implementations.Mvvm.Attributes;
 using NET.efilnukefesin.Contracts.Mvvm;
+using MaterialDesignThemes.Wpf;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {
@@ -20,6 +21,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
         #region Properties
 
         public MenuUserControlViewModel Menu { get; set; }
+        public ISnackbarMessageQueue SnackBarMessageQueue { get; set; }
 
         private INavigationService navigationService;
 
@@ -27,9 +29,10 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 
         #region Construction
 
-        public MainViewModel(INavigationService NavigationService)
+        public MainViewModel(INavigationService NavigationService, ISnackbarMessageQueue SnackBarMessageQueue)
             :base()
         {
+            this.SnackBarMessageQueue = SnackBarMessageQueue;  //TODO: move into View? Due to independency reasons and stuff?
             this.navigationService = NavigationService;
             this.Menu = new MenuUserControlViewModel(this.navigationService);
         }

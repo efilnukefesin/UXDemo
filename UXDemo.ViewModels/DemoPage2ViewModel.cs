@@ -31,7 +31,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
         #region ToastCommandExecute
         public void ToastCommandExecute()
         {
-            throw new NotImplementedException();
+            this.toastService.Post("Hello World");
         }
         #endregion ToastCommandExecute
 

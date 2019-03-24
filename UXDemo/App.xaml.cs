@@ -28,7 +28,7 @@ namespace NET.efilnukefesin.Apps.UXDemo
             {
                 BootStrapper.BootStrapper.RegisterDependencies();
                 //this is only to load the assembly
-                MainViewModel test = new MainViewModel(null);
+                MainViewModel test = new MainViewModel(null, null);
                 test = null;
             }
         }

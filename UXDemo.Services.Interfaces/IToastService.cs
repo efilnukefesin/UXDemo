@@ -12,6 +12,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.Services.Interfaces
 
         #region Methods
 
+        void Post(string Message);
+
         #endregion Methods
     }
 }

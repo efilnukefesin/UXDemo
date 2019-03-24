@@ -11,6 +11,7 @@ using NET.efilnukefesin.Apps.UXDemo.Views.Wpf;
 using NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf;
 using NET.efilnukefesin.Contracts.Mvvm;
 using NET.efilnukefesin.Implementations.Mvvm;
+using MaterialDesignThemes.Wpf;
 
 namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
 {
@@ -26,6 +27,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
         #region RegisterDependencies
         public static void RegisterDependencies()
         {
+            DiManager.GetInstance().RegisterType<ISnackbarMessageQueue, SnackbarMessageQueue>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IUserService, DemoUserService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IToastService, ToastService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IDesignModeService, WpfDesignModeService>(Lifetime.Singleton);

@@ -75,11 +75,11 @@
                 </materialDesign:ColorZone>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <Frame x:Name="mainFrame" Grid.Row="0" Source="/UXDemo.Views.Wpf;component/DemoPage.xaml" NavigationUIVisibility="Hidden" />
-                    <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
+                    <materialDesign:Snackbar MessageQueue="{Binding SnackBarMessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
                 </Grid>
             </DockPanel>
         </materialDesign:DrawerHost>
