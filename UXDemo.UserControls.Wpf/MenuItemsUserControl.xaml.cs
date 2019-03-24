@@ -62,16 +62,11 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
 
             MenuItemsUserControlViewModel viewModel = this.DataContext as MenuItemsUserControlViewModel;
 
-#if DEBUG
-            int counter = 0;
-#endif
-
             foreach (BaseMenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
             {
                 BaseMenuItemUserControl item;
 
-#if DEBUG
-                if (counter % 2 == 0)
+                if (true)  //TODO: which kind of menu items to use?
                 {
                     item = new GlowingMenuItemUserControl();
                 }
@@ -79,12 +74,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
                 {
                     item = new SimpleMenuItemUserControl();
                 }
-                counter++;
-#endif
 
-#if RELEASE
-                item = new GlowingMenuItemUserControl();
-#endif
                 item.Loaded += (s, e2) =>
                 {
                     item.DataContext = menuItemUserControlViewModel;
