@@ -9,8 +9,8 @@ using NET.efilnukefesin.Apps.UXDemo.Models;
 using NET.efilnukefesin.Apps.UXDemo.Services.Interfaces;
 using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
 using NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;
-using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Attributes;
-using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
+using NET.efilnukefesin.Implementations.Mvvm.Attributes;
+using NET.efilnukefesin.Contracts.Mvvm;
 
 namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 {

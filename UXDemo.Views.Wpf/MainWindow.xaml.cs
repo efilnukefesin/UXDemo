@@ -1,5 +1,5 @@
 ﻿using MahApps.Metro.Controls;
-using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
+using NET.efilnukefesin.Contracts.Mvvm;
 using NET.efilnukefesin.Implementations.DependencyInjection;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,5 @@
 ﻿using NET.efilnukefesin.Apps.UXDemo.Basics.Mvvm;
-using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
+using NET.efilnukefesin.Contracts.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

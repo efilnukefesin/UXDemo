@@ -48,10 +48,9 @@
     <Compile Include="WpfNavigationPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj">
-      <Project>{be1a25d3-8845-483d-92f4-aa21e2a642e8}</Project>
-      <Name>UXDemo.Navigation</Name>
-    </ProjectReference>
+    <PackageReference Include="NET.efilnukefesin.Contracts.Mvvm">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

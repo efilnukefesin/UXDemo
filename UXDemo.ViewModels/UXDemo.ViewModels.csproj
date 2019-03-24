@@ -16,18 +16,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NET.efilnukefesin.Common.Wpf.Commands" Version="1.0.1" />
-    <PackageReference Include="NET.efilnukefesin.Implementations.DependencyInjection" Version="1.0.3" />
+    <PackageReference Include="NET.efilnukefesin.Common.Wpf.Commands" Version="1.1.2" />
+    <PackageReference Include="NET.efilnukefesin.Implementations.DependencyInjection" Version="1.0.4" />
+    <PackageReference Include="NET.efilnukefesin.Implementations.Mvvm" Version="1.0.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj" />
     <ProjectReference Include="..\UXDemo.Models\UXDemo.Models.csproj" />
-    <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj" />
     <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj" />
     <ProjectReference Include="..\UXDemo.UserControls.ViewModels\UXDemo.UserControls.ViewModels.csproj" />
-    <ProjectReference Include="..\UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj" />
   </ItemGroup>
 
 </Project>

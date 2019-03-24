@@ -112,6 +112,9 @@
     <PackageReference Include="MaterialDesignThemes.MahApps">
       <Version>0.0.12</Version>
     </PackageReference>
+    <PackageReference Include="NET.efilnukefesin.Implementations.Mvvm">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UXDemo.Basics\UXDemo.Basics.csproj">
@@ -126,17 +129,9 @@
       <Project>{08857454-bfdf-4845-9350-2541a877b476}</Project>
       <Name>UXDemo.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj">
-      <Project>{be1a25d3-8845-483d-92f4-aa21e2a642e8}</Project>
-      <Name>UXDemo.Navigation</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UXDemo.UserControls.Wpf\UXDemo.UserControls.Wpf.csproj">
       <Project>{16038684-846a-4525-90bc-95a33f2da865}</Project>
       <Name>UXDemo.UserControls.Wpf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj">
-      <Project>{66150ad3-fe3d-4288-8587-9ef45a4717c7}</Project>
-      <Name>UXDemo.ViewModelLocator</Name>
     </ProjectReference>
     <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
       <Project>{facb7485-6029-4158-9ccf-fd52642f83a3}</Project>

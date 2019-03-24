@@ -1,4 +1,4 @@
-﻿using NET.efilnukefesin.Apps.UXDemo.Navigation.Attributes;
+﻿using NET.efilnukefesin.Implementations.Mvvm.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

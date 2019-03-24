@@ -11,7 +11,7 @@
         xmlns:Converters="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Converters;assembly=UXDemo.Converters"
         xmlns:UserControls="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf;assembly=UXDemo.UserControls.Wpf"
         xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.ViewModels;assembly=UXDemo.ViewModels"
-        xmlns:ViewModelLocator="clr-namespace:NET.efilnukefesin.Apps.UXDemo.ViewModelLocator;assembly=UXDemo.ViewModelLocator"
+        xmlns:ViewModelLocator="clr-namespace:NET.efilnukefesin.Implementations.Mvvm;assembly=NET.efilnukefesin.Implementations.Mvvm"
         mc:Ignorable="d"
         Title="UXDemo"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -29,7 +29,7 @@
     <!--#region Window Resources-->
     <Window.Resources>
         <ResourceDictionary>
-            <ObjectDataProvider x:Key="Locator" ObjectInstance="{x:Static ViewModelLocator:ObjectLocator.Current}" />
+            <ObjectDataProvider x:Key="Locator" ObjectInstance="{x:Static ViewModelLocator:StaticViewModelLocator.Current}" />
             <!--<ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/UXDemo.Styles;component/BaseResources.xaml" />
             </ResourceDictionary.MergedDictionaries>-->

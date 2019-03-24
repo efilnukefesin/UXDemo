@@ -6,8 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
 using NET.efilnukefesin.Implementations.DependencyInjection;
+using NET.efilnukefesin.Contracts.Mvvm;
 
 namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 {

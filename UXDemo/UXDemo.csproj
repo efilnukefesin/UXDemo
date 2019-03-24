@@ -104,23 +104,29 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=2.5.0.1205, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="NET.efilnukefesin.Common.Wpf.Commands, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NET.efilnukefesin.Common.Wpf.Commands.1.0.1\lib\netstandard1.3\NET.efilnukefesin.Common.Wpf.Commands.dll</HintPath>
-    </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.Base, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.Base.1.5.1\lib\netstandard2.0\NET.efilnukefesin.Contracts.Base.dll</HintPath>
     </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Contracts.DependencyInjection.dll</HintPath>
     </Reference>
+    <Reference Include="NET.efilnukefesin.Contracts.Mvvm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Contracts.Mvvm.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Mvvm.dll</HintPath>
+    </Reference>
     <Reference Include="NET.efilnukefesin.Contracts.Xml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Contracts.Xml.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Contracts.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Extensions.Wpf.Commands, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Extensions.Wpf.Commands.1.0.1\lib\net472\NET.efilnukefesin.Extensions.Wpf.Commands.dll</HintPath>
     </Reference>
     <Reference Include="NET.efilnukefesin.Implementations.Base, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NET.efilnukefesin.Implementations.Base.1.5.1\lib\netstandard2.0\NET.efilnukefesin.Implementations.Base.dll</HintPath>
     </Reference>
-    <Reference Include="NET.efilnukefesin.Implementations.DependencyInjection, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NET.efilnukefesin.Implementations.DependencyInjection.1.0.3\lib\netstandard2.0\NET.efilnukefesin.Implementations.DependencyInjection.dll</HintPath>
+    <Reference Include="NET.efilnukefesin.Implementations.DependencyInjection, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Implementations.DependencyInjection.1.0.4\lib\netstandard2.0\NET.efilnukefesin.Implementations.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="NET.efilnukefesin.Implementations.Mvvm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NET.efilnukefesin.Implementations.Mvvm.1.0.0\lib\netstandard2.0\NET.efilnukefesin.Implementations.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -180,6 +186,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="UXDemo.Navigation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -245,10 +252,6 @@
       <Project>{c4f97757-62cb-4347-90d3-59e0300532a5}</Project>
       <Name>UXDemo.Navigation.Wpf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UXDemo.Navigation\UXDemo.Navigation.csproj">
-      <Project>{be1a25d3-8845-483d-92f4-aa21e2a642e8}</Project>
-      <Name>UXDemo.Navigation</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UXDemo.Services.Interfaces\UXDemo.Services.Interfaces.csproj">
       <Project>{b636cd94-7976-4c1c-9cea-31f25c2e3747}</Project>
       <Name>UXDemo.Services.Interfaces</Name>
@@ -272,10 +275,6 @@
     <ProjectReference Include="..\UXDemo.UserControls.Wpf\UXDemo.UserControls.Wpf.csproj">
       <Project>{16038684-846a-4525-90bc-95a33f2da865}</Project>
       <Name>UXDemo.UserControls.Wpf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UXDemo.ViewModelLocator\UXDemo.ViewModelLocator.csproj">
-      <Project>{66150ad3-fe3d-4288-8587-9ef45a4717c7}</Project>
-      <Name>UXDemo.ViewModelLocator</Name>
     </ProjectReference>
     <ProjectReference Include="..\UXDemo.ViewModels\UXDemo.ViewModels.csproj">
       <Project>{facb7485-6029-4158-9ccf-fd52642f83a3}</Project>

@@ -7,12 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NET.efilnukefesin.Apps.UXDemo.Navigation.Interfaces;
-using NET.efilnukefesin.Apps.UXDemo.Navigation;
-using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator.Interfaces;
-using NET.efilnukefesin.Apps.UXDemo.ViewModelLocator;
 using NET.efilnukefesin.Apps.UXDemo.Views.Wpf;
 using NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf;
+using NET.efilnukefesin.Contracts.Mvvm;
+using NET.efilnukefesin.Implementations.Mvvm;
 
 namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
 {
@@ -32,7 +30,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.BootStrapper
             DiManager.GetInstance().RegisterType<IDesignModeService, WpfDesignModeService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<IVersionService, VersionService>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<INavigationPresenter, WpfNavigationPresenter>(Lifetime.Singleton);
-            DiManager.GetInstance().RegisterType<ILocator, VMLocator>(Lifetime.Singleton);
+            DiManager.GetInstance().RegisterType<IViewModelLocator, ViewModelLocator>(Lifetime.Singleton);
             DiManager.GetInstance().RegisterType<INavigationService, NavigationService>(Lifetime.Singleton);
         }
         #endregion RegisterDependencies
