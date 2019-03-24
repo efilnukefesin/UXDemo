@@ -19,6 +19,20 @@ namespace NET.efilnukefesin.Apps.UXDemo.ViewModels
 
         #region Methods
 
+        #region ToastCommandExecute
+        public void ToastCommandExecute()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion ToastCommandExecute
+
+        #region ToastCommandCanExecute
+        public bool ToastCommandCanExecute()
+        {
+            return true;
+        }
+        #endregion ToastCommandCanExecute
+
         #region dispose
         protected override void dispose()
         {
