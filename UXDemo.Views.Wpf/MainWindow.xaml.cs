@@ -23,11 +23,13 @@ namespace NET.efilnukefesin.Apps.UXDemo.Views.Wpf
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        #region Construction
         public MainWindow()
         {
             InitializeComponent();
 
             DiManager.GetInstance().Resolve<INavigationPresenter>().RegisterPresenter(this.mainFrame);
         }
+        #endregion Construction
     }
 }

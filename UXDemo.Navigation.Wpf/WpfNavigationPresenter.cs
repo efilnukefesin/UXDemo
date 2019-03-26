@@ -16,6 +16,9 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
         private Frame presentationFrame;
         private object currentDataContext = null;
 
+        private string bufferedViewUri = null;
+        private object bufferedDataContext = null;
+
         #endregion Properties
 
         #region Construction
@@ -40,6 +43,15 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
                         ((Page)this.presentationFrame.Content).DataContext = null;
                     }
 
+                    this.bufferedViewUri = null;
+                    this.bufferedDataContext = null;
+
+                    result = true;
+                }
+                else
+                {
+                    this.bufferedViewUri = ViewUri;
+                    this.bufferedDataContext = DataContext;
                     result = true;
                 }
             }
@@ -58,6 +70,10 @@ namespace NET.efilnukefesin.Apps.UXDemo.Navigation.Wpf
             {
                 this.presentationFrame = (Frame)Presenter;
                 this.presentationFrame.Navigated += this.presentationFrame_Navigated;
+                if (this.bufferedViewUri != null && this.bufferedDataContext != null)
+                {
+                    this.Present(this.bufferedViewUri, this.bufferedDataContext);
+                }
             }
         }
         #endregion RegisterPresenter

@@ -49,7 +49,11 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.State = ButtonState.Selected;
             (this.Parent as MenuItemsUserControlViewModel).DeselectAllOthers(this);
-            this.navigationService?.Navigate(this.Item.ViewModelName);
+            bool? hasNavigated = this.navigationService?.Navigate(this.Item.ViewModelName);
+            if (hasNavigated != true)
+            {
+                //TODO: figure out,what to do
+            }
         }
         #endregion ClickCommandExecute
 

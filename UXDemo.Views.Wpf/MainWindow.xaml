@@ -78,7 +78,7 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Frame x:Name="mainFrame" Grid.Row="0" Source="/UXDemo.Views.Wpf;component/DemoPage.xaml" NavigationUIVisibility="Hidden" />
+                    <Frame x:Name="mainFrame" Grid.Row="0" NavigationUIVisibility="Hidden" />
                     <materialDesign:Snackbar MessageQueue="{Binding SnackBarMessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
                 </Grid>
             </DockPanel>

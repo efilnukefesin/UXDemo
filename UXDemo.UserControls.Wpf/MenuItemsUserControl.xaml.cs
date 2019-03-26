@@ -82,16 +82,21 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
                 items.Add(item);
                 
             }
-
             this.lvItems.ItemsSource = items;
+
+            //select first button
+            if (viewModel.Items.Count > 0)
+            {
+                viewModel.Items[0].Select();
+            }
         }
-#endregion menuItemsUserControlViewModelPropertyChangedEventHandler
+        #endregion menuItemsUserControlViewModelPropertyChangedEventHandler
 
-#endregion Methods
+        #endregion Methods
 
-#region Events
+        #region Events
 
-#endregion Events
+        #endregion Events
 
         //TODO: https://stackoverflow.com/questions/7321710/wpf-binding-collection-property-in-usercontrol enable two ways of adding Items
     }
