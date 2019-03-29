@@ -9,6 +9,11 @@
              d:DesignHeight="450" 
              d:DesignWidth="800">
     <Grid>
-        <TextBlock>DemoPage</TextBlock> 
+        <StackPanel>
+            <TextBlock>DemoPage</TextBlock>
+            <!--<TextBlock Text="{Binding DataContext.Menu.SearchInfo.Text, Mode=TwoWay, NotifyOnSourceUpdated=True, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}, UpdateSourceTrigger=PropertyChanged}" />-->
+            <TextBlock Text="{Binding Path=ActualWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}" />
+            <TextBlock Text="{Binding ActualWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DemoPage}}}" />
+        </StackPanel>
     </Grid>
 </Page>

@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseMenuItemUserControl.cs" />
+    <Compile Include="DelayingTextInputUserControl.xaml.cs">
+      <DependentUpon>DelayingTextInputUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GlowingMenuItemUserControl.xaml.cs">
       <DependentUpon>GlowingMenuItemUserControl.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="DelayingTextInputUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GlowingMenuItemUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

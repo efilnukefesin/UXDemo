@@ -17,7 +17,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design
 
         public SearchBoxUserControlDesignViewModel()
         {
-            this.Text = "Something!";
+            this.DelayingTextInputUserControlViewModel = new DelayingTextInputUserControlViewModel() { Text = "Something!", Hint = "Search" };
         }
 
         #endregion Construction

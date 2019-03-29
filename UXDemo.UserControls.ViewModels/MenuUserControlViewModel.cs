@@ -29,7 +29,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public MenuUserControlViewModel(INavigationService NavigationService)
         {
             this.navigationService = NavigationService;
-            this.SearchInfo = new SearchBoxUserControlViewModel() { Text = "Something2!"};
+            this.SearchInfo = new SearchBoxUserControlViewModel() { DelayingTextInputUserControlViewModel = new DelayingTextInputUserControlViewModel() { Text = "Something2!", Hint = "Search" } };
             this.VersionInfo = new VersionInfoUserControlViewModel() { Version = new VersionModel(new Version(1, 1), new DateTimeOffset(2019, 03, 04, 23, 59, 59, new TimeSpan(-1, 0, 0)))};
             this.UserInfo = new UserInfoUserControlViewModel() { User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience = 100, MaxExperience = 102, Title = "Grand Geek" }, Experience = 101 } };
             this.MenuItems = new MenuItemsUserControlViewModel(this.navigationService) { Items = new ObservableCollection<BaseMenuItemUserControlViewModel>() { } };
@@ -48,7 +48,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
             {
                 this.navigationService = null;
             }
-            this.SearchInfo = new SearchBoxUserControlViewModel() { Text = "Something2!" };
+            this.SearchInfo = new SearchBoxUserControlViewModel() { DelayingTextInputUserControlViewModel = new DelayingTextInputUserControlViewModel() { Text = "Something2!", Hint = "Search" } };
             this.VersionInfo = new VersionInfoUserControlViewModel() { Version = new VersionModel(new Version(1, 1), new DateTimeOffset(2019, 03, 04, 23, 59, 59, new TimeSpan(-1, 0, 0))) };
             this.UserInfo = new UserInfoUserControlViewModel() { User = new UserModel() { Firstname = "Nigel", Lastname = "Lotze", Nickname = "Lotzinator", CurrentLevel = new LevelModel() { MinExperience = 100, MaxExperience = 102, Title = "Grand Geek" }, Experience = 101 } };
             this.MenuItems = new MenuItemsUserControlViewModel(this.navigationService) { Items = new ObservableCollection<BaseMenuItemUserControlViewModel>() { } };

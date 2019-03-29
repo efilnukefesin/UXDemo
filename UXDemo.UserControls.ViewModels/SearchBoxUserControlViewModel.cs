@@ -11,7 +11,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
     {
         #region Properties
 
-        public string Text { get; set; }
+        public DelayingTextInputUserControlViewModel DelayingTextInputUserControlViewModel { get; set; }
 
         #endregion Properties
 
@@ -19,7 +19,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
 
         public SearchBoxUserControlViewModel()
         {
-            this.Text = "Something!";
+            this.DelayingTextInputUserControlViewModel = new DelayingTextInputUserControlViewModel() { Text = "Something!", Hint = "Search" };
         }
 
         #endregion Construction
@@ -29,7 +29,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         #region dispose
         protected override void dispose()
         {
-
+            this.DelayingTextInputUserControlViewModel = null;
         }
         #endregion dispose
 
