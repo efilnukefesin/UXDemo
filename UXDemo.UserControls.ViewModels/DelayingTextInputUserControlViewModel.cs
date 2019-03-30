@@ -14,6 +14,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         public string Hint { get; set; }
         public TimeSpan Delay { get; set; } = new TimeSpan(0, 0, 0, 0, 500);
 
+        public Action ActionToExecute { get; set; }
+
         private Timer DelayTimer;
 
         #endregion Properties
@@ -48,12 +50,8 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
             // stop timer
             this.DelayTimer.Stop();
 
-            //TODO: implement chain end: command or something
-
-            //Dispatcher.Invoke(() => {
-            //    // execute command on UI-Thread
-            //    this.SearchCommand?.Execute(null);
-            //});
+            //execute Action
+            this.ActionToExecute?.Invoke();
         }
         #endregion delayTimer_Elapsed
 
@@ -62,6 +60,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels
         {
             this.DelayTimer.Elapsed -= this.delayTimer_Elapsed;
             this.DelayTimer = null;
+            this.ActionToExecute = null;
         }
         #endregion dispose
 
