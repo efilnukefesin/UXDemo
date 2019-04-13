@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@3)" Category="CodeSchema_Assembly" Bounds="0,220,207.78,25" CodeSchemaProperty_StrongName="UXDemo.Navigation.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(c4f97757-62cb-4347-90d3-59e0300532a5.OutputPath)" Group="Collapsed" Label="UXDemo.Navigation.Wpf.dll" />
+    <Node Id="@11" Category="CodeSchema_Assembly" Bounds="0,330,299.97,25" CodeSchemaProperty_StrongName="UXDemo.UserControls.ViewModels.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(5643762b-29ad-4446-99fc-1e7c3230e5b8.OutputPath)" Group="Collapsed" Label="UXDemo.UserControls.ViewModels.Design.dll" />
+    <Node Id="@13" Category="CodeSchema_Assembly" Bounds="159.036666666667,0,157.08,25" CodeSchemaProperty_StrongName="UXDemo.Basics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(33861155-48ca-4f78-b16b-bf47ed0ba515.OutputPath)" Group="Collapsed" Label="UXDemo.Basics.dll" />
+    <Node Id="@15" Category="CodeSchema_Assembly" Bounds="0,275,221.723333333333,25" CodeSchemaProperty_StrongName="UXDemo.Services.Interfaces, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b636cd94-7976-4c1c-9cea-31f25c2e3747.OutputPath)" Group="Collapsed" Label="UXDemo.Services.Interfaces.dll" />
+    <Node Id="@17" Category="CodeSchema_Assembly" Bounds="0,55,167.846666666667,25" CodeSchemaProperty_StrongName="UXDemo.Services, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(d960e943-a921-47e5-830c-5887f920525e.OutputPath)" Group="Collapsed" Label="UXDemo.Services.dll" />
+    <Node Id="@19" Category="CodeSchema_Assembly" Bounds="197.846666666667,55,179.746666666667,25" CodeSchemaProperty_StrongName="UXDemo.Test.Styles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(2b1faf64-1552-4bd4-ba11-d97fa2891710.OutputPath)" Group="Collapsed" Label="UXDemo.Test.Styles.dll">
+      <Category Ref="CodeMap_WpfProject" />
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="0,0,129.036666666667,25" CodeSchemaProperty_StrongName="UXDemo, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(933c2385-69de-408d-80f2-677996e7424f.OutputPath)" Group="Collapsed" Label="UXDemo.exe">
+      <Category Ref="CodeMap_WpfProject" />
+      <Category Ref="FileSystem.Category.FileOfType.exe" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_Assembly" Bounds="346.116666666667,0,164.606666666667,25" CodeSchemaProperty_StrongName="UXDemo.Models, Version=0.6.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(08857454-bfdf-4845-9350-2541a877b476.OutputPath)" Group="Collapsed" Label="UXDemo.Models.dll" />
+    <Node Id="@23" Category="CodeSchema_Assembly" Bounds="212.513333333333,165,189.916666666667,25" CodeSchemaProperty_StrongName="UXDemo.ViewModels, Version=0.6.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(facb7485-6029-4158-9ccf-fd52642f83a3.OutputPath)" Group="Collapsed" Label="UXDemo.ViewModels.dll" />
+    <Node Id="@25" Category="CodeSchema_Assembly" Bounds="251.723333333333,275,260.823333333333,25" CodeSchemaProperty_StrongName="UXDemo.UserControls.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(53732fe1-88ef-4d6a-8d44-efe9bea72cd5.OutputPath)" Group="Collapsed" Label="UXDemo.UserControls.ViewModels.dll" />
+    <Node Id="@27" Category="CodeSchema_Assembly" Bounds="0,165,182.513333333333,25" CodeSchemaProperty_StrongName="UXDemo.Converters, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(a7078161-3ac0-4a1c-a1ed-6669b59107c1.OutputPath)" Group="Collapsed" Label="UXDemo.Converters.dll" />
+    <Node Id="@5" Category="CodeSchema_Assembly" Bounds="0,110,181.213333333333,25" CodeSchemaProperty_StrongName="UXDemo.Styles.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(f6cad3ef-31cd-4599-adc2-a4c5095df428.OutputPath)" Group="Collapsed" Label="UXDemo.Styles.Wpf.dll">
+      <Category Ref="CodeMap_WpfProject" />
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_Assembly" Bounds="237.78,220,219.383333333333,25" CodeSchemaProperty_StrongName="UXDemo.UserControls.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(16038684-846a-4525-90bc-95a33f2da865.OutputPath)" Group="Collapsed" Label="UXDemo.UserControls.Wpf.dll">
+      <Category Ref="CodeMap_WpfProject" />
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="@9" Category="CodeSchema_Assembly" Bounds="211.213333333333,110,181.48,25" CodeSchemaProperty_StrongName="UXDemo.Views.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b2c0dfc6-7fa9-4e77-9c42-fed71910cda6.OutputPath)" Group="Collapsed" Label="UXDemo.Views.Wpf.dll">
+      <Category Ref="CodeMap_WpfProject" />
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+  </Nodes>
+  <Links>
+    <Link Source="@11" Target="@13" Category="References" Bounds="181.604873657227,29.8997631072998,43.8135833740234,300.10057258606" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@11" Target="@21" Category="CodeSchema_Calls" Bounds="181.604873657227,33.9677810668945,245.000991821289,296.032554626465" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="32">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@11" Target="@25" Category="References" Bounds="202.746267706786,302.075054880613,117.869887577502,27.9252879765297" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="66">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="InheritsFrom" />
+    </Link>
+    <Link Source="@15" Target="@21" Category="CodeSchema_ReturnTypeLink" Bounds="152.206283569336,33.9677810668945,274.39958190918,241.03246307373" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@17" Target="@15" Category="Implements" Bounds="-10.1341819763184,79.9998397827148,65.5718803405762,192.67472076416" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@17" Target="@21" Category="References" Bounds="162.217887949295,26.3706982753695,179.320489925273,28.6291445817734" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="21">
+      <Category Ref="CodeMap_ExternalReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@19" Target="@5" Category="CodeMap_ProjectReference" Bounds="144.073930958732,79.9998428571429,98.8476656444261,27.5812468049345" />
+    <Link Source="@19" Target="@7" Category="CodeMap_ProjectReference" Bounds="332.175537109375,79.9998397827148,77.8722229003906,135.908134460449" />
+    <Link Source="@2" Target="(@3)" Category="References" Bounds="-10.1341819763184,24.9997425079346,61.3290863037109,192.54282951355" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@2" Target="@11" Category="CodeMap_ProjectReference" Bounds="108.33854675293,24.9997425079346,116.011856079102,301.691877365112" />
+    <Link Source="@2" Target="@15" Category="References" Bounds="-10.1341819763184,24.9997425079346,65.5718803405762,247.67481803894" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@2" Target="@17" Category="References" Bounds="68.9285525874802,24.9997428571429,7.59011354659704,21.5128577209066" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@2" Target="@21" Category="CodeMap_ProjectReference" Bounds="105.746086120605,23.2579002380371,231.94327545166,11.8760261535645" />
+    <Link Source="@2" Target="@23" Category="CodeSchema_Calls" Bounds="108.33854675293,24.9997425079346,149.436080932617,137.370862960815" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@2" Target="@25" Category="CodeMap_ProjectReference" Bounds="108.33854675293,24.9997425079346,205.322616577148,248.155042648315" />
+    <Link Source="@2" Target="@27" Category="CodeMap_ProjectReference" Bounds="-10.1341819763184,24.9997425079346,53.6636962890625,137.248914718628" />
+    <Link Source="@2" Target="@5" Category="CodeMap_ProjectReference" Bounds="-10.1341819763184,24.9997425079346,53.2674102783203,82.2404842376709" />
+    <Link Source="@2" Target="@7" Category="CodeMap_ProjectReference" Bounds="108.33854675293,24.9997425079346,158.717727661133,193.4515209198" />
+    <Link Source="@2" Target="@9" Category="CodeMap_ProjectReference" Bounds="108.33854675293,24.9997425079346,129.124496459961,83.0282497406006" />
+    <Link Source="@23" Target="@13" Category="InheritsFrom" Bounds="190.986618041992,30.0567893981934,75.3953399658203,134.943256378174" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@23" Target="@15" Category="References" Bounds="160.81982421875,190.000045776367,115.822418212891,82.3912200927734" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@23" Target="@21" Category="CodeMap_ProjectReference" Bounds="344.298919677734,33.8367385864258,80.0039978027344,131.163307189941" />
+    <Link Source="@23" Target="@25" Category="References" Bounds="231.207870483398,190.000045776367,64.4234771728516,83.5692291259766" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@25" Target="@13" Category="References" Bounds="191.264221191406,30.0713443756104,131.205718994141,244.928899765015" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="44">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+      <Category Ref="InheritsFrom" />
+    </Link>
+    <Link Source="@25" Target="@21" Category="References" Bounds="415.025512695313,33.8863868713379,46.410400390625,241.113857269287" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="61">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@27" Target="@13" Category="CodeMap_ProjectReference" Bounds="129.912628173828,30.0468444824219,80.9544219970703,134.953201293945" />
+    <Link Source="@27" Target="@21" Category="References" Bounds="129.912628173828,32.9710922241211,287.777191162109,132.028953552246" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@7" Target="@11" Category="CodeMap_ProjectReference" Bounds="189.968200683594,245.000137329102,116.610717773438,81.6753387451172" />
+    <Link Source="@7" Target="@13" Category="References" Bounds="191.264221191406,30.0713443756104,84.6577758789063,189.928792953491" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@7" Target="@15" Category="CodeMap_ProjectReference" Bounds="173.40284937868,245.000142857143,120.293915060536,27.9623741926418" />
+    <Link Source="@7" Target="@17" Category="CodeMap_ProjectReference" Bounds="134.027282714844,82.6014175415039,141.894714355469,137.398719787598" />
+    <Link Source="@7" Target="@21" Category="References" Bounds="372.610961914063,33.9677810668945,53.9949035644531,186.032356262207" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@7" Target="@23" Category="CodeMap_ProjectReference" Bounds="321.856098212734,197.278672194065,16.5246758919188,22.7214706630782" />
+    <Link Source="@7" Target="@25" Category="References" Bounds="355.349682646032,245.000142857143,14.1086474181367,22.3861049772747" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="15">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_FunctionPointer" />
+    </Link>
+    <Link Source="@7" Target="@27" Category="CodeMap_ProjectReference" Bounds="158.286782035604,191.888985925672,130.954308686655,28.1111569314713" />
+    <Link Source="@9" Target="@13" Category="CodeMap_ProjectReference" Bounds="187.712478637695,29.9662666320801,70.1200408935547,80.0336799621582" />
+    <Link Source="@9" Target="@21" Category="CodeMap_ProjectReference" Bounds="335.080078125,32.9710922241211,82.6097412109375,77.0288543701172" />
+    <Link Source="@9" Target="@23" Category="CodeSchema_FunctionPointer" Bounds="303.207497719701,134.999942857143,2.11151729719933,21.0450611593522" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@9" Target="@27" Category="CodeMap_ProjectReference" Bounds="147.850380090521,134.999942857143,106.217434246787,27.726919451265" />
+    <Link Source="@9" Target="@7" Category="CodeMap_ProjectReference" Bounds="344.672210693359,134.999938964844,67.8919677734375,80.9561767578125" />
+  </Links>
+  <Categories>
+    <Category Id="CodeMap_ExternalReference" Label="Externer Verweis" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Verweis durch" OutgoingActionLabel="Verweise" />
+    <Category Id="CodeMap_ProjectReference" Label="Projektverweis" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Verweis durch" OutgoingActionLabel="Verweise" />
+    <Category Id="CodeMap_WpfProject" Label="WPF-Projekt" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="WPF-Projekte" />
+    <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" NavigationActionLabel="Assemblys" />
+    <Category Id="CodeSchema_Calls" Label="Aufrufe" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Aufgerufen von" OutgoingActionLabel="Aufrufe" />
+    <Category Id="CodeSchema_FunctionPointer" Label="Funktionszeiger" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Funktionszeiger" OutgoingActionLabel="Funktionszeiger" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="Rückgabe" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Rückgabetypen" OutgoingActionLabel="Rückgabetypen" />
+    <Category Id="File" Label="Datei" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="Dateien" />
+    <Category Id="FileSystem.Category.FileOfType.dll" BasedOn="CodeSchema_Assembly" CanBeDataDriven="True" IsProviderRoot="False" />
+    <Category Id="FileSystem.Category.FileOfType.exe" BasedOn="CodeSchema_Assembly" CanBeDataDriven="True" IsProviderRoot="False" />
+    <Category Id="Implements" Label="Implementiert" />
+    <Category Id="InheritsFrom" Label="Erbt von" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Geerbt durch" OutgoingActionLabel="Erbt von" />
+    <Category Id="References" Label="Verweise" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Verweis durch" OutgoingActionLabel="Verweise" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_StrongName" Label="StrongName" Description="StrongName" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Daten virtualisiert" Description="Bei &quot;True&quot; kann das Diagramm Knoten und Links enthalten, die Daten für virtualisierte (d. h. nicht tatsächlich im Diagramm erstellte) Knoten/Links darstellen." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="Status der verzögerten untergeordneten Knoten" Description="Nicht angegeben, wenn der Status der verzögerten untergeordneten Knoten nicht angegeben wurde. NotFetched, wenn die Gruppe untergeordnete Knoten enthält, die noch nicht in das Diagramm abgerufen wurden. Fetched, wenn alle verzögerten untergeordneten Knoten der Gruppe bereits abgerufen wurden." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Status der verzögerten gruppenübergreifenden Links" Description="Nicht angegeben, wenn der Status der verzögerten gruppenübergreifenden Links nicht angegeben wurde. NotFetched, wenn verzögerten gruppenübergreifenden Links des Knotens noch nicht in das Diagramm abgerufen wurden. Fetched, wenn alle verzögerten gruppenübergreifenden Links bereits abgerufen wurden." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilePath" Label="Dateipfad" Description="Dateipfad" DataType="System.String" />
+    <Property Id="Group" Label="Gruppe" Description="Knoten als Gruppe anzeigen" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Symbol" Description="Symbol" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsSourceVirtualized" Label="Linkquelle virtualisiert" Description="Bei &quot;True&quot; enthält das Linkquellenende Daten für virtualisierte (d. h. nicht tatsächlich im Diagramm erstellte) Knoten/Links." DataType="System.Boolean" />
+    <Property Id="IsTargetVirtualized" Label="Linkziel virtualisiert" Description="Bei &quot;True&quot; enthält das Linkzielende Daten für virtualisierte (d. h. nicht tatsächlich im Diagramm erstellte) Knoten/Links." DataType="System.Boolean" />
+    <Property Id="Label" Label="Bezeichnung" Description="Anzeigbare Bezeichnung eines Objekts, das Anmerkungen einblenden werden kann" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Sichtbarkeit" Description="Definiert, ob ein Knoten des Diagramms sichtbar ist oder nicht" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Stärke" Description="Stärke" DataType="System.Double" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo/bin/Debug/UXDemo.exe" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Navigation.Wpf/bin/Debug/UXDemo.Navigation.Wpf.dll" />
+    <Alias n="4" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Styles.Wpf/bin/Debug/UXDemo.Styles.Wpf.dll" />
+    <Alias n="5" Id="(@4)" />
+    <Alias n="6" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.UserControls.Wpf/bin/Debug/UXDemo.UserControls.Wpf.dll" />
+    <Alias n="7" Id="(@6)" />
+    <Alias n="8" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Views.Wpf/bin/Debug/UXDemo.Views.Wpf.dll" />
+    <Alias n="9" Id="(@8)" />
+    <Alias n="10" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.UserControls.ViewModels.Design/bin/Debug/netstandard2.0/UXDemo.UserControls.ViewModels.Design.dll" />
+    <Alias n="11" Id="(@10)" />
+    <Alias n="12" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Basics/bin/Debug/netstandard2.0/UXDemo.Basics.dll" />
+    <Alias n="13" Id="(@12)" />
+    <Alias n="14" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Services.Interfaces/bin/Debug/netstandard2.0/UXDemo.Services.Interfaces.dll" />
+    <Alias n="15" Id="(@14)" />
+    <Alias n="16" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Services/bin/Debug/netstandard2.0/UXDemo.Services.dll" />
+    <Alias n="17" Id="(@16)" />
+    <Alias n="18" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Test.Styles/bin/Debug/UXDemo.Test.Styles.dll" />
+    <Alias n="19" Id="(@18)" />
+    <Alias n="20" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Models/bin/Debug/netstandard2.0/UXDemo.Models.dll" />
+    <Alias n="21" Id="(@20)" />
+    <Alias n="22" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.ViewModels/bin/Debug/netstandard2.0/UXDemo.ViewModels.dll" />
+    <Alias n="23" Id="(@22)" />
+    <Alias n="24" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.UserControls.ViewModels/bin/Debug/netstandard2.0/UXDemo.UserControls.ViewModels.dll" />
+    <Alias n="25" Id="(@24)" />
+    <Alias n="26" Uri="Assembly=file:///T:/Data/odrive/OneDrive/Programizing/C%2523 WPF/UXDemo/UXDemo.Converters/bin/Debug/UXDemo.Converters.dll" />
+    <Alias n="27" Id="(@26)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Ergebnisse" ValueLabel="Wahr">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Testprojekt" ValueLabel="Testprojekt">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Webprojekt" ValueLabel="Webprojekt">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows Store-Projekt" ValueLabel="Windows Store-Projekt">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Phone-Projekt" ValueLabel="Phone-Projekt">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Portable Bibliothek" ValueLabel="Portable Bibliothek">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF-Projekt" ValueLabel="WPF-Projekt">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX-Projekt" ValueLabel="VSIX-Projekt">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Modellierungsprojekt" ValueLabel="Modellierungsprojekt">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schnittstelle" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struktur" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegat" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Klasse" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF0E70C0" />
+      <Setter Property="Stroke" Value="#FF0E70C0" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Eigenschaft" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Methode" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Ereignis" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Feld" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out-Parameter" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Lokale Variable" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Extern" ValueLabel="Weist Kategorie auf">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Erbt von" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implementiert" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Aufrufe" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Funktionszeiger" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Feld zum Lesen" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Feld zum Schreiben" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Zurück" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Verweise" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Verwendet Attribut" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Projektmappenordner" ValueLabel="Wahr" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Projektverweis" ValueLabel="Projektverweis">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Externer Verweis" ValueLabel="Externer Verweis">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="08857454-bfdf-4845-9350-2541a877b476.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Models\bin\Debug\netstandard2.0\UXDemo.Models.dll" />
+    <Path Id="16038684-846a-4525-90bc-95a33f2da865.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.UserControls.Wpf\bin\Debug\UXDemo.UserControls.Wpf.dll" />
+    <Path Id="2b1faf64-1552-4bd4-ba11-d97fa2891710.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Test.Styles\bin\Debug\UXDemo.Test.Styles.dll" />
+    <Path Id="33861155-48ca-4f78-b16b-bf47ed0ba515.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Basics\bin\Debug\netstandard2.0\UXDemo.Basics.dll" />
+    <Path Id="53732fe1-88ef-4d6a-8d44-efe9bea72cd5.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.UserControls.ViewModels\bin\Debug\netstandard2.0\UXDemo.UserControls.ViewModels.dll" />
+    <Path Id="5643762b-29ad-4446-99fc-1e7c3230e5b8.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.UserControls.ViewModels.Design\bin\Debug\netstandard2.0\UXDemo.UserControls.ViewModels.Design.dll" />
+    <Path Id="933c2385-69de-408d-80f2-677996e7424f.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo\bin\Debug\UXDemo.exe" />
+    <Path Id="a7078161-3ac0-4a1c-a1ed-6669b59107c1.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Converters\bin\Debug\UXDemo.Converters.dll" />
+    <Path Id="b2c0dfc6-7fa9-4e77-9c42-fed71910cda6.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Views.Wpf\bin\Debug\UXDemo.Views.Wpf.dll" />
+    <Path Id="b636cd94-7976-4c1c-9cea-31f25c2e3747.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Services.Interfaces\bin\Debug\netstandard2.0\UXDemo.Services.Interfaces.dll" />
+    <Path Id="c4f97757-62cb-4347-90d3-59e0300532a5.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Navigation.Wpf\bin\Debug\UXDemo.Navigation.Wpf.dll" />
+    <Path Id="d960e943-a921-47e5-830c-5887f920525e.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Services\bin\Debug\netstandard2.0\UXDemo.Services.dll" />
+    <Path Id="f6cad3ef-31cd-4599-adc2-a4c5095df428.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.Styles.Wpf\bin\Debug\UXDemo.Styles.Wpf.dll" />
+    <Path Id="facb7485-6029-4158-9ccf-fd52642f83a3.OutputPath" Value="T:\Data\odrive\OneDrive\Programizing\C# WPF\UXDemo\UXDemo.ViewModels\bin\Debug\netstandard2.0\UXDemo.ViewModels.dll" />
+  </Paths>
+</DirectedGraph>
