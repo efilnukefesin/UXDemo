@@ -65,16 +65,7 @@ namespace NET.efilnukefesin.Apps.UXDemo.UserControls.Wpf
             foreach (BaseMenuItemUserControlViewModel menuItemUserControlViewModel in viewModel.Items)
             {
                 BaseMenuItemUserControl item;
-
-                if (true)  //TODO: which kind of menu items to use?
-                {
-                    item = new GlowingMenuItemUserControl();
-                }
-                else
-                {
-                    item = new SimpleMenuItemUserControl();
-                }
-
+                item = new GlowingMenuItemUserControl();
                 item.Loaded += (s, e2) =>
                 {
                     item.DataContext = menuItemUserControlViewModel;

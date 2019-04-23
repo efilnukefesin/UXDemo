@@ -16,6 +16,5 @@
     <UserControl.DataContext>
         <ViewModels:MenuItemsUserControlViewModel />
     </UserControl.DataContext>
-
     <ListView x:Name="lvItems" Style="{StaticResource MenuItemsListView}" ItemContainerStyle="{StaticResource MenuItemsListViewItem}" />
 </Base:BaseUserControl>

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:Base="clr-namespace:NET.efilnukefesin.Extensions.Wpf.UserControls;assembly=NET.efilnukefesin.Extensions.Wpf.UserControls"
              xmlns:Converters="clr-namespace:NET.efilnukefesin.Apps.UXDemo.Converters;assembly=UXDemo.Converters"
+             xmlns:NETEfilnukefesinConverters="clr-namespace:NET.efilnukefesin.Extensions.Wpf.Converters;assembly=NET.efilnukefesin.Extensions.Wpf.Converters"
              xmlns:ViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels;assembly=UXDemo.UserControls.ViewModels"
              xmlns:DesignTimeViewModels="clr-namespace:NET.efilnukefesin.Apps.UXDemo.UserControls.ViewModels.Design;assembly=UXDemo.UserControls.ViewModels.Design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -35,12 +36,11 @@
     </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20px"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border x:Name="backgroundBorder" Grid.Column="0" Margin="5px" Style="{StaticResource BackgroundLed}" />
-        <Border x:Name="glowBorder" Grid.Column="0" Margin="5px" Style="{StaticResource GlowingLed}" Visibility="{Binding State, Converter={StaticResource ButtonStatusToVisibilityConverter}}" />
-        <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="1" Content="{Binding Item.Caption}">
+        <Rectangle RadiusY="2px" RadiusX="2px" Margin="2px" Fill="#FF0A2D00" Stroke="Black" />
+        <Rectangle RadiusY="2px" RadiusX="2px" Margin="2px" Fill="#FF5FFF31" Stroke="Black" Visibility="{Binding State, Converter={StaticResource ButtonStatusToVisibilityConverter}}" />
+        <Button x:Name="btnMain" Command="{Binding ClickCommand, ElementName=userControl}" Grid.Column="0" Content="{Binding Item.Caption}" Margin="7,9"  >
             <Button.Style>
                 <MultiBinding Converter="{StaticResource styleConverter}">
                     <Binding Path="State"/>
@@ -50,5 +50,22 @@
                 </MultiBinding>
             </Button.Style>
         </Button>
+        <Canvas>
+            <Path Stroke="Black" StrokeThickness="0" Fill="#FF5FFF31" Margin="3px">
+                <Path.Data>
+                    <CombinedGeometry GeometryCombineMode="Exclude">
+                        <CombinedGeometry.Geometry1>
+                            <RectangleGeometry RadiusY="2" RadiusX="2" Rect="0,0 94,44"/>
+                        </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                            <RectangleGeometry RadiusY="2" RadiusX="2" Rect="4,6 86,32"/>
+                        </CombinedGeometry.Geometry2>
+                    </CombinedGeometry>
+                </Path.Data>
+                <Path.Effect>
+                    <BlurEffect Radius="3" />
+                </Path.Effect>
+            </Path>
+        </Canvas>
     </Grid>
 </local:BaseMenuItemUserControl>
